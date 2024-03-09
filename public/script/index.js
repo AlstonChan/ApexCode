@@ -1,1 +1,0 @@
-const mok = "noob";

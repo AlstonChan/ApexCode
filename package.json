@@ -1,0 +1,35 @@
+{
+  "name": "apexcode",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "contributors": [
+    {
+      "name": "Chan Alston",
+      "email": "devalston390@gmail.com",
+      "url": "https://www.chanalston.com"
+    },
+    {
+      "name": "Chan Ming Jian",
+      "email": "zijianchan10@gmail.com"
+    },
+    {
+      "name": "Mok CHun Hao",
+      "email": "chunhaomok2@gmail.com"
+    },
+    {
+      "name": "Martin Tan Yue Howe",
+      "email": "yuehowe2002@gmail.com"
+    }
+  ],
+  "license": "MPL-2.0",
+  "repository": {
+    "url": "https://github.com/AlstonChan/ApexCode",
+    "type": "git"
+  },
+  "devDependencies": {
+    "prettier": "3.2.5"
+  }
+}
