@@ -1,0 +1,9 @@
+{
+  "markdownlint.ignore": "./LICENSE.md",
+  "cSpell.ignorePaths": [
+    "package-lock.json",
+    "package.json",
+    "node_modules",
+    ".vscode",
+  ]
+}
