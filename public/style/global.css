@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* font family  */
+@import url(./font.css);
+/* CSS Reset */
+@import url(./reset.css);
+
+:root {
+  /* Colors scheme for the website */
+  --primary: #38bdf8;
+  --secondary: #818cf8;
+  --accent: #f471b5;
+  --neutral: #1e293b;
+  --base-100: #0f172a;
+  --base-content: #c8cbd0;
+  --info: #0ca5e9;
+  --info-content: #000000;
+  --success: #2dd4bf;
+  --warning: #f4bf50;
+  --error: #fb7085;
+}
