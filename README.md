@@ -26,6 +26,7 @@ The following VScode extension is recommended to install to provide a better dev
 - [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+- [lit-html](https://marketplace.visualstudio.com/items?itemName=bierner.lit-html)
 
 ## License
 

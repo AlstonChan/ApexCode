@@ -1,0 +1,139 @@
+header {
+  margin: 0 auto;
+  max-width: 1500px;
+}
+header > div {
+  display: flex;
+  align-items: center;
+  margin: 10px 20px 0;
+}
+a.logoContainer {
+  display: flex;
+  padding: 3px 10px;
+  /* to prevent flash of text-decoration on load  */
+  text-decoration: none;
+  text-decoration-color: transparent;
+  transition: text-decoration 160ms ease-in-out;
+}
+a.logoContainer:hover {
+  text-decoration: underline solid var(--base-content);
+}
+a.logoContainer > img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+a.logoContainer > p {
+  color: var(--base-content);
+  font-size: var(--fs-xl);
+  font-weight: bold;
+  margin: 0;
+  align-self: center;
+}
+nav {
+  margin-left: auto;
+}
+nav > ul {
+  display: flex;
+  align-items: center;
+
+  list-style: none;
+  padding: 0;
+}
+nav > ul > li > a {
+  color: var(--base-content);
+  margin: 0 10px;
+  font-size: var(--fs-lg);
+  font-weight: bold;
+  /* to prevent flash of text-decoration on load  */
+  text-decoration: none;
+  text-decoration-color: transparent;
+  transition: text-decoration 160ms ease-in-out;
+}
+nav > ul > li > a:hover {
+  text-decoration: underline solid var(--base-content);
+}
+nav > ul > li > button {
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+}
+nav > ul > li > button > img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+.auth {
+  display: block;
+  padding: 4px 15px;
+  background-color: var(--base-content);
+  color: var(--base-100);
+  border-radius: 5px;
+  font-size: var(--fs-md);
+  transition: background-color 160ms ease-in-out;
+  box-shadow: 0 3px 10px -3px rgba(200, 203, 208, 0.75);
+}
+.auth:hover {
+  background-color: var(--base-content-hover);
+}
+.cart {
+  cursor: pointer;
+  transition: transform 160ms ease-in-out;
+}
+.cart:hover {
+  transform: scale(1.05);
+}
+
+.hamburger {
+  display: none;
+  margin-left: auto;
+  position: relative;
+}
+.hamburger > button {
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: transform 160ms ease-in-out;
+}
+.hamburger > button:hover {
+  transform: scale(1.05);
+}
+
+.hamburger > .dropdown {
+  visibility: hidden;
+
+  position: absolute;
+  list-style: none;
+  padding: 4px 6px;
+  right: 2px;
+  top: 29px;
+
+  width: 90px;
+  border-radius: 8px;
+  background-color: var(--base-content);
+  box-shadow: 0 3px 10px -3px rgba(200, 203, 208, 0.75);
+  transition: opacity 160ms ease-in-out;
+}
+.hamburger > .dropdown > li > a {
+  display: block;
+  text-decoration: none;
+  color: var(--base-100);
+  padding: 4px 6px;
+  transition: background-color 160ms ease-in-out;
+}
+.hamburger > .dropdown > li > a:hover {
+  border-radius: 5px;
+  background-color: var(--base-content-hover);
+}
+
+@media screen and (max-width: 738px) {
+  nav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}

@@ -12,9 +12,20 @@
   --neutral: #1e293b;
   --base-100: #0f172a;
   --base-content: #c8cbd0;
+  --base-content-hover: #b2b5ba;
   --info: #0ca5e9;
   --info-content: #000000;
   --success: #2dd4bf;
   --warning: #f4bf50;
   --error: #fb7085;
+  /* font size  */
+  --fs-3xl: 2.25rem; /* 36px */
+  --fs-2xl: 1.875rem; /* 30px */
+  --fs-xl: 1.5rem; /* 24px */
+  --fs-lg: 1.25rem; /* 20px */
+  --fs-md: 1rem; /* 16px */
+  --fs-sm: 0.875rem; /* 14px */
+  --fs-xs: 0.8125rem; /* 13px */
+  --fs-xxs: 0.75rem; /* 12px */
+  --fs-xxxs: 0.6875rem; /* 11px */
 }
