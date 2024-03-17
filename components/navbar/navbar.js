@@ -1,5 +1,3 @@
-const header = document.getElementById("header");
-
 /**
  *
  * @param {string[]} strings
@@ -10,8 +8,11 @@ function html(strings) {
 }
 
 // Web Component
-const template = document.createElement("template");
-template.innerHTML = html`<link rel="stylesheet" href="/components/navbar/navbar.css" />
+const navBarTemplate = document.createElement("template");
+navBarTemplate.innerHTML = html`<link
+    rel="stylesheet"
+    href="/components/navbar/navbar.css"
+  />
   <header>
     <div>
       <a href="/" class="logoContainer">
@@ -45,7 +46,7 @@ template.innerHTML = html`<link rel="stylesheet" href="/components/navbar/navbar
       <div class="hamburger">
         <button class="cart">
           <img
-            src="./public/assets/images/icons/CartIcon-white.svg"
+            src="/public/assets/images/icons/CartIcon-white.svg"
             alt="cart"
             width="35"
             height="35"
@@ -53,7 +54,7 @@ template.innerHTML = html`<link rel="stylesheet" href="/components/navbar/navbar
         </button>
         <button id="menu">
           <img
-            src="./public/assets/images/icons/MenuIcon-white.svg"
+            src="/public/assets/images/icons/MenuIcon-white.svg"
             alt="menu"
             width="35"
             height="35"
@@ -76,13 +77,12 @@ class Navigation extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
-    this.shadowRoot.appendChild(template.content.cloneNode(true));
+    this.shadowRoot.appendChild(navBarTemplate.content.cloneNode(true));
 
     const menuBtn = this.shadowRoot.getElementById("menu");
     menuBtn.addEventListener("click", (e) => {
       e.stopPropagation();
       this.#dropdownIsOpen = !this.#dropdownIsOpen;
-      console.log(e.currentTarget === menuBtn);
 
       if (this.#dropdownIsOpen) {
         this.shadowRoot.querySelector(".dropdown").style.visibility = "visible";
