@@ -11,12 +11,12 @@ function html(strings) {
 
 // Web Component
 const template = document.createElement("template");
-template.innerHTML = html`<link rel="stylesheet" href="./components/header/header.css" />
+template.innerHTML = html`<link rel="stylesheet" href="/components/navbar/navbar.css" />
   <header>
     <div>
       <a href="/" class="logoContainer">
         <img
-          src="./public/assets/images/logo-100x100.png"
+          src="/public/assets/images/logo-100x100.png"
           alt="logo"
           width="100"
           height="100"
@@ -32,7 +32,7 @@ template.innerHTML = html`<link rel="stylesheet" href="./components/header/heade
           <li>
             <button class="cart">
               <img
-                src="./public/assets/images/icons/CartIcon-white.svg"
+                src="/public/assets/images/icons/CartIcon-white.svg"
                 alt="cart"
                 width="35"
                 height="35"
@@ -107,3 +107,7 @@ class Navigation extends HTMLElement {
 }
 
 customElements.define("navigation-bar", Navigation);
+
+const body = document.querySelector("body");
+const navBar = document.createElement("navigation-bar");
+body.insertBefore(navBar, body.firstChild);
