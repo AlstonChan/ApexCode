@@ -27,7 +27,6 @@ navBarTemplate.innerHTML = html`<link
       <nav>
         <ul>
           <li><a href="/all-course.html">All Course</a></li>
-          <li><a href="/faq.html">FAQ</a></li>
           <li><a href="/about.html">About</a></li>
           <li><a href="/pricing.html">Pricing</a></li>
           <li>
@@ -62,7 +61,6 @@ navBarTemplate.innerHTML = html`<link
         </button>
         <ul class="dropdown">
           <li><a href="/all-course.html">All Course</a></li>
-          <li><a href="/faq.html">FAQ</a></li>
           <li><a href="/about.html">About</a></li>
           <li><a href="/pricing.html">Pricing</a></li>
           <li><a href="/login.html">Log In</a></li>
@@ -108,6 +106,7 @@ class Navigation extends HTMLElement {
 
 customElements.define("navigation-bar", Navigation);
 
-const body = document.querySelector("body");
 const navBar = document.createElement("navigation-bar");
-body.insertBefore(navBar, body.firstChild);
+document
+  .querySelector("body")
+  .insertBefore(navBar, document.querySelector("body").firstChild);

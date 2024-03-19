@@ -7,6 +7,7 @@
 :root {
   /* Colors scheme for the website */
   --primary: #38bdf8;
+  --primary-hover: #269ed1;
   --secondary: #818cf8;
   --accent: #f471b5;
   --neutral: #1e293b;

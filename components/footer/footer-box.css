@@ -1,0 +1,67 @@
+@import url("/public/style/reset.css");
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--neutral);
+}
+.footer-content {
+  display: flex;
+  padding: 20px;
+  color: #fff;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+
+  /* border-top: 1px solid var(--secondary); */
+}
+.footer-content a {
+  color: var(--primary);
+  transition: color 160ms, text-decoration 160ms;
+  text-decoration-color: transparent;
+}
+.footer-content a:hover {
+  color: var(--primary-hover);
+  text-decoration: underline solid var(--primary-hover) 1px;
+}
+
+.left {
+  width: 50%;
+}
+.left > h2 {
+  font-size: var(--fs-xl);
+  margin: 12px 0 4px 0;
+}
+.left > p {
+  font-size: var(--fs-md);
+  margin: 0 0 12px 0;
+  max-width: 400px;
+}
+address > p {
+  font-size: var(--fs-sm);
+  margin: 0 0 4px 0;
+  color: var(--base-content);
+}
+
+.right {
+  width: 50%;
+}
+.right > h3 {
+  font-size: var(--fs-xl);
+  margin: 12px 0 4px 0;
+}
+.right > ul {
+  list-style: none;
+  padding: 0;
+}
+.right > ul > li {
+  margin: 6px 0;
+}
+
+.copyright {
+  padding: 12px 20px;
+  background-color: var(--base-100);
+  color: var(--base-content);
+  text-align: center;
+  font-size: var(--fs-sm);
+}
