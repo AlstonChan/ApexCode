@@ -28,8 +28,5 @@
   "repository": {
     "url": "https://github.com/AlstonChan/ApexCode",
     "type": "git"
-  },
-  "devDependencies": {
-    "prettier": "3.2.5"
   }
 }
