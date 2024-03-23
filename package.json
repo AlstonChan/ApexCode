@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "emulators": "firebase emulators:start",
+    "emulators:import": "firebase emulators:start --import ./emulators",
+    "emulators:auth": "firebase emulators:start --only auth",
+    "emulators:db": "firebase emulators:start --only firestore",
+    "emulators:storage": "firebase emulators:start --only storage"
   },
   "contributors": [
     {
@@ -28,5 +32,8 @@
   "repository": {
     "url": "https://github.com/AlstonChan/ApexCode",
     "type": "git"
+  },
+  "dependencies": {
+    "firebase-tools": "^13.5.2"
   }
 }
