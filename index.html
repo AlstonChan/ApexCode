@@ -7,10 +7,67 @@
     <script defer src="/components/navbar/navbar.js"></script>
     <!-- scripts  -->
     <script src="/public/script/index.js"></script>
+    <script defer src="/components/course-card/course-card.js"></script>
+    <link rel="stylesheet" href="/components/course-card/course-card.css">
+    <link rel="stylesheet" href="/public/style/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   </head>
   <body>
     <main>
-      <h1>hello world</h1>
+        <div class="cta">
+          <h1><br>Unlock Your Potential: <br>Master Coding with Our <br>Online Courses</h1>
+          <p>Our online courses offer comprehensive 
+            <br>lessons tailored to all skill levels, 
+            <br>empowering you to become a coding expert from the 
+            <br>comfort of your own home.
+          </p>
+        </div>
+        <div class="course-discover">
+          <button>
+            Discover Courses
+          </button>
+        </div>
+        <div class="TopRated">
+          <h1>
+            Our Top Rated Courses
+          </h1>
+          <p>
+            Here are our top rated <br>courses among the users
+          </p>
+          <div>
+            <div class="first-course"><course-card></course-card></div>
+            <div class="second-course"><course-card></course-card></div>
+            <div class="third-course"><course-card></course-card></div>
+          </div>
+
+          <button>
+            View All
+          </button>
+        </div>
+        <div class="subs">
+          <h1>Join Our premium Courses</h1>
+          <p> Description here</p>
+        </div>
+        <div class="month">
+          <p class="Monthly">
+            Monthly Membership
+          </p>
+          <p class="Price">
+            RM30 / Month
+          </p>
+          <P>
+            <i class="fa-solid fa-check"></i> Lorem ipsum dolor sit amet Dictum adipiscing proin turpis 
+            <br><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit amet Dictum adipiscing proin turpis 
+            <br><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit amet Dictum adipiscing proin turpis
+            <br><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit amet Dictum adipiscing proin turpis
+            <br><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit amet Dictum adipiscing proin turpis
+            <br><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit amet Dictum adipiscing proin turpis
+          </P>
+          <button>
+            BUY NOW
+          </button>
+        </div>
     </main>
   </body>
+
 </html>
