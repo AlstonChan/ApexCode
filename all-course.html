@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ApexCode | All course</title>
+    <!-- component  -->
+    <script defer src="/components/head/head.js"></script>
+    <script defer src="/components/navbar/navbar.js"></script>
+    <script defer src="/components/course-card/course-card.js"></script>
+    <script defer src="/components/footer/footer-box.js"></script>
+    <!-- scripts -->
+    <script defer src="/public/script/all-course.js"></script>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="/public/style/pages/all-course.css" />
+  </head>
+  <body>
+    <aside id="filter-drawer">
+      <div class="title">
+        <img
+          src="/public/assets/images/icons/FilterIcon-white.svg"
+          alt=""
+          width="40"
+          height="40"
+        />
+        <div class="header">
+          <h3>Filters</h3>
+          <p class="filter-count">3</p>
+        </div>
+        <button class="clear-filter"><small> Clear filters </small></button>
+        <button class="close-drawer" id="close-drawer">
+          <img
+            src="/public/assets/images/icons/xIcon-white.svg"
+            alt=""
+            width="40"
+            height="40"
+          />
+        </button>
+      </div>
+      <div class="drawer-body">
+        <div class="section">
+          <p>Level</p>
+          <ul>
+            <li>
+              <div>
+                <input type="checkbox" name="level" id="beginner" />
+                <label for="beginner">Beginner</label>
+              </div>
+            </li>
+            <li>
+              <div>
+                <input type="checkbox" name="level" id="intermediate" />
+                <label for="intermediate">intermediate</label>
+              </div>
+            </li>
+            <li>
+              <div>
+                <input type="checkbox" name="level" id="Advanced" />
+                <label for="Advanced">Advanced</label>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <div class="title">
+        <h1>All course</h1>
+        <p>Browse all the course here</p>
+      </div>
+      <div class="meta">
+        <div class="filter-box">
+          <button class="filter-btn" id="filter">
+            <img
+              src="/public/assets/images/icons/FilterIcon-white.svg"
+              width="30"
+              height="30"
+              alt=""
+            />
+            Filters
+          </button>
+          <p id="filter-results">34 results</p>
+          <button id="clear-filter" class="clear-filter">
+            <small>Clear filters</small>
+          </button>
+        </div>
+        <div class="search">
+          <label for="course-search">
+            <img
+              src="/public/assets/images/icons/SearchIcon-grey.svg"
+              width="30"
+              height="30"
+              alt=""
+            />
+            <input type="search" name="course-search" id="course-search" />
+          </label>
+        </div>
+      </div>
+      <div id="course-card-container"></div>
+    </main>
+  </body>
+</html>
