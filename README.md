@@ -32,6 +32,17 @@ This guide assumes that you are developing this project in Windows operating sys
 
 3. Open `index.html` directly or by running a live server for hot reloading too see the web page.
 
+4. If you have setup the firebase, and wish to develop using firebase emulators, run the following command:
+
+   ```powershell
+   npm run emulators:import
+   ```
+
+   This will populate the emulator with data instead of having a empty emulator with no data.
+   The default user for testing is:
+   - Email : mok@chunhao.com
+   - Password : 123456789
+
 ### Firebase setup
 
 1. Firstly, go to [Firebase](https://firebase.google.com/), you should see this page. Click the top right **Sign in** button if you haven't sign in yet and click _Get started_ button.
