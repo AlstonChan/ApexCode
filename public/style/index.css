@@ -64,23 +64,87 @@ main{
 .subs > p{
 font-size: var(--fs-xl);
 }
-.month{
-    background-color: var(--neutral);
-    width: 500px;
-    height: 400px;
+.join{
+    display: flex;   
+    flex-direction: column;
+    height: 100%;
+}
+.subscription{
+    display: flex; 
+    justify-content: space-evenly;                    
+    align-items: center; 
+}
+.month-membership{
+    width: 450px;
+    height: 650px;
     border-radius: 50px;
+    background-color: var(--neutral);
 }
-.month > p{
-    text-align: center;
-    line-height: 2.0;
+.monthly-paid{
+    font-size: var(--fs-xl);
+    position: relative;
+    top: 50px;
 }
-.month > button{
-    appearance: none;
+.details{
+    position: relative;
+    top: 40px;
+    right: 60px;
+}
+.details img {
+    display: inline-block; 
+    margin-right: 10px;  
+    vertical-align: middle; 
+}
+.month-membership> button{
+    border-radius: 10px;
+    padding: 15px 70px;
+    margin: 30px;
     border: none;
     background-color: var(--primary);
-    color: #fff;
-    padding: 4px 10px;
-    border-radius: 8px;
+}
+.month-membership > button:hover{
+    background-color: var(--primary-hover);
+}
+.year-membership{
+    width: 450px;
+    height: 650px;
+    border-radius: 50px;
+    background-color: var(--neutral);
+}
+.Yearly-paid{
     font-size: var(--fs-xl);
-    cursor: pointer;
+    position: relative;
+    top: 50px;
+}
+.year-membership> button{
+    border-radius: 10px;
+    padding: 15px 70px;
+    margin: 30px;
+    border: none;
+    background-color: var(--primary);
+}
+.year-membership > button:hover{
+    background-color: var(--primary-hover);
+}
+.buy-course{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+.one-course{
+    background-color: var(--neutral);
+    width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 40px;
+}
+.price-buy{
+    font: bold;
+    font-size: var(--fs-xl);
+}
+.buy-details img{
+    display: inline-block; 
+    margin-right: 10px;  
+    vertical-align: middle; 
 }
