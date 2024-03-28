@@ -2,6 +2,10 @@
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-analytics.js";
+import {
+  getAuth,
+  connectAuthEmulator,
+} from "https://www.gstatic.com/firebasejs/10.9.0/firebase-auth.js";
 
 // TODO: Add SDKs for Firebase products that you want to use
 
@@ -20,5 +24,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
+connectAuthEmulator(auth, "http://127.0.0.1:9099");
 
 const analytics = getAnalytics(app);
