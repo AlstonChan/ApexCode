@@ -1,5 +1,9 @@
 import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-auth.js";
-import { auth } from "./firebase-config.js";
+import {
+  doc,
+  setDoc,
+} from "https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore.js";
+import { auth, db } from "./firebase-config.js";
 
 const signupForm = document.getElementById("signup-form");
 const usernameSignUpError = document.getElementById("usernameSignUpError");
@@ -72,6 +76,12 @@ signupForm.addEventListener("submit", async (e) => {
       formState.confPassword === null
     ) {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      await setDoc(doc(db, "accounts", userCredential.user.uid), {
+        name: username,
+        uid: userCredential.user.uid,
+        createdAt: Date(),
+      });
+
       console.log(userCredential);
       signupForm.reset();
     }
