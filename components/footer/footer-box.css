@@ -45,16 +45,22 @@ address > p {
 
 .right {
   width: 50%;
+  margin-bottom: 10px;
 }
 .right > h3 {
   font-size: var(--fs-xl);
   margin: 12px 0 4px 0;
 }
-.right > ul {
-  list-style: none;
-  padding: 0;
+.right > .links {
+  display: flex;
+  gap: 20px;
 }
-.right > ul > li {
+.right > .links ul {
+  margin: 0;
+  list-style: none;
+  padding: 0 10px 0 0;
+}
+.right > .links ul > li {
   margin: 6px 0;
 }
 
@@ -64,4 +70,18 @@ address > p {
   color: var(--base-content);
   text-align: center;
   font-size: var(--fs-sm);
+}
+
+@media screen and (max-width: 700px) {
+  .footer-content {
+    flex-direction: column;
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .right {
+    margin-top: 20px;
+  }
 }

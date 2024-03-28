@@ -28,13 +28,20 @@ footerBoxTemplate.innerHTML = html`<link
       </div>
       <div class="right">
         <h3>Quick Links</h3>
-        <ul class="dropdown">
-          <li><a href="/all-course.html">All Course</a></li>
-          <li><a href="/faq.html">FAQ</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/pricing.html">Pricing</a></li>
-          <li><a href="/login.html">Log In</a></li>
-        </ul>
+        <div class="links">
+          <ul class="dropdown">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/all-course.html">All Course</a></li>
+            <li><a href="/faq.html">FAQ</a></li>
+            <li><a href="/about.html">About</a></li>
+          </ul>
+          <ul class="dropdown">
+            <li><a href="/pricing.html">Pricing</a></li>
+            <li><a href="/LICENSE.md">License</a></li>
+            <li><a href="/login.html">Login</a></li>
+            <li><a href="/signup.html">Sign Up</a></li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="copyright">Copyright @ <span id="copyright-year"></span> ApexCode</div>

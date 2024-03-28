@@ -20,5 +20,6 @@
     "titleBar.inactiveBackground": "#2fcef999",
     "titleBar.inactiveForeground": "#15202b99"
   },
-  "peacock.color": "#2fcef9"
+  "peacock.color": "#2fcef9",
+  "cSpell.words": ["Firestore"]
 }
