@@ -1,6 +1,7 @@
 main{
     text-align: center;
 }
+
 /* Call to action */
 .cta > h1{
     font: bold;
@@ -10,10 +11,9 @@ main{
 .cta > p{
     font-size: 20px;
     font-weight: normal;
-    margin: -40px;
 }
 .course-discover{
-    margin: 70px;
+    margin: 50px;
 }
 .course-discover > button{
     appearance: none;
@@ -52,14 +52,21 @@ main{
     font-size: var(--fs-xl);
     text-align: center;
 }
-.TopRated > button{
-    background-color: var(--base-100);
-    border: none;
-    border-color: white;
+.top-button{
+    width: 263px;
 }
-.TopRated > button:hover{
+.top-button > button{
+    background-color: var(--primary);
+    border: none;
+    border-radius: 18px;
+    border-color: white;
+    font-size: var(--fs-2xl);
+    padding: 13px 50px;
+}
+.top-button > button:hover{
     background-color: var(--primary-hover);
 }
+
 /* subscription */
 .subs > p{
 font-size: var(--fs-xl);
@@ -147,4 +154,38 @@ font-size: var(--fs-xl);
     display: inline-block; 
     margin-right: 10px;  
     vertical-align: middle; 
+}
+
+/* Review Say */
+.review{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+}
+.name1{
+    background-color: var(--neutral);
+    height: 400px;
+    width: 400px;
+    border-radius: 50px;
+}
+.name1 > p{
+    font-size: var(--fs-lg);
+}
+.name2{
+    background-color: var(--neutral);
+    height: 400px;
+    width: 400px;
+    border-radius: 50px;
+}
+.name2 > p{
+    font-size: var(--fs-lg);
+}
+.name3{
+    background-color: var(--neutral);
+    height: 400px;
+    width: 400px;
+    border-radius: 50px;
+}
+.name3 > p{
+    font-size: var(--fs-lg);
 }
