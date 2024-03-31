@@ -8,6 +8,8 @@ if (!document.getElementById("dimmed-bg")) {
   createDrawerBg();
 }
 const dimmedBg = document.getElementById("dimmed-bg");
+// filter drawer level filter
+const levelFilter = document.querySelectorAll("checkbox-custom[level]");
 
 // https://developer.mozilla.org/en-US/docs/Glossary/IIFE
 // This is a Immediately Invoked Function Expression (IIFE)
@@ -65,7 +67,7 @@ const filterState = new Proxy(
   }
 );
 
-// toggleFilterDrawer(true);
+toggleFilterDrawer(true);
 filterBtn.addEventListener("click", () => {
   if (filterState.drawerIsOpen) {
     filterState.drawerIsOpen = false;
@@ -82,6 +84,12 @@ dimmedBg.addEventListener("click", () => {
 closeDrawerBtn.addEventListener("click", () => {
   filterState.drawerIsOpen = false;
   toggleFilterDrawer(false);
+});
+
+levelFilter.forEach((level) => {
+  level.shadowRoot.querySelector("input").addEventListener("change", (e) => {
+    console.log(e);
+  });
 });
 
 /**

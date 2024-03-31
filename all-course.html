@@ -7,6 +7,7 @@
     <script defer src="/components/navbar/navbar.js"></script>
     <script defer src="/components/course-card/course-card.js"></script>
     <script defer src="/components/footer/footer-box.js"></script>
+    <script defer src="/components/checkbox/checkbox.js"></script>
     <!-- scripts -->
     <script defer src="/public/script/all-course.js"></script>
     <!-- stylesheet -->
@@ -40,22 +41,17 @@
           <p>Level</p>
           <ul>
             <li>
-              <div>
-                <input type="checkbox" name="level" id="beginner" />
-                <label for="beginner">Beginner</label>
-              </div>
+              <checkbox-custom level id="beginner" label="Beginner"></checkbox-custom>
             </li>
             <li>
-              <div>
-                <input type="checkbox" name="level" id="intermediate" />
-                <label for="intermediate">intermediate</label>
-              </div>
+              <checkbox-custom
+                level
+                id="intermediate"
+                label="Intermediate"
+              ></checkbox-custom>
             </li>
             <li>
-              <div>
-                <input type="checkbox" name="level" id="Advanced" />
-                <label for="Advanced">Advanced</label>
-              </div>
+              <checkbox-custom level id="advanced" label="Advanced"></checkbox-custom>
             </li>
           </ul>
         </div>
