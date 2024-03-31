@@ -11,6 +11,11 @@ const dimmedBg = document.getElementById("dimmed-bg");
 // filter drawer level filter
 const levelFilter = document.querySelectorAll("checkbox-custom[level]");
 
+/**
+ * @type {HTMLElement[]}
+ */
+const allCourseCard = [];
+
 // https://developer.mozilla.org/en-US/docs/Glossary/IIFE
 // This is a Immediately Invoked Function Expression (IIFE)
 // that fetches the course data from the public and creates
@@ -50,46 +55,96 @@ const levelFilter = document.querySelectorAll("checkbox-custom[level]");
       courseCard.setAttribute("thumbnail", data.courses[i].thumbnail);
       courseCard.setAttribute("category", data.courses[i].category);
       courseCard.setAttribute("level", data.courses[i].level);
-      courseCardContainer.appendChild(courseCard.cloneNode(true));
+      const element = courseCard.cloneNode(true);
+      allCourseCard.push(element);
+      courseCardContainer.appendChild(element);
     }
   }
 })();
 
 // filter drawer state
 const filterState = new Proxy(
-  { drawerIsOpen: false },
+  {
+    drawerIsOpen: false,
+    beginner: false,
+    intermediate: false,
+    advanced: false,
+  },
   {
     set(obj, prop, value) {
       obj[prop] = value;
+
+      switch (prop) {
+        case "drawerIsOpen":
+          toggleFilterDrawer(value);
+          break;
+
+        default:
+          break;
+      }
+
+      const checkedLevel = Object.keys(obj).filter((key) => {
+        if (key === "drawerIsOpen") return false;
+        return obj[key];
+      });
+      if (checkedLevel.length === 0) {
+        allCourseCard.forEach((card) => {
+          card.style.display = "block";
+        });
+      } else {
+        allCourseCard.forEach((card) => {
+          const element = card.shadowRoot.querySelector(".level");
+          if (
+            element.classList &&
+            checkedLevel.some((level) => element.classList.contains(level))
+          ) {
+            card.style.display = "block";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      }
+
+      const totalFilterCount = checkedLevel.length;
+      document.querySelector(".filter-count").textContent = totalFilterCount;
 
       return Reflect.set(...arguments);
     },
   }
 );
 
-toggleFilterDrawer(true);
+// toggleFilterDrawer(true);
 filterBtn.addEventListener("click", () => {
   if (filterState.drawerIsOpen) {
     filterState.drawerIsOpen = false;
-    toggleFilterDrawer(false);
   } else {
     filterState.drawerIsOpen = true;
-    toggleFilterDrawer(true);
   }
 });
 dimmedBg.addEventListener("click", () => {
   filterState.drawerIsOpen = false;
-  toggleFilterDrawer(false);
 });
 closeDrawerBtn.addEventListener("click", () => {
   filterState.drawerIsOpen = false;
-  toggleFilterDrawer(false);
 });
 
 levelFilter.forEach((level) => {
   level.shadowRoot.querySelector("input").addEventListener("change", (e) => {
-    console.log(e);
+    if (e.target.checked) {
+      filterState[e.target.id] = true;
+    } else {
+      filterState[e.target.id] = false;
+    }
   });
+});
+
+document.querySelector(".clear-filter").addEventListener("click", () => {
+  levelFilter.forEach((level) => {
+    level.shadowRoot.querySelector("input").checked = false;
+  });
+  filterState.beginner = false;
+  filterState.intermediate = false;
+  filterState.advanced = false;
 });
 
 /**

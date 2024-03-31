@@ -107,7 +107,7 @@ class CourseCard extends HTMLElement {
           break;
         case 3:
           badge.textContent = "🔴 Advanced";
-          badge.classList.add("advance");
+          badge.classList.add("advanced");
           break;
         default:
           badge.textContent = "🟢 Beginner";
