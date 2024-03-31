@@ -52,7 +52,8 @@ main {
 }
 /* Top rated course */
 .TopRated {
-  margin: 20px 0;
+  margin: 20px auto;
+  max-width: 1200px;
 }
 .TopRated > div {
   display: flex;
@@ -94,30 +95,39 @@ main {
   display: flex;
   flex-direction: column;
   height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 .subscription {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
-.monthly-membership {
+.membership {
   padding: 30px 40px;
   border-radius: 35px;
   background-color: var(--neutral);
+  width: 50%;
 }
-.monthly-membership > h3 {
+.membership > h3 {
   margin: 0;
   font-size: var(--fs-xl);
+  font-weight: 400;
 }
-.monthly-paid {
-  font-size: var(--fs-xl);
-  position: relative;
-  top: 50px;
+.membership-desc {
+  font-size: var(--fs-3xl);
+  font-weight: 700;
+  margin: 15px 0;
 }
 .details {
-  position: relative;
-  top: 40px;
-  right: 60px;
+  text-align: left;
+  list-style: none;
+  padding: 0;
+}
+.details > li {
+  display: flex;
+  align-items: center;
 }
 .details img {
   display: inline-block;
@@ -158,7 +168,7 @@ main {
 .buy-course {
   display: flex;
   justify-content: center;
-  margin: 50px;
+  margin: 50px 0;
 }
 .one-course {
   background-color: var(--neutral);
