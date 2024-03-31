@@ -59,6 +59,7 @@ const allCourseCard = [];
       allCourseCard.push(element);
       courseCardContainer.appendChild(element);
     }
+    document.getElementById("filter-result").textContent = allCourseCard.length;
   }
 })();
 
@@ -83,6 +84,8 @@ const filterState = new Proxy(
           break;
       }
 
+      let resultCount = 0;
+
       const checkedLevel = Object.keys(obj).filter((key) => {
         if (key === "drawerIsOpen") return false;
         return obj[key];
@@ -90,6 +93,7 @@ const filterState = new Proxy(
       if (checkedLevel.length === 0) {
         allCourseCard.forEach((card) => {
           card.style.display = "block";
+          resultCount = allCourseCard.length;
         });
       } else {
         allCourseCard.forEach((card) => {
@@ -99,12 +103,14 @@ const filterState = new Proxy(
             checkedLevel.some((level) => element.classList.contains(level))
           ) {
             card.style.display = "block";
+            resultCount++;
           } else {
             card.style.display = "none";
           }
         });
       }
 
+      document.getElementById("filter-result").textContent = resultCount;
       const totalFilterCount = checkedLevel.length;
       document.querySelector(".filter-count").textContent = totalFilterCount;
 
@@ -138,13 +144,15 @@ levelFilter.forEach((level) => {
   });
 });
 
-document.querySelector(".clear-filter").addEventListener("click", () => {
-  levelFilter.forEach((level) => {
-    level.shadowRoot.querySelector("input").checked = false;
+document.querySelectorAll(".clear-filter").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    levelFilter.forEach((level) => {
+      level.shadowRoot.querySelector("input").checked = false;
+    });
+    filterState.beginner = false;
+    filterState.intermediate = false;
+    filterState.advanced = false;
   });
-  filterState.beginner = false;
-  filterState.intermediate = false;
-  filterState.advanced = false;
 });
 
 /**
