@@ -1,191 +1,211 @@
-main{
-    text-align: center;
+main {
+  text-align: center;
+}
+.sectionHead {
+  font-size: var(--fs-3xl);
+  font: bolder;
+  text-align: center;
+  margin: 0;
+}
+.sectionDesc {
+  font-size: var(--fs-lg);
+  text-align: center;
+  margin: 8px 0 30px 0;
 }
 
 /* Call to action */
-.cta > h1{
-    font: bold;
-    font-size: 70px;
-  }
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+.cta > h1 {
+  font-size: var(--fs-7xl);
+  max-width: 710px;
+  margin: 50px auto 0;
+}
 
-.cta > p{
-    font-size: 20px;
-    font-weight: normal;
+.cta > p {
+  font-size: var(--fs-lg);
+  font-weight: normal;
+  max-width: 500px;
 }
-.course-discover{
-    margin: 50px;
+.course-discover {
+  margin: 20px;
 }
-.course-discover > button{
-    appearance: none;
-    border: none;
-    background-color: var(--primary);
-    color: #fff;
-    padding: 10px 24px;
-    border-radius: 8px;
-    font-size: var(--fs-xl);
-    cursor: pointer;
+.course-discover > a {
+  appearance: none;
+  text-decoration: none;
+  border: none;
+  background-color: var(--primary);
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: var(--fs-xl);
+  cursor: pointer;
+  transition: background-color 0.15s ease;
 }
-.course-discover > button:hover{
-    background-color: var(--primary-hover);
+.course-discover > a:hover {
+  background-color: var(--primary-hover);
 }
 /* Top rated course */
-.TopRated > div{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.TopRated {
+  margin: 20px 0;
 }
-.first-course{
-    flex: 1;
+.TopRated > div {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
-.second-course{
-    flex: 1;
+.first-course {
+  flex: 1;
 }
-.third-course{
-    flex: 1;
+.second-course {
+  flex: 1;
 }
-.TopRated > h1{
-    font-size: var(--fs-3xl);
-    font: bolder;
-    text-align: center;
+.third-course {
+  flex: 1;
 }
-.TopRated > p{
-    font-size: var(--fs-xl);
-    text-align: center;
+
+.top-button > a {
+  appearance: none;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 18px;
+  border-color: white;
+  font-size: var(--fs-xl);
+  padding: 13px 50px;
 }
-.top-button{
-    width: 263px;
-}
-.top-button > button{
-    background-color: var(--primary);
-    border: none;
-    border-radius: 18px;
-    border-color: white;
-    font-size: var(--fs-2xl);
-    padding: 13px 50px;
-}
-.top-button > button:hover{
-    background-color: var(--primary-hover);
+.top-button > a:hover {
+  background-color: var(--primary-hover);
 }
 
 /* subscription */
-.subs > p{
-font-size: var(--fs-xl);
+.subs {
+  margin: 100px 0;
 }
-.join{
-    display: flex;   
-    flex-direction: column;
-    height: 100%;
+.subs .join {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
-.subscription{
-    display: flex; 
-    justify-content: space-evenly;                    
-    align-items: center; 
+.subscription {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.month-membership{
-    width: 450px;
-    height: 650px;
-    border-radius: 50px;
-    background-color: var(--neutral);
+.monthly-membership {
+  padding: 30px 40px;
+  border-radius: 35px;
+  background-color: var(--neutral);
 }
-.monthly-paid{
-    font-size: var(--fs-xl);
-    position: relative;
-    top: 50px;
+.monthly-membership > h3 {
+  margin: 0;
+  font-size: var(--fs-xl);
 }
-.details{
-    position: relative;
-    top: 40px;
-    right: 60px;
+.monthly-paid {
+  font-size: var(--fs-xl);
+  position: relative;
+  top: 50px;
+}
+.details {
+  position: relative;
+  top: 40px;
+  right: 60px;
 }
 .details img {
-    display: inline-block; 
-    margin-right: 10px;  
-    vertical-align: middle; 
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
 }
-.month-membership> button{
-    border-radius: 10px;
-    padding: 15px 70px;
-    margin: 30px;
-    border: none;
-    background-color: var(--primary);
+.monthly-membership > button {
+  border-radius: 10px;
+  padding: 15px 70px;
+  margin: 30px;
+  border: none;
+  background-color: var(--primary);
 }
-.month-membership > button:hover{
-    background-color: var(--primary-hover);
+.monthly-membership > button:hover {
+  background-color: var(--primary-hover);
 }
-.year-membership{
-    width: 450px;
-    height: 650px;
-    border-radius: 50px;
-    background-color: var(--neutral);
+.year-membership {
+  width: 450px;
+  height: 650px;
+  border-radius: 50px;
+  background-color: var(--neutral);
 }
-.Yearly-paid{
-    font-size: var(--fs-xl);
-    position: relative;
-    top: 50px;
+.Yearly-paid {
+  font-size: var(--fs-xl);
+  position: relative;
+  top: 50px;
 }
-.year-membership> button{
-    border-radius: 10px;
-    padding: 15px 70px;
-    margin: 30px;
-    border: none;
-    background-color: var(--primary);
+.year-membership > button {
+  border-radius: 10px;
+  padding: 15px 70px;
+  margin: 30px;
+  border: none;
+  background-color: var(--primary);
 }
-.year-membership > button:hover{
-    background-color: var(--primary-hover);
+.year-membership > button:hover {
+  background-color: var(--primary-hover);
 }
-.buy-course{
-    display: flex;
-    justify-content: center;
-    margin: 50px;
+.buy-course {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
 }
-.one-course{
-    background-color: var(--neutral);
-    width: 1200px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border-radius: 40px;
+.one-course {
+  background-color: var(--neutral);
+  width: 1200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 40px;
 }
-.price-buy{
-    font: bold;
-    font-size: var(--fs-xl);
+.price-buy {
+  font: bold;
+  font-size: var(--fs-xl);
 }
-.buy-details img{
-    display: inline-block; 
-    margin-right: 10px;  
-    vertical-align: middle; 
+.buy-details img {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
 /* Review Say */
-.review{
- display: flex;
- flex-direction: row;
- justify-content: space-evenly;
+.review {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-.name1{
-    background-color: var(--neutral);
-    height: 400px;
-    width: 400px;
-    border-radius: 50px;
+.name1 {
+  background-color: var(--neutral);
+  height: 400px;
+  width: 400px;
+  border-radius: 50px;
 }
-.name1 > p{
-    font-size: var(--fs-lg);
+.name1 > p {
+  font-size: var(--fs-lg);
 }
-.name2{
-    background-color: var(--neutral);
-    height: 400px;
-    width: 400px;
-    border-radius: 50px;
+.name2 {
+  background-color: var(--neutral);
+  height: 400px;
+  width: 400px;
+  border-radius: 50px;
 }
-.name2 > p{
-    font-size: var(--fs-lg);
+.name2 > p {
+  font-size: var(--fs-lg);
 }
-.name3{
-    background-color: var(--neutral);
-    height: 400px;
-    width: 400px;
-    border-radius: 50px;
+.name3 {
+  background-color: var(--neutral);
+  height: 400px;
+  width: 400px;
+  border-radius: 50px;
 }
-.name3 > p{
-    font-size: var(--fs-lg);
+.name3 > p {
+  font-size: var(--fs-lg);
 }
