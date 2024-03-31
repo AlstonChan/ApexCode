@@ -1,0 +1,220 @@
+{
+    "courses": [
+        {
+            "id": 1,
+            "title": "HTML5 For Beginners",
+            "description": "Master HTML5 and the essentials of web development in this HTML5 tutorial for beginners.",
+            "language": "English",
+            "category": "html",
+            "level": 1,
+            "thumbnail": "html5.png"
+        },
+        {
+            "id": 2,
+            "title": "CSS3 For Beginners",
+            "description": "Learn CSS3 and modern web design techniques in this CSS3 tutorial for beginners.",
+            "language": "English",
+            "category": "css",
+            "level": 1,
+            "thumbnail": "css3.png"
+        },
+        {
+            "id": 3,
+            "title": "JavaScript For Beginners",
+            "description": "Learn JavaScript and the essentials of web development in this JavaScript tutorial for beginners.",
+            "language": "English",
+            "category": "javascript",
+            "level": 1,
+            "thumbnail": "javascript-1.png"
+        },
+        {
+            "id": 4,
+            "title": "JavaScript Advanced",
+            "description": "Learn advanced JavaScript techniques and concepts in this JavaScript tutorial for advanced users.",
+            "language": "English",
+            "category": "javascript",
+            "level": 3,
+            "thumbnail": "javascript-2.png"
+        },
+        {
+            "id": 5,
+            "title": "C++ For Beginners",
+            "description": "Learn C++ to build applications and games in this C++ tutorial for beginners.",
+            "language": "English",
+            "category": "cpp",
+            "level": 1,
+            "thumbnail": "cpp.png"
+        },
+        {
+            "id": 6,
+            "title": "C For Beginners",
+            "description": "Get proficient in C programming and build applications in this C tutorial for intermediate programmer.",
+            "language": "English",
+            "category": "c",
+            "level": 2,
+            "thumbnail": "c.png"
+        },
+        {
+            "id": 7,
+            "title": "C# For Beginners",
+            "description": "Learn C# to build games in Unity and applications in this C Sharp tutorial for beginners.",
+            "language": "English",
+            "category": "csharp",
+            "level": 1,
+            "thumbnail": "csharp.png"
+        },
+        {
+            "id": 8,
+            "title": "Python For Beginners",
+            "description": "Learn Python and build applications in this Python tutorial for beginners.",
+            "language": "English",
+            "category": "python",
+            "level": 1,
+            "thumbnail": "python.png"
+        },
+        {
+            "id": 9,
+            "title": "NodeJs For Beginners",
+            "description": "Learn NodeJs to write server-side applications in this NodeJs tutorial for beginners.",
+            "language": "English",
+            "category": "nodejs",
+            "level": 1,
+            "thumbnail": "nodejs.png"
+        },
+        {
+            "id": 10,
+            "title": "Svelte For Beginners",
+            "description": "Learn Svelte to build modern front-end applications in this Svelte tutorial for beginners.",
+            "language": "English",
+            "category": "javascript",
+            "level": 1,
+            "thumbnail": "svelte.png"
+        },
+        {
+            "id": 11,
+            "title": "VueJs For Beginners",
+            "description": "Learn VueJs to build modern front-end applications in this VueJs tutorial for beginners.",
+            "language": "English",
+            "category": "javascript",
+            "level": 1,
+            "thumbnail": "vuejs.png"
+        },
+        {
+            "id": 12,
+            "title": "Angular For Experts",
+            "description": "Discover the advanced features of Angular in this Angular tutorial for experts.",
+            "language": "English",
+            "category": "javascript",
+            "level": 3,
+            "thumbnail": "angular.png"
+        },
+        {
+            "id": 13,
+            "title": "Nuxt Essentials",
+            "description": "Learn Nuxt to build full stack web application in this Nuxt tutorial for intermediate who knows VueJs.",
+            "language": "English",
+            "category": "javascript",
+            "level": 2,
+            "thumbnail": "nuxt.png"
+        },
+        {
+            "id": 14,
+            "title": "PHP For Beginners",
+            "description": "Learn PHP to build dynamic websites in this PHP tutorial for beginners.",
+            "language": "English",
+            "category": "php",
+            "level": 1,
+            "thumbnail": "php.png"
+        },
+        {
+            "id": 15,
+            "title": "WordPress For Coders",
+            "description": "Learn WordPress to build custom themes and plugins in this WordPress tutorial for coders.",
+            "language": "English",
+            "category": "wordpress",
+            "level": 2,
+            "thumbnail": "wordpress.png"
+        },
+        {
+            "id": 16,
+            "title": "SCSS For experienced",
+            "description": "Learn SCSS to build modern websites in this SCSS tutorial for experienced developers.",
+            "language": "English",
+            "category": "css",
+            "level": 2,
+            "thumbnail": "scss.png"
+        },
+        {
+            "id": 17,
+            "title": "Typescript Essentials",
+            "description": "Learn Typescript to write scalable applications in this Typescript tutorial for intermediate developer.",
+            "language": "English",
+            "category": "typescript",
+            "level": 2,
+            "thumbnail": "typescript.png"
+        },
+        {
+            "id": 18,
+            "title": "Deno For Beginners",
+            "description": "Learn Deno to write server-side applications in this Deno tutorial for beginners.",
+            "language": "English",
+            "category": "deno",
+            "level": 1,
+            "thumbnail": "deno.png"
+        },
+        {
+            "id": 19,
+            "title": "MySQL For Beginners",
+            "description": "Learn MySQL to build database-driven applications in this MySQL tutorial for beginners.",
+            "language": "English",
+            "category": "mysql",
+            "level": 1,
+            "thumbnail": "mysql.png"
+        },
+        {
+            "id": 20,
+            "title": "MongoDB For MERN",
+            "description": "Learn MongoDB to build MERN stack applications in this MongoDB tutorial for Advanced developer.",
+            "language": "English",
+            "category": "mongodb",
+            "level": 3,
+            "thumbnail": "mongodb.png"
+        },
+        {
+            "id": 21,
+            "title": "PostgresSQL For Beginners",
+            "description": "Learn advanced SQL queries and optimization in this tutorial tailored for advanced developers.",
+            "language": "English",
+            "category": "postgresql",
+            "level": 3,
+            "thumbnail": "postgres.png"
+        },
+        {
+            "id": 22,
+            "title": "MariaDB For Beginners",
+            "description": "Dive into MariaDB's versatile features and learn how to create and manage databases in this MariaDB tutorial for beginners.",
+            "language": "English",
+            "category": "mariadb",
+            "level": 1,
+            "thumbnail": "mariadb.png"
+        },
+        {
+            "id": 23,
+            "title": "Firebase Mastery",
+            "description": "Learn Firebase to build real-time applications in this Firebase tutorial for intermediate developer.",
+            "language": "English",
+            "category": "firebase",
+            "level": 2,
+            "thumbnail": "firebase.png"
+        },
+        {
+            "id": 24,
+            "title": "Docker For HomeLab",
+            "description": "Learn Docker to deploy and maintain the service in this Docker tutorial for SysAdmin.",
+            "language": "English",
+            "category": "docker",
+            "level": 2,
+            "thumbnail": "docker.png"
+        }
+    ]
+}

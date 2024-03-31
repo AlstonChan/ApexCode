@@ -7,6 +7,7 @@
     <script defer src="/components/navbar/navbar.js"></script>
     <script defer src="/components/course-card/course-card.js"></script>
     <script defer src="/components/footer/footer-box.js"></script>
+    <script defer src="/components/checkbox/checkbox.js"></script>
     <!-- scripts -->
     <script defer src="/public/script/all-course.js"></script>
     <!-- stylesheet -->
@@ -23,7 +24,7 @@
         />
         <div class="header">
           <h3>Filters</h3>
-          <p class="filter-count">3</p>
+          <p class="filter-count">0</p>
         </div>
         <button class="clear-filter"><small> Clear filters </small></button>
         <button class="close-drawer" id="close-drawer">
@@ -40,22 +41,17 @@
           <p>Level</p>
           <ul>
             <li>
-              <div>
-                <input type="checkbox" name="level" id="beginner" />
-                <label for="beginner">Beginner</label>
-              </div>
+              <checkbox-custom level id="beginner" label="Beginner"></checkbox-custom>
             </li>
             <li>
-              <div>
-                <input type="checkbox" name="level" id="intermediate" />
-                <label for="intermediate">intermediate</label>
-              </div>
+              <checkbox-custom
+                level
+                id="intermediate"
+                label="Intermediate"
+              ></checkbox-custom>
             </li>
             <li>
-              <div>
-                <input type="checkbox" name="level" id="Advanced" />
-                <label for="Advanced">Advanced</label>
-              </div>
+              <checkbox-custom level id="advanced" label="Advanced"></checkbox-custom>
             </li>
           </ul>
         </div>
@@ -77,8 +73,8 @@
             />
             Filters
           </button>
-          <p id="filter-results">34 results</p>
-          <button id="clear-filter" class="clear-filter">
+          <p><span id="filter-result"></span> results</p>
+          <button class="clear-filter">
             <small>Clear filters</small>
           </button>
         </div>
