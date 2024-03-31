@@ -35,6 +35,6 @@
     "type": "git"
   },
   "dependencies": {
-    "firebase-tools": "^13.5.2"
+    "firebase-tools": "^13.6.0"
   }
 }

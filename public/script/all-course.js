@@ -9,11 +9,49 @@ if (!document.getElementById("dimmed-bg")) {
 }
 const dimmedBg = document.getElementById("dimmed-bg");
 
-const courseCard = document.createElement("course-card");
-// Create 15 course cards. This is just a dummy data.
-for (let i = 0; i < 15; i++) {
-  courseCardContainer.appendChild(courseCard.cloneNode(true));
-}
+// https://developer.mozilla.org/en-US/docs/Glossary/IIFE
+// This is a Immediately Invoked Function Expression (IIFE)
+// that fetches the course data from the public and creates
+// a course card for each course. The course card is a custom
+// element that is defined in the course-card.js file. The
+// course card contains information about the course such as title,
+// description, thumbnail, category, level, and ratings
+(async () => {
+  const response = await fetch("/public/course.json");
+  if (response.ok) {
+    /**
+     * @typedef {Object} CourseData
+     * @property {CourseDetails[]} courses
+     */
+
+    /**
+     * @typedef {Object} CourseDetails
+     * @property {number} id unique course id
+     * @property {string} title
+     * @property {string} description
+     * @property {string} thumbnail the filename of the thumbnail image
+     * @property {string} category
+     * @property {number} level 1 - beginner, 2 - intermediate, 3 - advanced
+     * @property {string} language the language of the course
+     */
+
+    /**
+     * @type {CourseData}
+     */
+    const data = await response.json();
+
+    for (let i = 0; i < data.courses.length; i++) {
+      const courseCard = document.createElement("course-card");
+      courseCard.setAttribute("id", data.courses[i].id);
+      courseCard.setAttribute("title", data.courses[i].title);
+      courseCard.setAttribute("description", data.courses[i].description);
+      courseCard.setAttribute("thumbnail", data.courses[i].thumbnail);
+      courseCard.setAttribute("category", data.courses[i].category);
+      courseCard.setAttribute("level", data.courses[i].level);
+      courseCardContainer.appendChild(courseCard.cloneNode(true));
+    }
+  }
+})();
 
 // filter drawer state
 const filterState = new Proxy(
