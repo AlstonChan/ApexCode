@@ -19,7 +19,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 60vh;
+  margin: 100px 0 120px;
 }
 .cta > h1 {
   font-size: var(--fs-7xl);
@@ -61,12 +61,14 @@ main {
 }
 .first-course {
   flex: 1;
+  margin: 0 10px;
 }
 .second-course {
   flex: 1;
 }
 .third-course {
   flex: 1;
+  margin: 0 10px;
 }
 
 .top-button > a {
