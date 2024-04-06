@@ -52,7 +52,7 @@
         },
         {
             "id": 6,
-            "title": "C For Beginners",
+            "title": "C Proficiency",
             "description": "Get proficient in C programming and build applications in this C tutorial for intermediate programmer.",
             "language": "English",
             "category": "c",
@@ -62,7 +62,7 @@
         },
         {
             "id": 7,
-            "title": "C# For Beginners",
+            "title": "C# For Game Dev",
             "description": "Learn C# to build games in Unity and applications in this C Sharp tutorial for beginners.",
             "language": "English",
             "category": "csharp",
@@ -182,7 +182,7 @@
         },
         {
             "id": 19,
-            "title": "MySQL For Beginners",
+            "title": "MySQL Full Course",
             "description": "Learn MySQL to build database-driven applications in this MySQL tutorial for beginners.",
             "language": "English",
             "category": "mysql",
@@ -202,7 +202,7 @@
         },
         {
             "id": 21,
-            "title": "PostgresSQL For Beginners",
+            "title": "PostgresSQL Advanced",
             "description": "Learn advanced SQL queries and optimization in this tutorial tailored for advanced developers.",
             "language": "English",
             "category": "postgresql",
