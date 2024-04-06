@@ -1,0 +1,140 @@
+/************************************/
+/** Hero section styles **/
+/************************************/
+.hero {
+  background-color: var(--neutral);
+  padding: 35px 0 70px;
+  position: relative;
+  margin-bottom: 120px;
+}
+.hero-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.hero-content > h1 {
+  font-size: var(--fs-3xl);
+  margin: 0;
+}
+.hero-content > p {
+  font-size: var(--fs-lg);
+  color: var(--base-content);
+  margin: 7px 0 0 0;
+  max-width: 600px;
+}
+/* ratings row  */
+.hero-content > .ratings {
+  display: flex;
+  align-items: center;
+  margin: 15px 0 0 0;
+}
+.hero-content > .ratings > p:first-child {
+  font-size: var(--fs-lg);
+  font-weight: 600;
+  color: var(--base-content);
+  margin: 0 6px 0 0;
+}
+.hero-content > .ratings > p.ratings-count {
+  font-size: var(--fs-lg);
+  text-decoration: underline;
+  color: var(--base-content);
+  margin: 0 0 0 10px;
+}
+.hero-content > .ratings > .stars {
+  display: flex;
+}
+/* metadata row  */
+.hero-content > .meta {
+  display: flex;
+  margin: 13px 0;
+}
+.hero-content > .meta > .metadata {
+  display: flex;
+  align-items: center;
+  margin: 0 30px 0 0;
+}
+.hero-content > .meta > .metadata > p {
+  margin: 0 0 0 5px;
+}
+/* button section  */
+.hero-content > .action {
+  display: flex;
+  margin: 20px 0;
+}
+.hero-content > .action > .btn {
+  appearance: none;
+  border: 0;
+  text-decoration: none;
+  color: var(--base-content);
+  background: none;
+  cursor: pointer;
+
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.hero-content > .action > .btn:first-child {
+  background-color: var(--primary);
+  color: #000;
+  margin-right: 15px;
+  box-shadow: 5px 3px 20px -1px #38bff84e;
+}
+.hero-content > .action > .btn:first-child:hover {
+  box-shadow: 5px 3px 20px 0 #38bff87e;
+}
+.hero-content > .action > .btn:first-child:active {
+  background-color: var(--primary-hover);
+  box-shadow: 5px 3px 20px 0 #38bff87e;
+}
+.hero-content > .action > .btn:last-child {
+  background-color: var(--accent);
+  color: #000;
+  box-shadow: 5px 3px 20px -1px #f471b54e;
+}
+.hero-content > .action > .btn:last-child:hover {
+  box-shadow: 5px 3px 20px 0 #f471b57e;
+}
+.hero-content > .action > .btn:last-child:active {
+  background-color: var(--accent-hover);
+  box-shadow: 5px 3px 20px 0 #f471b57e;
+}
+
+/************************************/
+/** Highlight section styles **/
+/************************************/
+.highlight {
+  position: absolute;
+  padding: 35px 0;
+  bottom: -100px;
+  width: 100%;
+}
+.highlight > .box {
+  background-color: var(--secondary);
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 12px 20px;
+  color: #fff;
+}
+.highlight > .box > ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+  list-style: none;
+}
+.highlight > .box > ul li {
+  display: flex;
+  align-items: center;
+}
+.highlight > .box > ul li > div {
+  margin: 0 5px;
+}
+.highlight > .box > ul li > div > p {
+  margin: 0 0 5px 0;
+  font-weight: 200;
+}
+.highlight > .box > ul li > div > h3 {
+  margin: 0;
+  font-size: var(--fs-2xl);
+}

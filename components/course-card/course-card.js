@@ -11,7 +11,7 @@ function html(strings) {
 const courseCardTemplate = document.createElement("template");
 courseCardTemplate.innerHTML = html`
   <link rel="stylesheet" href="/components/course-card/course-card.css" />
-  <a href="#" class="main">
+  <a href="/course.html" class="main">
     <div class="thumbnail">
       <img
         src="https://placehold.co/345x200"
@@ -60,7 +60,7 @@ courseCardTemplate.innerHTML = html`
           alt=""
         />
       </div>
-      <div class="price">RM 20.00</div>
+      <div class="price">RM 89.99</div>
     </div>
   </a>
 `;
@@ -71,6 +71,7 @@ class CourseCard extends HTMLElement {
     this.attachShadow({ mode: "open" });
     this.shadowRoot.appendChild(courseCardTemplate.content.cloneNode(true));
 
+    const id = this.getAttribute("id");
     const title = this.getAttribute("title");
     const description = this.getAttribute("description");
     const thumbnail = this.getAttribute("thumbnail");
@@ -114,6 +115,11 @@ class CourseCard extends HTMLElement {
           badge.classList.add("beginner");
       }
       this.shadowRoot.querySelector(".badges").appendChild(badge);
+    }
+    if (id && category) {
+      this.shadowRoot.querySelector(
+        "a"
+      ).href = `/course.html?id=${id}&category=${category}`;
     }
   }
 }

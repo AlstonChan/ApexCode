@@ -6,6 +6,7 @@
             "description": "Master HTML5 and the essentials of web development in this HTML5 tutorial for beginners.",
             "language": "English",
             "category": "html",
+            "lastUpdate": "23 March 2024",
             "level": 1,
             "thumbnail": "html5.png"
         },
@@ -15,6 +16,7 @@
             "description": "Learn CSS3 and modern web design techniques in this CSS3 tutorial for beginners.",
             "language": "English",
             "category": "css",
+            "lastUpdate": "13 March 2024",
             "level": 1,
             "thumbnail": "css3.png"
         },
@@ -24,6 +26,7 @@
             "description": "Learn JavaScript and the essentials of web development in this JavaScript tutorial for beginners.",
             "language": "English",
             "category": "javascript",
+            "lastUpdate": "26 April 2024",
             "level": 1,
             "thumbnail": "javascript-1.png"
         },
@@ -33,6 +36,7 @@
             "description": "Learn advanced JavaScript techniques and concepts in this JavaScript tutorial for advanced users.",
             "language": "English",
             "category": "javascript",
+            "lastUpdate": "26 January 2024",
             "level": 3,
             "thumbnail": "javascript-2.png"
         },
@@ -42,6 +46,7 @@
             "description": "Learn C++ to build applications and games in this C++ tutorial for beginners.",
             "language": "English",
             "category": "cpp",
+            "lastUpdate": "15 December 2023",
             "level": 1,
             "thumbnail": "cpp.png"
         },
@@ -51,6 +56,7 @@
             "description": "Get proficient in C programming and build applications in this C tutorial for intermediate programmer.",
             "language": "English",
             "category": "c",
+            "lastUpdate": "27 February 2024",
             "level": 2,
             "thumbnail": "c.png"
         },
@@ -60,6 +66,7 @@
             "description": "Learn C# to build games in Unity and applications in this C Sharp tutorial for beginners.",
             "language": "English",
             "category": "csharp",
+            "lastUpdate": "22 February 2024",
             "level": 1,
             "thumbnail": "csharp.png"
         },
@@ -69,6 +76,7 @@
             "description": "Learn Python and build applications in this Python tutorial for beginners.",
             "language": "English",
             "category": "python",
+            "lastUpdate": "30 November 2023",
             "level": 1,
             "thumbnail": "python.png"
         },
@@ -78,6 +86,7 @@
             "description": "Learn NodeJs to write server-side applications in this NodeJs tutorial for beginners.",
             "language": "English",
             "category": "nodejs",
+            "lastUpdate": "18 November 2023",
             "level": 1,
             "thumbnail": "nodejs.png"
         },
@@ -87,6 +96,7 @@
             "description": "Learn Svelte to build modern front-end applications in this Svelte tutorial for beginners.",
             "language": "English",
             "category": "javascript",
+            "lastUpdate": "21 January 2024",
             "level": 1,
             "thumbnail": "svelte.png"
         },
@@ -96,6 +106,7 @@
             "description": "Learn VueJs to build modern front-end applications in this VueJs tutorial for beginners.",
             "language": "English",
             "category": "javascript",
+            "lastUpdate": "30 January 2024",
             "level": 1,
             "thumbnail": "vuejs.png"
         },
@@ -105,6 +116,7 @@
             "description": "Discover the advanced features of Angular in this Angular tutorial for experts.",
             "language": "English",
             "category": "javascript",
+            "lastUpdate": "1 March 2024",
             "level": 3,
             "thumbnail": "angular.png"
         },
@@ -114,6 +126,7 @@
             "description": "Learn Nuxt to build full stack web application in this Nuxt tutorial for intermediate who knows VueJs.",
             "language": "English",
             "category": "javascript",
+            "lastUpdate": "2 April 2024",
             "level": 2,
             "thumbnail": "nuxt.png"
         },
@@ -123,6 +136,7 @@
             "description": "Learn PHP to build dynamic websites in this PHP tutorial for beginners.",
             "language": "English",
             "category": "php",
+            "lastUpdate": "5 April 2024",
             "level": 1,
             "thumbnail": "php.png"
         },
@@ -132,6 +146,7 @@
             "description": "Learn WordPress to build custom themes and plugins in this WordPress tutorial for coders.",
             "language": "English",
             "category": "wordpress",
+            "lastUpdate": "3 March 2024",
             "level": 2,
             "thumbnail": "wordpress.png"
         },
@@ -141,6 +156,7 @@
             "description": "Learn SCSS to build modern websites in this SCSS tutorial for experienced developers.",
             "language": "English",
             "category": "css",
+            "lastUpdate": "19 February 2024",
             "level": 2,
             "thumbnail": "scss.png"
         },
@@ -150,6 +166,7 @@
             "description": "Learn Typescript to write scalable applications in this Typescript tutorial for intermediate developer.",
             "language": "English",
             "category": "typescript",
+            "lastUpdate": "3 December 2023",
             "level": 2,
             "thumbnail": "typescript.png"
         },
@@ -159,6 +176,7 @@
             "description": "Learn Deno to write server-side applications in this Deno tutorial for beginners.",
             "language": "English",
             "category": "deno",
+            "lastUpdate": "13 April 2024",
             "level": 1,
             "thumbnail": "deno.png"
         },
@@ -168,6 +186,7 @@
             "description": "Learn MySQL to build database-driven applications in this MySQL tutorial for beginners.",
             "language": "English",
             "category": "mysql",
+            "lastUpdate": "6 January 2024",
             "level": 1,
             "thumbnail": "mysql.png"
         },
@@ -177,6 +196,7 @@
             "description": "Learn MongoDB to build MERN stack applications in this MongoDB tutorial for Advanced developer.",
             "language": "English",
             "category": "mongodb",
+            "lastUpdate": "30 January 2024",
             "level": 3,
             "thumbnail": "mongodb.png"
         },
@@ -186,6 +206,7 @@
             "description": "Learn advanced SQL queries and optimization in this tutorial tailored for advanced developers.",
             "language": "English",
             "category": "postgresql",
+            "lastUpdate": "9 March 2024",
             "level": 3,
             "thumbnail": "postgres.png"
         },
@@ -195,6 +216,7 @@
             "description": "Dive into MariaDB's versatile features and learn how to create and manage databases in this MariaDB tutorial for beginners.",
             "language": "English",
             "category": "mariadb",
+            "lastUpdate": "5 February 2024",
             "level": 1,
             "thumbnail": "mariadb.png"
         },
@@ -204,6 +226,7 @@
             "description": "Learn Firebase to build real-time applications in this Firebase tutorial for intermediate developer.",
             "language": "English",
             "category": "firebase",
+            "lastUpdate": "8 April 2024",
             "level": 2,
             "thumbnail": "firebase.png"
         },
@@ -213,6 +236,7 @@
             "description": "Learn Docker to deploy and maintain the service in this Docker tutorial for SysAdmin.",
             "language": "English",
             "category": "docker",
+            "lastUpdate": "13 March 2024",
             "level": 2,
             "thumbnail": "docker.png"
         }
