@@ -5,6 +5,7 @@
   color: #fff;
   max-width: 500px;
   margin: 0 auto;
+  height: 100%;
 
   border-radius: 15px;
   text-decoration: none;
@@ -15,6 +16,7 @@
   backface-visibility: hidden;
   transform: perspective(1px) translateZ(0);
   -webkit-font-smoothing: subpixel-antialiased;
+  text-align: left;
 }
 .main:hover {
   transform: scale(1.06) translateZ(0);
@@ -33,6 +35,9 @@
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 13px 20px;
 }
 .content > h2 {
@@ -54,15 +59,25 @@
 .badges {
   display: flex;
   align-items: center;
-  margin: 25px 0;
+  margin: 10px 0;
 }
-.badges > span {
+.badges > p {
+  display: block;
+  margin: 0;
   background-color: var(--secondary);
   color: #fff;
   padding: 3px 10px;
   border-radius: 5px;
   margin-right: 10px;
   font-size: var(--fs-xs);
+}
+.badges > p.level {
+  font-size: var(--fs-md);
+  background: none;
+}
+.ratings {
+  margin: auto 0 0 0;
+  display: flex;
 }
 .price {
   margin: 10px 0;

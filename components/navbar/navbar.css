@@ -7,7 +7,7 @@ header {
 header > div {
   display: flex;
   align-items: center;
-  margin: 10px 20px 0;
+  margin: 10px 20px;
 }
 a.logoContainer {
   display: flex;

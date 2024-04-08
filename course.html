@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ApexCode</title>
+    <!-- component  -->
+    <script defer src="/components/head/head.js"></script>
+    <script defer src="/components/navbar/navbar.js"></script>
+    <script defer src="/components/footer/footer-box.js"></script>
+    <!-- scripts  -->
+    <script defer src="/public/script/course.js"></script>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="/public/style/pages/course.css" />
+  </head>
+  <body>
+    <main>
+      <div class="hero">
+        <div class="hero-content">
+          <h1></h1>
+          <p class="desc"></p>
+          <div class="ratings">
+            <p>4.0</p>
+            <div class="stars">
+              <!-- 
+              icon here should not have alt text
+              https://html.spec.whatwg.org/multipage/images.html#a-graphical-representation-of-some-of-the-surrounding-text 
+              -->
+              <img
+                src="/public/assets/images/icons/StarFilledIcon.svg"
+                width="25"
+                height="25"
+                alt=""
+              />
+              <img
+                src="/public/assets/images/icons/StarFilledIcon.svg"
+                width="25"
+                height="25"
+                alt=""
+              />
+              <img
+                src="/public/assets/images/icons/StarFilledIcon.svg"
+                width="25"
+                height="25"
+                alt=""
+              />
+              <img
+                src="/public/assets/images/icons/StarFilledIcon.svg"
+                width="25"
+                height="25"
+                alt=""
+              />
+              <img
+                src="/public/assets/images/icons/StarIcon.svg"
+                width="25"
+                height="25"
+                alt=""
+              />
+            </div>
+            <p class="ratings-count">
+              <small> 35 ratings </small>
+            </p>
+          </div>
+          <div class="meta">
+            <div class="metadata">
+              <img
+                src="/public/assets/images/icons/GlobeFilledIcon-white.svg"
+                width="35"
+                height="35"
+                alt=""
+              />
+              <p id="lang"></p>
+            </div>
+            <div class="metadata">
+              <img
+                src="/public/assets/images/icons/CheckCircleIcon-white.svg"
+                width="35"
+                height="35"
+                alt=""
+              />
+              <p>Last updated <span id="lastUpdate"></span></p>
+            </div>
+          </div>
+          <div class="action">
+            <button id="addToCart" class="btn">Add to Cart</button>
+            <a href="#" class="btn"> Upgrade to Pro </a>
+          </div>
+        </div>
+        <!-- 
+        the highlight section of the course, floating in between the hero
+        section and the next section  
+        -->
+        <div class="highlight">
+          <div class="box">
+            <ul>
+              <li>
+                <img
+                  src="/public/assets/images/icons/ChartPopularIcon-white.svg"
+                  alt=""
+                  width="60"
+                  height="60"
+                />
+                <div>
+                  <p>Skill Level</p>
+                  <h3 id="skillLevel">Beginner</h3>
+                </div>
+              </li>
+              <li>
+                <img
+                  src="/public/assets/images/icons/ClockIcon-white.svg"
+                  alt=""
+                  width="60"
+                  height="60"
+                />
+                <div>
+                  <p>Time to complete</p>
+                  <h3><span id="courseLength">25</span> hour</h3>
+                </div>
+              </li>
+              <li>
+                <img
+                  src="/public/assets/images/icons/CalendarIcon-white.svg"
+                  alt=""
+                  width="60"
+                  height="60"
+                />
+                <div>
+                  <p>Flexible schedule</p>
+                  <h3>Learn Anytime</h3>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>aa</div>
+    </main>
+  </body>
+</html>

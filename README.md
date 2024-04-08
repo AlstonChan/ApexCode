@@ -40,7 +40,7 @@ This guide assumes that you are developing this project in Windows operating sys
 
    This will populate the emulator with data instead of having a empty emulator with no data.
    The default user for testing is:
-   - Email : mok@chunhao.com
+   - Email : <user1@test.com>
    - Password : 123456789
 
 ### Firebase setup
