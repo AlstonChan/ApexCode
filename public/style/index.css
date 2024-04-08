@@ -26,7 +26,6 @@ main {
   max-width: 710px;
   margin: 50px auto 0;
 }
-
 .cta > p {
   font-size: var(--fs-lg);
   font-weight: normal;
@@ -72,22 +71,7 @@ main {
   margin: 0 10px;
 }
 
-.top-button > a {
-  appearance: none;
-  text-decoration: none;
-  color: #fff;
-  background-color: var(--primary);
-  border: none;
-  border-radius: 18px;
-  border-color: white;
-  font-size: var(--fs-xl);
-  padding: 13px 50px;
-}
-.top-button > a:hover {
-  background-color: var(--primary-hover);
-}
-
-/* subscription */
+/* pricing tier */
 .subs {
   margin: 100px 0;
 }
@@ -144,27 +128,6 @@ main {
 .monthly-membership > button:hover {
   background-color: var(--primary-hover);
 }
-.year-membership {
-  width: 450px;
-  height: 650px;
-  border-radius: 50px;
-  background-color: var(--neutral);
-}
-.Yearly-paid {
-  font-size: var(--fs-xl);
-  position: relative;
-  top: 50px;
-}
-.year-membership > button {
-  border-radius: 10px;
-  padding: 15px 70px;
-  margin: 30px;
-  border: none;
-  background-color: var(--primary);
-}
-.year-membership > button:hover {
-  background-color: var(--primary-hover);
-}
 .buy-course {
   display: flex;
   justify-content: center;
@@ -182,11 +145,6 @@ main {
   font: bold;
   font-size: var(--fs-xl);
 }
-.buy-details img {
-  display: inline-block;
-  margin-right: 10px;
-  vertical-align: middle;
-}
 
 /* Review Say */
 .review {
@@ -194,30 +152,12 @@ main {
   flex-direction: row;
   justify-content: space-evenly;
 }
-.name1 {
+.name {
   background-color: var(--neutral);
   height: 400px;
   width: 400px;
   border-radius: 50px;
 }
-.name1 > p {
-  font-size: var(--fs-lg);
-}
-.name2 {
-  background-color: var(--neutral);
-  height: 400px;
-  width: 400px;
-  border-radius: 50px;
-}
-.name2 > p {
-  font-size: var(--fs-lg);
-}
-.name3 {
-  background-color: var(--neutral);
-  height: 400px;
-  width: 400px;
-  border-radius: 50px;
-}
-.name3 > p {
+.name > p {
   font-size: var(--fs-lg);
 }
