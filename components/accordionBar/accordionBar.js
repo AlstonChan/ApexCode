@@ -23,21 +23,21 @@ accordionBarTemplate.innerHTML = html`<link
           height="30"
         />
       </div>
-      <p>Module 1 : Introduction to the course</p>
-      <p>7 Lecture</p>
+      <p></p>
+      <p></p>
     </button>
     <div class="content"></div>
   </div>`;
 
 class AccordionBar extends HTMLElement {
-  constructor() {
+  constructor(_title, _lecture, _isOpen) {
     super();
     this.attachShadow({ mode: "open" });
     this.shadowRoot.appendChild(accordionBarTemplate.content.cloneNode(true));
 
-    const title = this.getAttribute("title");
-    const lecture = this.getAttribute("lecture");
-    const isOpen = this.getAttribute("open");
+    const title = this.getAttribute("title") || _title;
+    const lecture = this.getAttribute("lecture") || _lecture;
+    const isOpen = this.getAttribute("open") || _isOpen;
 
     if (title) {
       this.shadowRoot.querySelector("p").textContent = title;
@@ -49,6 +49,44 @@ class AccordionBar extends HTMLElement {
       this.shadowRoot.querySelector(".icon").classList.add("open");
     } else {
       this.shadowRoot.querySelector(".icon").classList.remove("open");
+    }
+
+    this.shadowRoot.querySelector("button").addEventListener("click", () => {
+      const icon = this.shadowRoot.querySelector(".icon");
+      const content = this.shadowRoot.querySelector(".content");
+      if (icon.classList.contains("open")) {
+        icon.classList.remove("open");
+        content.classList.remove("open");
+      } else {
+        icon.classList.add("open");
+        content.classList.add("open");
+      }
+    });
+  }
+
+  /**
+   * To populate the content of the accordion bar
+   * @param {string[]} lectures
+   */
+  populateLecture(lectures) {
+    const content = this.shadowRoot.querySelector(".content");
+    for (const lecture of lectures) {
+      // the bar container for each lecture
+      const bar = document.createElement("div");
+      bar.classList.add("bar");
+      // the play icon
+      const icon = document.createElement("img");
+      icon.src = "/public/assets/images/icons/PlayCircleIcon.svg";
+      icon.width = 25;
+      icon.height = 25;
+      icon.alt = "";
+      // the lecture title
+      const p = document.createElement("p");
+      p.textContent = lecture;
+      // append the icon and the title to the bar
+      bar.appendChild(icon);
+      bar.appendChild(p);
+      content.appendChild(bar);
     }
   }
 }

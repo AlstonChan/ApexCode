@@ -21,6 +21,7 @@
 }
 .icon {
   transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
 }
 .icon.open {
   transform: rotate(0);
@@ -30,4 +31,30 @@
 }
 .main > p:last-of-type {
   margin-left: auto;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+}
+.content.open {
+  max-height: 1000px;
+}
+.content > .bar {
+  display: flex;
+  align-items: center;
+  background-color: var(--neutral-light);
+  padding: 7px 20px;
+}
+.content > .bar:first-of-type {
+  padding-top: 25px;
+}
+.content > .bar:last-of-type {
+  padding-bottom: 25px;
+}
+.content > .bar > p {
+  padding: 0 10px;
+  margin: 0;
 }

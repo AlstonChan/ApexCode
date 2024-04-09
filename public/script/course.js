@@ -65,10 +65,9 @@ function updateCourseDetail(course) {
   for (const module of course.content) {
     moduleCount++;
     lectureCount += module.lessons.length;
-    const accordionBar = document.createElement("accordion-bar");
-    accordionBar.setAttribute("title", module.module);
-    accordionBar.setAttribute("lecture", module.lessons.length);
-    courseAccordion.appendChild(accordionBar.cloneNode(true));
+    const accordionBar = new AccordionBar(module.module, module.lessons.length, false);
+    accordionBar.populateLecture(module.lessons);
+    courseAccordion.appendChild(accordionBar);
   }
 
   const moduleCountElement = document.getElementById("moduleCount");
