@@ -6,6 +6,7 @@
     <script defer src="/components/head/head.js"></script>
     <script defer src="/components/navbar/navbar.js"></script>
     <script defer src="/components/footer/footer-box.js"></script>
+    <script defer src="/components/accordionBar/accordionBar.js"></script>
     <!-- scripts  -->
     <script defer src="/public/script/course.js"></script>
     <!-- stylesheet -->
@@ -85,8 +86,7 @@
           </div>
         </div>
         <!-- 
-        the highlight section of the course, floating in between the hero
-        section and the next section  
+        the highlight section of the course, floating in between the hero section and the next section  
         -->
         <div class="highlight">
           <div class="box">
@@ -131,7 +131,79 @@
           </div>
         </div>
       </div>
-      <div>aa</div>
+      <!-- what you'll learn section  -->
+      <section>
+        <h2>What you'll learn</h2>
+        <ul class="learningPoints">
+          <li>
+            <img
+              src="/public/assets/images/icons/CheckIcon-white.svg"
+              alt=""
+              width="25"
+              height="25"
+            />
+            <p>Understand the core concepts of Programming</p>
+          </li>
+          <li>
+            <img
+              src="/public/assets/images/icons/CheckIcon-white.svg"
+              alt=""
+              width="25"
+              height="25"
+            />
+            <p>Learn how to write clean and efficient code</p>
+          </li>
+          <li>
+            <img
+              src="/public/assets/images/icons/CheckIcon-white.svg"
+              alt=""
+              width="25"
+              height="25"
+            />
+            <p>Problem solving skills through coding challenges and projects.</p>
+          </li>
+          <li>
+            <img
+              src="/public/assets/images/icons/CheckIcon-white.svg"
+              alt=""
+              width="25"
+              height="25"
+            />
+            <p>Debugging techniques and error troubleshooting</p>
+          </li>
+          <li>
+            <img
+              src="/public/assets/images/icons/CheckIcon-white.svg"
+              alt=""
+              width="25"
+              height="25"
+            />
+            <p>Learn to think algorithmically for efficient problem solving</p>
+          </li>
+          <li>
+            <img
+              src="/public/assets/images/icons/CheckIcon-white.svg"
+              alt=""
+              width="25"
+              height="25"
+            />
+            <p>
+              Best practices for clean, maintainable code including readability and
+              documentation
+            </p>
+          </li>
+        </ul>
+      </section>
+      <!-- course content section -->
+      <section>
+        <h2>Course Content</h2>
+        <p class="desc">
+          <span id="moduleCount"></span> Modules •
+          <span id="lectureCount"></span> lectures
+        </p>
+
+        <div class="content"></div>
+      </section>
     </main>
   </body>
 </html>

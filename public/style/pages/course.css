@@ -1,15 +1,42 @@
 /************************************/
+/** General section styles **/
+/************************************/
+section {
+  padding: 40px 20px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+section:not(:first-of-type) {
+  padding: 10px 20px 0;
+}
+section > h2 {
+  font-size: var(--fs-2xl);
+  margin: 20px 0;
+}
+section > h2:has(+ p.desc) {
+  margin: 20px 0 10px;
+}
+section > p.desc {
+  font-size: var(--fs-md);
+  margin: 0 0 15px 0;
+}
+section:last-of-type {
+  margin-bottom: 40px;
+}
+
+/************************************/
 /** Hero section styles **/
 /************************************/
 .hero {
   background-color: var(--neutral);
-  padding: 35px 0 70px;
+  padding: 35px 0 60px;
   position: relative;
-  margin-bottom: 120px;
+  margin-bottom: 70px;
 }
 .hero-content {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 .hero-content > h1 {
   font-size: var(--fs-3xl);
@@ -105,7 +132,7 @@
 /************************************/
 .highlight {
   position: absolute;
-  padding: 35px 0;
+  padding: 35px 20px;
   bottom: -100px;
   width: 100%;
 }
@@ -137,4 +164,32 @@
 .highlight > .box > ul li > div > h3 {
   margin: 0;
   font-size: var(--fs-2xl);
+}
+
+/************************************/
+/** What you'll learn section styles **/
+/************************************/
+.learningPoints {
+  display: grid;
+  list-style: none;
+  padding: 0;
+
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+}
+.learningPoints > li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+.learningPoints > li > p {
+  margin: 0;
+}
+
+/************************************/
+/** Course content section styles **/
+/************************************/
+.content {
+  display: flex;
+  flex-direction: column;
 }

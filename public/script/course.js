@@ -58,4 +58,21 @@ function updateCourseDetail(course) {
     default:
       skillLevel.textContent = "Unknown";
   }
+
+  let moduleCount = 0;
+  let lectureCount = 0;
+  const courseAccordion = document.querySelector(".content");
+  for (const module of course.content) {
+    moduleCount++;
+    lectureCount += module.lessons.length;
+    const accordionBar = document.createElement("accordion-bar");
+    accordionBar.setAttribute("title", module.module);
+    accordionBar.setAttribute("lecture", module.lessons.length);
+    courseAccordion.appendChild(accordionBar.cloneNode(true));
+  }
+
+  const moduleCountElement = document.getElementById("moduleCount");
+  moduleCountElement.textContent = moduleCount;
+  const lectureCountElement = document.getElementById("lectureCount");
+  lectureCountElement.textContent = lectureCount;
 }

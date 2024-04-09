@@ -8,7 +8,55 @@
             "category": "html",
             "lastUpdate": "23 March 2024",
             "level": 1,
-            "thumbnail": "html5.png"
+            "thumbnail": "html5.png",
+            "content": [
+                {
+                    "id": 1,
+                    "module": "Module 1: Introduction",
+                    "lessons": [
+                        "What is HTML5?",
+                        "Why HTML5?",
+                        "HTML5 Syntax"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "module": "Module 2: Basic Tags",
+                    "lessons": [
+                        "Headings",
+                        "Paragraphs",
+                        "Links",
+                        "Images",
+                        "Lists",
+                        "Tables",
+                        "Forms"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "module": "Module 3: Advanced Tags",
+                    "lessons": [
+                        "Audio",
+                        "Video",
+                        "Canvas",
+                        "SVG",
+                        "Geolocation",
+                        "Web Storage",
+                        "Web Workers",
+                        "Web Sockets"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "module": "Module 4: SEO",
+                    "lessons": [
+                        "Meta Tags",
+                        "Semantic Tags",
+                        "Microdata",
+                        "Rich Snippets"
+                    ]
+                }
+            ]
         },
         {
             "id": 2,

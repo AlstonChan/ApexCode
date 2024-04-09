@@ -1,0 +1,33 @@
+.main {
+  appearance: none;
+  border: none;
+  cursor: pointer;
+
+  font-family: inherit;
+  color: inherit;
+
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  background-color: var(--neutral);
+  padding: 8px 15px;
+  font-size: var(--fs-md);
+
+  transition: background-color 0.3s ease-in-out;
+}
+.main:hover {
+  background-color: var(--neutral-hover);
+}
+.icon {
+  transform: rotate(180deg);
+}
+.icon.open {
+  transform: rotate(0);
+}
+.icon > img {
+  vertical-align: middle;
+}
+.main > p:last-of-type {
+  margin-left: auto;
+}
