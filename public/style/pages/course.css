@@ -257,9 +257,16 @@ section.ratings > div > h2 {
   margin: 10px auto;
 }
 /* progress bar styling  */
+.ratings-body > .bar > progress::-moz-progress-bar {
+  appearance: none;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  height: 7px;
+  width: 100%;
+}
 .ratings-body > .bar > progress,
 .ratings-body > .bar > progress::-webkit-progress-bar,
-.ratings-body > .bar > progress::-moz-progress-bar,
 .ratings-body > .bar > progress::-webkit-progress-value {
   appearance: none;
   outline: none;
@@ -272,7 +279,10 @@ section.ratings > div > h2 {
   background-color: #d9d9d9;
   outline: 1px solid #000;
 }
-.ratings-body > .bar > progress::-moz-progress-bar,
+.ratings-body > .bar > progress::-moz-progress-bar {
+  background-color: #ffd300;
+  outline: 1px solid #000;
+}
 .ratings-body > .bar > progress::-webkit-progress-value {
   background-color: #ffd300;
   outline: 1px solid #000;
@@ -285,4 +295,37 @@ section.ratings > div > h2 {
 }
 .ratings-body > .bar > label:last-of-type {
   margin: 0 0 2px 10px;
+}
+
+/************************************/
+/** Contact Us section styles **/
+/************************************/
+.questions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 20px;
+
+  text-align: center;
+}
+.questions > h2 {
+  font-size: var(--fs-3xl);
+  margin: 0 0 20px 0;
+}
+.questions > p.desc {
+  font-size: var(--fs-lg);
+  max-width: 500px;
+  margin: 0 0 20px 0;
+  line-height: 1.8rem;
+}
+.questions > a {
+  appearance: none;
+  border: 0;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--primary);
+  padding: 15px 28px;
+  border-radius: 9px;
+  font-size: var(--fs-lg);
 }
