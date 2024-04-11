@@ -24,6 +24,7 @@
   --warning: #f4bf50;
   --error: #fb7085;
   /* font size  */
+  --fs-4xl: 3rem; /* 48px */
   --fs-3xl: 2.25rem; /* 36px */
   --fs-2xl: 1.875rem; /* 30px */
   --fs-xl: 1.5rem; /* 24px */

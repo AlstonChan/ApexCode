@@ -193,3 +193,96 @@ section:last-of-type {
   display: flex;
   flex-direction: column;
 }
+
+/************************************/
+/** Prerequisites section styles **/
+/************************************/
+.prerequisites {
+  max-width: 1200px;
+}
+.prerequisites > li {
+  margin: 10px 0;
+  line-height: 1.6rem;
+}
+.prerequisites > li:not(:last-child):not(:first-child) {
+  margin: 20px 0;
+}
+
+/****************************************/
+/** Ratings and reviews section styles **/
+/****************************************/
+
+section.ratings {
+  background-color: var(--neutral);
+  max-width: none;
+}
+section.ratings > div {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px 40px 20px;
+}
+section.ratings > div > h2 {
+  font-size: var(--fs-2xl);
+  text-align: center;
+  margin: 10px 0;
+}
+.ratings-top {
+  display: flex;
+  justify-content: center;
+}
+.ratings-top > h3 {
+  display: flex;
+  font-size: var(--fs-4xl);
+  margin: 30px 0;
+}
+.ratings-top > h3 + div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 7px;
+}
+.ratings-top > h3 + div > .stars {
+  display: flex;
+  margin-bottom: 5px;
+}
+.ratings-top > h3 + div > p {
+  margin: 0 0 0 3px;
+}
+.ratings-body > .bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+  margin: 10px auto;
+}
+/* progress bar styling  */
+.ratings-body > .bar > progress,
+.ratings-body > .bar > progress::-webkit-progress-bar,
+.ratings-body > .bar > progress::-moz-progress-bar,
+.ratings-body > .bar > progress::-webkit-progress-value {
+  appearance: none;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  height: 7px;
+  width: 100%;
+}
+.ratings-body > .bar > progress::-webkit-progress-bar {
+  background-color: #d9d9d9;
+  outline: 1px solid #000;
+}
+.ratings-body > .bar > progress::-moz-progress-bar,
+.ratings-body > .bar > progress::-webkit-progress-value {
+  background-color: #ffd300;
+  outline: 1px solid #000;
+}
+.ratings-body > .bar > label {
+  white-space: nowrap;
+}
+.ratings-body > .bar > label:first-of-type {
+  margin: 0 10px 2px 0;
+}
+.ratings-body > .bar > label:last-of-type {
+  margin: 0 0 2px 10px;
+}
