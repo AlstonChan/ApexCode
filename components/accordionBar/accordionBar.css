@@ -48,6 +48,12 @@
   background-color: var(--neutral-light);
   padding: 7px 20px;
 }
+.content > .bar.para {
+  flex-direction: column;
+}
+.content > .bar.para > p {
+  padding: 10px;
+}
 .content > .bar:first-of-type {
   padding-top: 25px;
 }
