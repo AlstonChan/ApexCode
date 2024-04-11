@@ -1,0 +1,163 @@
+main {
+  text-align: center;
+}
+.sectionHead {
+  font-size: var(--fs-3xl);
+  font: bolder;
+  text-align: center;
+  margin: 0;
+}
+.sectionDesc {
+  font-size: var(--fs-lg);
+  text-align: center;
+  margin: 8px 0 30px 0;
+}
+
+/* Call to action */
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0 120px;
+}
+.cta > h1 {
+  font-size: var(--fs-7xl);
+  max-width: 710px;
+  margin: 50px auto 0;
+}
+.cta > p {
+  font-size: var(--fs-lg);
+  font-weight: normal;
+  max-width: 500px;
+}
+.course-discover {
+  margin: 20px;
+}
+.course-discover > a {
+  appearance: none;
+  text-decoration: none;
+  border: none;
+  background-color: var(--primary);
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: var(--fs-xl);
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+.course-discover > a:hover {
+  background-color: var(--primary-hover);
+}
+/* Top rated course */
+.TopRated {
+  margin: 20px auto;
+  max-width: 1200px;
+}
+.TopRated > div {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.first-course {
+  flex: 1;
+  margin: 0 10px;
+}
+.second-course {
+  flex: 1;
+}
+.third-course {
+  flex: 1;
+  margin: 0 10px;
+}
+
+/* pricing tier */
+.subs {
+  margin: 100px 0;
+}
+.subs .join {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.subscription {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.membership {
+  padding: 30px 40px;
+  border-radius: 35px;
+  background-color: var(--neutral);
+  width: 50%;
+}
+.membership > h3 {
+  margin: 0;
+  font-size: var(--fs-xl);
+  font-weight: 400;
+}
+.membership-desc {
+  font-size: var(--fs-3xl);
+  font-weight: 700;
+  margin: 15px 0;
+}
+.details {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+}
+.details > li {
+  display: flex;
+  align-items: center;
+}
+.details img {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.monthly-membership > button {
+  border-radius: 10px;
+  padding: 15px 70px;
+  margin: 30px;
+  border: none;
+  background-color: var(--primary);
+}
+.monthly-membership > button:hover {
+  background-color: var(--primary-hover);
+}
+.buy-course {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+.one-course {
+  background-color: var(--neutral);
+  width: 1200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 40px;
+}
+.price-buy {
+  font: bold;
+  font-size: var(--fs-xl);
+}
+
+/* Review Say */
+.review {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.name {
+  background-color: var(--neutral);
+  height: 400px;
+  width: 400px;
+  border-radius: 50px;
+}
+.name > p {
+  font-size: var(--fs-lg);
+}

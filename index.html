@@ -5,12 +5,228 @@
     <!-- component  -->
     <script defer src="/components/head/head.js"></script>
     <script defer src="/components/navbar/navbar.js"></script>
+    <script defer src="/components/footer/footer-box.js"></script>
+    <script defer src="/components/course-card/course-card.js"></script>
     <!-- scripts  -->
     <script src="/public/script/index.js"></script>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="/public/style/index.css" />
   </head>
   <body>
     <main>
-      <h1>hello world</h1>
+      <!-- call to action  -->
+      <section class="cta">
+        <h1>Unlock Your Potential: Master Coding with Our Online Courses</h1>
+        <p>
+          Our online courses offer comprehensive lessons tailored to all skill levels,
+          empowering you to become a coding expert from the comfort of your own home.
+        </p>
+        <div class="course-discover">
+          <a href="/all-course.html"> Discover Courses </a>
+        </div>
+      </section>
+      <!-- top rated courses  -->
+      <section class="TopRated">
+        <h2 class="sectionHead">Our Top Rated Courses</h2>
+        <p class="sectionDesc">Here are our top rated courses among the users</p>
+        <div>
+          <div class="first-course"><course-card></course-card></div>
+          <div class="second-course"><course-card></course-card></div>
+          <div class="third-course"><course-card></course-card></div>
+        </div>
+        <div style="height: 20px"></div>
+        <div class="course-discover">
+          <a href="/all-course.html"> View All </a>
+        </div>
+      </section>
+
+      <!-- pricing tier  -->
+      <section class="subs">
+        <h2 class="sectionHead">Join Our premium Courses</h2>
+        <p class="sectionDesc">Description here</p>
+
+        <div class="join">
+          <div class="subscription">
+            <div class="monthly-membership membership">
+              <h3>Monthly Membership</h3>
+              <p class="membership-desc">RM 30/Month</p>
+              <ul class="details">
+                <li>
+                  <img
+                    src="/public/assets/images/icons/CheckIcon-white.svg"
+                    width="30"
+                    height="30"
+                  />
+                  <p>Lorem ipsum dolor sit amet</p>
+                </li>
+                <li>
+                  <img
+                    src="/public/assets/images/icons/CheckIcon-white.svg"
+                    width="30"
+                    height="30"
+                  />
+                  <p>Lorem ipsum dolor sit amet</p>
+                </li>
+                <li>
+                  <img
+                    src="/public/assets/images/icons/CheckIcon-white.svg"
+                    width="30"
+                    height="30"
+                  />
+                  <p>Lorem ipsum dolor sit amet</p>
+                </li>
+                <li>
+                  <img
+                    src="/public/assets/images/icons/CheckIcon-white.svg"
+                    width="30"
+                    height="30"
+                  />
+                  <p>Lorem ipsum dolor sit amet</p>
+                </li>
+                <li>
+                  <img
+                    src="/public/assets/images/icons/CheckIcon-white.svg"
+                    width="30"
+                    height="30"
+                  />
+                  <p>Lorem ipsum dolor sit amet</p>
+                </li>
+              </ul>
+              <button>Buy Now</button>
+            </div>
+            <div class="monthly-membership membership">
+              <h3>Yearly Membership</h3>
+              <p class="membership-desc">RM 400/Year</p>
+              <p class="details">
+                <ul class="details">
+                  <li>
+                    <img
+                      src="/public/assets/images/icons/CheckIcon-white.svg"
+                      width="30"
+                      height="30"
+                    />
+                    <p>Lorem ipsum dolor sit amet</p>
+                  </li>
+                  <li>
+                    <img
+                      src="/public/assets/images/icons/CheckIcon-white.svg"
+                      width="30"
+                      height="30"
+                    />
+                    <p>Lorem ipsum dolor sit amet</p>
+                  </li>
+                  <li>
+                    <img
+                      src="/public/assets/images/icons/CheckIcon-white.svg"
+                      width="30"
+                      height="30"
+                    />
+                    <p>Lorem ipsum dolor sit amet</p>
+                  </li>
+                  <li>
+                    <img
+                      src="/public/assets/images/icons/CheckIcon-white.svg"
+                      width="30"
+                      height="30"
+                    />
+                    <p>Lorem ipsum dolor sit amet</p>
+                  </li>
+                  <li>
+                    <img
+                      src="/public/assets/images/icons/CheckIcon-white.svg"
+                      width="30"
+                      height="30"
+                    />
+                    <p>Lorem ipsum dolor sit amet</p>
+                  </li>
+                </ul>
+              <button>Buy Now</button>
+            </div>
+          </div>
+          <div class="buy-course">
+            <div class="one-course">
+              <div class="buy-head">
+                <h3 style="margin: 0; font-size: var(--fs-xl); font-weight: 400;">Single course</h3>
+                <p class="membership-desc">RM 30/Course</p>
+                <p style="font-size: var(--fs-lg)">Buy once, own it forever</p>
+              </div>
+              <div>
+                <ul class="details">
+                  <li>
+                    <img
+                      src="/public/assets/images/icons/CheckIcon-white.svg"
+                      width="30"
+                      height="30"
+                    />
+                    <p>Lorem ipsum dolor sit amet</p>
+                  </li>
+                  <li>
+                    <img
+                      src="/public/assets/images/icons/CheckIcon-white.svg"
+                      width="30"
+                      height="30"
+                    />
+                    <p>Lorem ipsum dolor sit amet</p>
+                  </li>
+                  <li>
+                    <img
+                      src="/public/assets/images/icons/CheckIcon-white.svg"
+                      width="30"
+                      height="30"
+                    />
+                    <p>Lorem ipsum dolor sit amet</p>
+                  </li>
+                  <li>
+                    <img
+                      src="/public/assets/images/icons/CheckIcon-white.svg"
+                      width="30"
+                      height="30"
+                    />
+                    <p>Lorem ipsum dolor sit amet</p>
+                  </li>
+                  <li>
+                    <img
+                      src="/public/assets/images/icons/CheckIcon-white.svg"
+                      width="30"
+                      height="30"
+                    />
+                    <p>Lorem ipsum dolor sit amet</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <h1>What People Says About Us</h1>
+      <p style="font-size: var(--fs-xl)">Description Here</p>
+      <div class="review">
+        <div class="name">
+          <h1>name</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Tempor fringilla interdum libero
+            <br />ultricies nisl morbi convallis mattis. Morbi id gravida amet amet elit
+            vitae vel. Blandit.
+          </p>
+        </div>
+        <div class="name">
+          <h1>name</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Tempor fringilla interdum libero
+            <br />ultricies nisl morbi convallis mattis. Morbi id gravida amet amet elit
+            vitae vel. Blandit.
+          </p>
+        </div>
+        <div class="name">
+          <h1>name</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Tempor fringilla interdum libero
+            <br />ultricies nisl morbi convallis mattis. Morbi id gravida amet amet elit
+            vitae vel. Blandit.
+          </p>
+        </div>
+      </div>
+      <div style="height: 100px"></div>
     </main>
   </body>
 </html>
