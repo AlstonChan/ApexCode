@@ -12,7 +12,7 @@ font-size: var(--fs-3xl);
 }
 .who-p > p{
     width: 500px;
-    font-size: var(--fs-lg);
+    font-size: var(--fs-xl);
 }
 img{
     border-radius: 50px;
@@ -39,4 +39,53 @@ margin-top: 40px;
 .people > p{
     font-size: var(--fs-lg);
     text-align: center;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.about > h1{
+     font-size: var(--fs-3xl);
+}
+.about > p{
+    font-size: var(--fs-xl);
+    max-width: 600px;
+    text-align: center;
+}
+.our-story{
+    background-color: var(--neutral);
+    display: flex;
+    justify-content: space-evenly;
+    width: 1500px;
+    border-radius: 50px;
+    height: 560px;
+    margin-bottom: 100px;
+}
+.our{
+    display: flex;
+    flex-direction: column;
+}
+.our> h1{
+    font-size: var(--fs-3xl);
+    text-align: center;
+}
+.story{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.story > p{
+    font-size: var(--fs-xl);
+    max-width: 700px;
+    text-align: center;
+}
+.location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.location > h1{
+    font-size: var(--fs-3xl);
 }
