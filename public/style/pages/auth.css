@@ -1,0 +1,4 @@
+.errorLabel {
+  color: var(--error);
+  font-size: var(--fs-sm);
+}

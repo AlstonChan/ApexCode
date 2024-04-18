@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "emulators": "firebase emulators:start",
+    "emulators:export": "firebase emulators:start --export-on-exit=./emulators",
     "emulators:import": "firebase emulators:start --import ./emulators",
     "emulators:auth": "firebase emulators:start --only auth",
     "emulators:db": "firebase emulators:start --only firestore",
@@ -34,6 +35,6 @@
     "type": "git"
   },
   "dependencies": {
-    "firebase-tools": "^13.5.2"
+    "firebase-tools": "^13.6.0"
   }
 }

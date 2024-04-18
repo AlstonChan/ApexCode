@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ApexCode | Sign Up</title>
+    <!-- component  -->
+    <script defer src="/components/head/head.js"></script>
+    <script defer src="/components/navbar/navbar.js"></script>
+    <script defer src="/components/footer/footer-box.js"></script>
+    <!-- scripts -->
+    <script defer type="module" src="/public/script/firebase-config.js"></script>
+    <script defer type="module" src="/public/script/signup.js"></script>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="/public/style/pages/auth.css" />
+  </head>
+  <body>
+    <form id="signup-form">
+      <div>
+        <label for="signUpUsername">Username</label>
+        <input required type="text" name="signUpUsername" id="signUpUsername" />
+        <label for="signUpUsername" class="errorLabel" id="usernameSignUpError"></label>
+      </div>
+      <div>
+        <label for="signUpEmail">Email</label>
+        <input required type="email" name="signUpEmail" id="signUpEmail" />
+        <label for="signUpEmail" class="errorLabel" id="emailSignUpError"></label>
+      </div>
+      <div>
+        <label for="signUpPassword">Password</label>
+        <input required type="password" name="signUpPassword" id="signUpPassword" />
+        <label for="signUpPassword" class="errorLabel" id="passSignUpError"></label>
+      </div>
+      <div>
+        <label for="confPass">Confirm Password</label>
+        <input required type="password" name="confPass" id="confPass" />
+        <label for="confPass" class="errorLabel" id="confPassError"></label>
+      </div>
+      <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="/login.html">Login</a></p>
+  </body>
+</html>
