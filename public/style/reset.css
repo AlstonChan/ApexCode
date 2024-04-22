@@ -8,9 +8,9 @@ body {
   font-family: "Barlow", sans-serif;
 
   /**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
+  * 1. Correct the line height in all browsers.
+  * 2. Prevent adjustments of font size after orientation changes in iOS.
+  */
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -19,6 +19,7 @@ body {
 *::after,
 *::before {
   box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
 }
 
 input,

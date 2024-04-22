@@ -8,7 +8,55 @@
             "category": "html",
             "lastUpdate": "23 March 2024",
             "level": 1,
-            "thumbnail": "html5.png"
+            "thumbnail": "html5.png",
+            "content": [
+                {
+                    "id": 1,
+                    "module": "Module 1: Introduction",
+                    "lessons": [
+                        "What is HTML5?",
+                        "Why HTML5?",
+                        "HTML5 Syntax"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "module": "Module 2: Basic Tags",
+                    "lessons": [
+                        "Headings",
+                        "Paragraphs",
+                        "Links",
+                        "Images",
+                        "Lists",
+                        "Tables",
+                        "Forms"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "module": "Module 3: Advanced Tags",
+                    "lessons": [
+                        "Audio",
+                        "Video",
+                        "Canvas",
+                        "SVG",
+                        "Geolocation",
+                        "Web Storage",
+                        "Web Workers",
+                        "Web Sockets"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "module": "Module 4: SEO",
+                    "lessons": [
+                        "Meta Tags",
+                        "Semantic Tags",
+                        "Microdata",
+                        "Rich Snippets"
+                    ]
+                }
+            ]
         },
         {
             "id": 2,
@@ -18,7 +66,55 @@
             "category": "css",
             "lastUpdate": "13 March 2024",
             "level": 1,
-            "thumbnail": "css3.png"
+            "thumbnail": "css3.png",
+            "content": [
+                {
+                    "id": 1,
+                    "module": "Module 1: Introduction",
+                    "lessons": [
+                        "What is CSS3?",
+                        "Why CSS3?",
+                        "CSS3 Syntax"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "module": "Module 2: Basic Styling",
+                    "lessons": [
+                        "Text Styling",
+                        "Font Styling",
+                        "Color",
+                        "Backgrounds",
+                        "Borders",
+                        "Margins",
+                        "Paddings"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "module": "Module 3: Advanced Styling",
+                    "lessons": [
+                        "Flexbox",
+                        "Grid",
+                        "Transitions",
+                        "Animations",
+                        "Transforms",
+                        "Filters",
+                        "Variables"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "module": "Module 4: Responsive Design",
+                    "lessons": [
+                        "Media Queries",
+                        "Viewport",
+                        "Responsive Images",
+                        "Responsive Tables",
+                        "Responsive Forms"
+                    ]
+                }
+            ]
         },
         {
             "id": 3,
@@ -28,7 +124,55 @@
             "category": "javascript",
             "lastUpdate": "26 April 2024",
             "level": 1,
-            "thumbnail": "javascript-1.png"
+            "thumbnail": "javascript-1.png",
+            "content": [
+                {
+                    "id": 1,
+                    "module": "Module 1: Introduction",
+                    "lessons": [
+                        "What is JavaScript?",
+                        "Why JavaScript?",
+                        "JavaScript Syntax"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "module": "Module 2: Basic Concepts",
+                    "lessons": [
+                        "Variables",
+                        "Data Types",
+                        "Operators",
+                        "Control Structures",
+                        "Functions",
+                        "Arrays",
+                        "Objects"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "module": "Module 3: Advanced Concepts",
+                    "lessons": [
+                        "DOM Manipulation",
+                        "Events",
+                        "AJAX",
+                        "Promises",
+                        "ES6",
+                        "Modules",
+                        "Classes"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "module": "Module 4: Projects",
+                    "lessons": [
+                        "Calculator",
+                        "Todo List",
+                        "Weather App",
+                        "Quiz App",
+                        "Chat App"
+                    ]
+                }
+            ]
         },
         {
             "id": 4,
@@ -38,7 +182,59 @@
             "category": "javascript",
             "lastUpdate": "26 January 2024",
             "level": 3,
-            "thumbnail": "javascript-2.png"
+            "thumbnail": "javascript-2.png",
+            "content": [
+                {
+                    "id": 1,
+                    "module": "Module 1: Advanced Concepts",
+                    "lessons": [
+                        "Closures",
+                        "Prototypes",
+                        "This Keyword",
+                        "Async/Await",
+                        "Generators",
+                        "Web Workers",
+                        "Service Workers"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "module": "Module 2: Design Patterns",
+                    "lessons": [
+                        "Singleton",
+                        "Factory",
+                        "Observer",
+                        "Decorator",
+                        "Facade",
+                        "Module",
+                        "MVC"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "module": "Module 3: Libraries & Frameworks",
+                    "lessons": [
+                        "jQuery",
+                        "React",
+                        "Angular",
+                        "Vue",
+                        "Svelte",
+                        "NodeJs",
+                        "Express"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "module": "Module 4: Projects",
+                    "lessons": [
+                        "E-commerce",
+                        "Social Media",
+                        "Blog",
+                        "Portfolio",
+                        "Admin Panel"
+                    ]
+                }
+            ]
         },
         {
             "id": 5,
@@ -48,7 +244,55 @@
             "category": "cpp",
             "lastUpdate": "15 December 2023",
             "level": 1,
-            "thumbnail": "cpp.png"
+            "thumbnail": "cpp.png",
+            "content": [
+                {
+                    "id": 1,
+                    "module": "Module 1: Introduction",
+                    "lessons": [
+                        "What is C++?",
+                        "Why C++?",
+                        "C++ Syntax"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "module": "Module 2: Basic Concepts",
+                    "lessons": [
+                        "Variables",
+                        "Data Types",
+                        "Operators",
+                        "Control Structures",
+                        "Functions",
+                        "Arrays",
+                        "Pointers"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "module": "Module 3: Advanced Concepts",
+                    "lessons": [
+                        "Classes",
+                        "Inheritance",
+                        "Polymorphism",
+                        "Encapsulation",
+                        "Templates",
+                        "STL",
+                        "Exceptions"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "module": "Module 4: Projects",
+                    "lessons": [
+                        "Calculator",
+                        "Todo List",
+                        "Weather App",
+                        "Quiz App",
+                        "Chat App"
+                    ]
+                }
+            ]
         },
         {
             "id": 6,
@@ -58,7 +302,55 @@
             "category": "c",
             "lastUpdate": "27 February 2024",
             "level": 2,
-            "thumbnail": "c.png"
+            "thumbnail": "c.png",
+            "content": [
+                {
+                    "id": 1,
+                    "module": "Module 1: Introduction",
+                    "lessons": [
+                        "What is C?",
+                        "Why C?",
+                        "C Syntax"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "module": "Module 2: Basic Concepts",
+                    "lessons": [
+                        "Variables",
+                        "Data Types",
+                        "Operators",
+                        "Control Structures",
+                        "Functions",
+                        "Arrays",
+                        "Pointers"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "module": "Module 3: Advanced Concepts",
+                    "lessons": [
+                        "Structures",
+                        "Unions",
+                        "Enums",
+                        "File Handling",
+                        "Dynamic Memory Allocation",
+                        "Preprocessor Directives",
+                        "Header Files"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "module": "Module 4: Projects",
+                    "lessons": [
+                        "Calculator",
+                        "Todo List",
+                        "Weather App",
+                        "Quiz App",
+                        "Chat App"
+                    ]
+                }
+            ]
         },
         {
             "id": 7,
@@ -68,7 +360,55 @@
             "category": "csharp",
             "lastUpdate": "22 February 2024",
             "level": 1,
-            "thumbnail": "csharp.png"
+            "thumbnail": "csharp.png",
+            "content": [
+                {
+                    "id": 1,
+                    "module": "Module 1: Introduction",
+                    "lessons": [
+                        "What is C#?",
+                        "Why C#?",
+                        "C# Syntax"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "module": "Module 2: Basic Concepts",
+                    "lessons": [
+                        "Variables",
+                        "Data Types",
+                        "Operators",
+                        "Control Structures",
+                        "Functions",
+                        "Arrays",
+                        "Classes"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "module": "Module 3: Advanced Concepts",
+                    "lessons": [
+                        "Inheritance",
+                        "Polymorphism",
+                        "Encapsulation",
+                        "Interfaces",
+                        "Delegates",
+                        "Events",
+                        "Generics"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "module": "Module 4: Projects",
+                    "lessons": [
+                        "Calculator",
+                        "Todo List",
+                        "Weather App",
+                        "Quiz App",
+                        "Chat App"
+                    ]
+                }
+            ]
         },
         {
             "id": 8,
@@ -78,7 +418,55 @@
             "category": "python",
             "lastUpdate": "30 November 2023",
             "level": 1,
-            "thumbnail": "python.png"
+            "thumbnail": "python.png",
+            "content": [
+                {
+                    "id": 1,
+                    "module": "Module 1: Introduction",
+                    "lessons": [
+                        "What is Python?",
+                        "Why Python?",
+                        "Python Syntax"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "module": "Module 2: Basic Concepts",
+                    "lessons": [
+                        "Variables",
+                        "Data Types",
+                        "Operators",
+                        "Control Structures",
+                        "Functions",
+                        "Lists",
+                        "Tuples"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "module": "Module 3: Advanced Concepts",
+                    "lessons": [
+                        "Dictionaries",
+                        "Sets",
+                        "File Handling",
+                        "Modules",
+                        "Classes",
+                        "Exceptions",
+                        "Decorators"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "module": "Module 4: Projects",
+                    "lessons": [
+                        "Calculator",
+                        "Todo List",
+                        "Weather App",
+                        "Quiz App",
+                        "Chat App"
+                    ]
+                }
+            ]
         },
         {
             "id": 9,
@@ -88,7 +476,55 @@
             "category": "nodejs",
             "lastUpdate": "18 November 2023",
             "level": 1,
-            "thumbnail": "nodejs.png"
+            "thumbnail": "nodejs.png",
+            "content": [
+                {
+                    "id": 1,
+                    "module": "Module 1: Introduction",
+                    "lessons": [
+                        "What is NodeJs?",
+                        "Why NodeJs?",
+                        "NodeJs Syntax"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "module": "Module 2: Basic Concepts",
+                    "lessons": [
+                        "NPM",
+                        "Modules",
+                        "Events",
+                        "File System",
+                        "Streams",
+                        "HTTP",
+                        "Express"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "module": "Module 3: Advanced Concepts",
+                    "lessons": [
+                        "RESTful APIs",
+                        "WebSockets",
+                        "Authentication",
+                        "Authorization",
+                        "Error Handling",
+                        "Testing",
+                        "Deployment"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "module": "Module 4: Projects",
+                    "lessons": [
+                        "E-commerce",
+                        "Social Media",
+                        "Blog",
+                        "Portfolio",
+                        "Admin Panel"
+                    ]
+                }
+            ]
         },
         {
             "id": 10,
@@ -98,7 +534,55 @@
             "category": "javascript",
             "lastUpdate": "21 January 2024",
             "level": 1,
-            "thumbnail": "svelte.png"
+            "thumbnail": "svelte.png",
+            "content": [
+                {
+                    "id": 1,
+                    "module": "Module 1: Introduction",
+                    "lessons": [
+                        "What is Svelte?",
+                        "Why Svelte?",
+                        "Svelte Syntax"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "module": "Module 2: Basic Concepts",
+                    "lessons": [
+                        "Reactivity",
+                        "Components",
+                        "Props",
+                        "Events",
+                        "Bindings",
+                        "Stores",
+                        "Transitions"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "module": "Module 3: Advanced Concepts",
+                    "lessons": [
+                        "Routing",
+                        "Server-side Rendering",
+                        "Animations",
+                        "Context API",
+                        "Lifecycle Methods",
+                        "Testing",
+                        "Deployment"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "module": "Module 4: Projects",
+                    "lessons": [
+                        "E-commerce",
+                        "Social Media",
+                        "Blog",
+                        "Portfolio",
+                        "Admin Panel"
+                    ]
+                }
+            ]
         },
         {
             "id": 11,
@@ -108,7 +592,55 @@
             "category": "javascript",
             "lastUpdate": "30 January 2024",
             "level": 1,
-            "thumbnail": "vuejs.png"
+            "thumbnail": "vuejs.png",
+            "content": [
+                {
+                    "id": 1,
+                    "module": "Module 1: Introduction",
+                    "lessons": [
+                        "What is VueJs?",
+                        "Why VueJs?",
+                        "VueJs Syntax"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "module": "Module 2: Basic Concepts",
+                    "lessons": [
+                        "Reactivity",
+                        "Components",
+                        "Props",
+                        "Events",
+                        "Bindings",
+                        "Computed Properties",
+                        "Watchers"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "module": "Module 3: Advanced Concepts",
+                    "lessons": [
+                        "Routing",
+                        "Vuex",
+                        "Vue Router",
+                        "Vue CLI",
+                        "Vue Devtools",
+                        "Testing",
+                        "Deployment"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "module": "Module 4: Projects",
+                    "lessons": [
+                        "E-commerce",
+                        "Social Media",
+                        "Blog",
+                        "Portfolio",
+                        "Admin Panel"
+                    ]
+                }
+            ]
         },
         {
             "id": 12,
@@ -118,7 +650,55 @@
             "category": "javascript",
             "lastUpdate": "1 March 2024",
             "level": 3,
-            "thumbnail": "angular.png"
+            "thumbnail": "angular.png",
+            "content": [
+                {
+                    "id": 1,
+                    "module": "Module 1: Introduction",
+                    "lessons": [
+                        "What is Angular?",
+                        "Why Angular?",
+                        "Angular Syntax"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "module": "Module 2: Basic Concepts",
+                    "lessons": [
+                        "Components",
+                        "Directives",
+                        "Pipes",
+                        "Services",
+                        "Modules",
+                        "Routing",
+                        "Forms"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "module": "Module 3: Advanced Concepts",
+                    "lessons": [
+                        "Observables",
+                        "Http Client",
+                        "Interceptors",
+                        "Guards",
+                        "Animations",
+                        "Testing",
+                        "Deployment"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "module": "Module 4: Projects",
+                    "lessons": [
+                        "E-commerce",
+                        "Social Media",
+                        "Blog",
+                        "Portfolio",
+                        "Admin Panel"
+                    ]
+                }
+            ]
         },
         {
             "id": 13,
@@ -128,7 +708,54 @@
             "category": "javascript",
             "lastUpdate": "2 April 2024",
             "level": 2,
-            "thumbnail": "nuxt.png"
+            "thumbnail": "nuxt.png",
+            "content": [
+                {
+                    "id": 1,
+                    "module": "Module 1: Introduction",
+                    "lessons": [
+                        "What is Nuxt?",
+                        "Why Nuxt?",
+                        "Nuxt structure"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "module": "Module 2: Basic Concepts",
+                    "lessons": [
+                        "Pages",
+                        "Layouts",
+                        "Components",
+                        "Plugins",
+                        "Middleware",
+                        "Routing",
+                        "Store"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "module": "Module 3: Advanced Concepts",
+                    "lessons": [
+                        "Server Middleware",
+                        "Static Site Generation",
+                        "Server Side Rendering",
+                        "Nuxt Modules",
+                        "Testing",
+                        "Deployment"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "module": "Module 4: Projects",
+                    "lessons": [
+                        "E-commerce",
+                        "Social Media",
+                        "Blog",
+                        "Portfolio",
+                        "Admin Panel"
+                    ]
+                }
+            ]
         },
         {
             "id": 14,
@@ -138,7 +765,55 @@
             "category": "php",
             "lastUpdate": "5 April 2024",
             "level": 1,
-            "thumbnail": "php.png"
+            "thumbnail": "php.png",
+            "content": [
+                {
+                    "id": 1,
+                    "module": "Module 1: Introduction",
+                    "lessons": [
+                        "What is PHP?",
+                        "Why PHP?",
+                        "PHP Syntax"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "module": "Module 2: Basic Concepts",
+                    "lessons": [
+                        "Variables",
+                        "Data Types",
+                        "Operators",
+                        "Control Structures",
+                        "Functions",
+                        "Arrays",
+                        "Strings"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "module": "Module 3: Advanced Concepts",
+                    "lessons": [
+                        "Forms",
+                        "Sessions",
+                        "Cookies",
+                        "File Handling",
+                        "Database",
+                        "OOP",
+                        "MVC"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "module": "Module 4: Projects",
+                    "lessons": [
+                        "E-commerce",
+                        "Social Media",
+                        "Blog",
+                        "Portfolio",
+                        "Admin Panel"
+                    ]
+                }
+            ]
         },
         {
             "id": 15,
@@ -148,7 +823,54 @@
             "category": "wordpress",
             "lastUpdate": "3 March 2024",
             "level": 2,
-            "thumbnail": "wordpress.png"
+            "thumbnail": "wordpress.png",
+            "content": [
+                {
+                    "id": 1,
+                    "module": "Module 1: Introduction",
+                    "lessons": [
+                        "What is WordPress?",
+                        "Why WordPress?",
+                        "WordPress ecosystem"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "module": "Module 2: Basic Concepts",
+                    "lessons": [
+                        "Themes",
+                        "Plugins",
+                        "Widgets",
+                        "Menus",
+                        "Customizer",
+                        "Shortcodes",
+                        "Post Types"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "module": "Module 3: Advanced Concepts",
+                    "lessons": [
+                        "Custom Fields",
+                        "Taxonomies",
+                        "Hooks",
+                        "Filters",
+                        "Actions",
+                        "REST API",
+                        "Gutenberg"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "module": "Module 4: Projects",
+                    "lessons": [
+                        "E-commerce",
+                        "Social Media",
+                        "Blog",
+                        "Portfolio"
+                    ]
+                }
+            ]
         },
         {
             "id": 16,
@@ -158,7 +880,55 @@
             "category": "css",
             "lastUpdate": "19 February 2024",
             "level": 2,
-            "thumbnail": "scss.png"
+            "thumbnail": "scss.png",
+            "content": [
+                {
+                    "id": 1,
+                    "module": "Module 1: Introduction",
+                    "lessons": [
+                        "What is SCSS?",
+                        "Why SCSS?",
+                        "SCSS Syntax"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "module": "Module 2: Basic Concepts",
+                    "lessons": [
+                        "Variables",
+                        "Nesting",
+                        "Mixins",
+                        "Functions",
+                        "Operators",
+                        "Control Directives",
+                        "Interpolation"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "module": "Module 3: Advanced Concepts",
+                    "lessons": [
+                        "Inheritance",
+                        "Extend",
+                        "Placeholder",
+                        "Modules",
+                        "Testing",
+                        "Deployment",
+                        "Frameworks"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "module": "Module 4: Projects",
+                    "lessons": [
+                        "E-commerce",
+                        "Social Media",
+                        "Blog",
+                        "Portfolio",
+                        "Admin Panel"
+                    ]
+                }
+            ]
         },
         {
             "id": 17,
@@ -168,7 +938,55 @@
             "category": "typescript",
             "lastUpdate": "3 December 2023",
             "level": 2,
-            "thumbnail": "typescript.png"
+            "thumbnail": "typescript.png",
+            "content": [
+                {
+                    "id": 1,
+                    "module": "Module 1: Introduction",
+                    "lessons": [
+                        "What is Typescript?",
+                        "Why Typescript?",
+                        "Typescript Syntax"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "module": "Module 2: Basic Concepts",
+                    "lessons": [
+                        "Types",
+                        "Interfaces",
+                        "Classes",
+                        "Functions",
+                        "Generics",
+                        "Modules",
+                        "Decorators"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "module": "Module 3: Advanced Concepts",
+                    "lessons": [
+                        "Type Inference",
+                        "Type Guards",
+                        "Type Aliases",
+                        "Enums",
+                        "Mixins",
+                        "Testing",
+                        "Deployment"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "module": "Module 4: Projects",
+                    "lessons": [
+                        "E-commerce",
+                        "Social Media",
+                        "Blog",
+                        "Portfolio",
+                        "Admin Panel"
+                    ]
+                }
+            ]
         },
         {
             "id": 18,
@@ -178,7 +996,55 @@
             "category": "deno",
             "lastUpdate": "13 April 2024",
             "level": 1,
-            "thumbnail": "deno.png"
+            "thumbnail": "deno.png",
+            "content": [
+                {
+                    "id": 1,
+                    "module": "Module 1: Introduction",
+                    "lessons": [
+                        "What is Deno?",
+                        "Why Deno?",
+                        "Deno over NodeJs"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "module": "Module 2: Basic Concepts",
+                    "lessons": [
+                        "Modules",
+                        "File System",
+                        "HTTP",
+                        "Testing",
+                        "Security",
+                        "Environment Variables",
+                        "Third-party Modules"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "module": "Module 3: Advanced Concepts",
+                    "lessons": [
+                        "RESTful APIs",
+                        "WebSockets",
+                        "Authentication",
+                        "Authorization",
+                        "Error Handling",
+                        "Deployment",
+                        "Deno Deploy"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "module": "Module 4: Projects",
+                    "lessons": [
+                        "E-commerce",
+                        "Social Media",
+                        "Blog",
+                        "Portfolio",
+                        "Admin Panel"
+                    ]
+                }
+            ]
         },
         {
             "id": 19,
@@ -188,7 +1054,55 @@
             "category": "mysql",
             "lastUpdate": "6 January 2024",
             "level": 1,
-            "thumbnail": "mysql.png"
+            "thumbnail": "mysql.png",
+            "content": [
+                {
+                    "id": 1,
+                    "module": "Module 1: Introduction",
+                    "lessons": [
+                        "What is MySQL?",
+                        "Why MySQL?",
+                        "MySQL Syntax"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "module": "Module 2: Basic Concepts",
+                    "lessons": [
+                        "Database",
+                        "Tables",
+                        "Columns",
+                        "Data Types",
+                        "Constraints",
+                        "Indexes",
+                        "Queries"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "module": "Module 3: Advanced Concepts",
+                    "lessons": [
+                        "Joins",
+                        "Subqueries",
+                        "Views",
+                        "Stored Procedures",
+                        "Triggers",
+                        "Transactions",
+                        "Performance Tuning"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "module": "Module 4: Projects",
+                    "lessons": [
+                        "E-commerce",
+                        "Social Media",
+                        "Blog",
+                        "Portfolio",
+                        "Admin Panel"
+                    ]
+                }
+            ]
         },
         {
             "id": 20,
@@ -198,7 +1112,55 @@
             "category": "mongodb",
             "lastUpdate": "30 January 2024",
             "level": 3,
-            "thumbnail": "mongodb.png"
+            "thumbnail": "mongodb.png",
+            "content": [
+                {
+                    "id": 1,
+                    "module": "Module 1: Introduction",
+                    "lessons": [
+                        "What is MongoDB?",
+                        "Why MongoDB?",
+                        "MongoDB Drivers"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "module": "Module 2: Basic Concepts",
+                    "lessons": [
+                        "Database",
+                        "Collections",
+                        "Documents",
+                        "Indexes",
+                        "Queries",
+                        "Aggregation",
+                        "Replication"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "module": "Module 3: Advanced Concepts",
+                    "lessons": [
+                        "Sharding",
+                        "Transactions",
+                        "Capped Collections",
+                        "TTL Indexes",
+                        "Change Streams",
+                        "Performance Tuning",
+                        "Security"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "module": "Module 4: Projects",
+                    "lessons": [
+                        "E-commerce",
+                        "Social Media",
+                        "Blog",
+                        "Portfolio",
+                        "Admin Panel"
+                    ]
+                }
+            ]
         },
         {
             "id": 21,
@@ -208,7 +1170,55 @@
             "category": "postgresql",
             "lastUpdate": "9 March 2024",
             "level": 3,
-            "thumbnail": "postgres.png"
+            "thumbnail": "postgres.png",
+            "content": [
+                {
+                    "id": 1,
+                    "module": "Module 1: Introduction",
+                    "lessons": [
+                        "What is PostgreSQL?",
+                        "Why PostgreSQL?",
+                        "PostgreSQL Syntax"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "module": "Module 2: Basic Concepts",
+                    "lessons": [
+                        "Database",
+                        "Tables",
+                        "Columns",
+                        "Data Types",
+                        "Constraints",
+                        "Indexes",
+                        "Queries"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "module": "Module 3: Advanced Concepts",
+                    "lessons": [
+                        "Joins",
+                        "Subqueries",
+                        "Views",
+                        "Stored Procedures",
+                        "Triggers",
+                        "Transactions",
+                        "Performance Tuning"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "module": "Module 4: Projects",
+                    "lessons": [
+                        "E-commerce",
+                        "Social Media",
+                        "Blog",
+                        "Portfolio",
+                        "Admin Panel"
+                    ]
+                }
+            ]
         },
         {
             "id": 22,
@@ -218,7 +1228,55 @@
             "category": "mariadb",
             "lastUpdate": "5 February 2024",
             "level": 1,
-            "thumbnail": "mariadb.png"
+            "thumbnail": "mariadb.png",
+            "content": [
+                {
+                    "id": 1,
+                    "module": "Module 1: Introduction",
+                    "lessons": [
+                        "What is MariaDB?",
+                        "Why MariaDB?",
+                        "MariaDB SQL Syntax"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "module": "Module 2: Basic Concepts",
+                    "lessons": [
+                        "Database",
+                        "Tables",
+                        "Columns",
+                        "Data Types",
+                        "Constraints",
+                        "Indexes",
+                        "Queries"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "module": "Module 3: Advanced Concepts",
+                    "lessons": [
+                        "Joins",
+                        "Subqueries",
+                        "Views",
+                        "Stored Procedures",
+                        "Triggers",
+                        "Transactions",
+                        "Performance Tuning"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "module": "Module 4: Projects",
+                    "lessons": [
+                        "E-commerce",
+                        "Social Media",
+                        "Blog",
+                        "Portfolio",
+                        "Admin Panel"
+                    ]
+                }
+            ]
         },
         {
             "id": 23,
@@ -228,7 +1286,55 @@
             "category": "firebase",
             "lastUpdate": "8 April 2024",
             "level": 2,
-            "thumbnail": "firebase.png"
+            "thumbnail": "firebase.png",
+            "content": [
+                {
+                    "id": 1,
+                    "module": "Module 1: Introduction",
+                    "lessons": [
+                        "What is Firebase?",
+                        "Why Firebase?",
+                        "Firebase Console"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "module": "Module 2: Basic Concepts",
+                    "lessons": [
+                        "Authentication",
+                        "Realtime Database",
+                        "Firestore",
+                        "Storage",
+                        "Hosting",
+                        "Functions",
+                        "ML Kit"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "module": "Module 3: Advanced Concepts",
+                    "lessons": [
+                        "Cloud Messaging",
+                        "Remote Config",
+                        "Performance Monitoring",
+                        "Crashlytics",
+                        "Test Lab",
+                        "App Distribution",
+                        "Security Rules"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "module": "Module 4: Projects",
+                    "lessons": [
+                        "E-commerce",
+                        "Social Media",
+                        "Blog",
+                        "Portfolio",
+                        "Admin Panel"
+                    ]
+                }
+            ]
         },
         {
             "id": 24,
@@ -238,7 +1344,55 @@
             "category": "docker",
             "lastUpdate": "13 March 2024",
             "level": 2,
-            "thumbnail": "docker.png"
+            "thumbnail": "docker.png",
+            "content": [
+                {
+                    "id": 1,
+                    "module": "Module 1: Introduction",
+                    "lessons": [
+                        "What is Docker?",
+                        "Why Docker?",
+                        "Docker Compose"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "module": "Module 2: Basic Concepts",
+                    "lessons": [
+                        "Containers",
+                        "Images",
+                        "Volumes",
+                        "Networks",
+                        "Compose",
+                        "Swarm",
+                        "Registry"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "module": "Module 3: Advanced Concepts",
+                    "lessons": [
+                        "Kubernetes",
+                        "Helm",
+                        "Istio",
+                        "Prometheus",
+                        "Grafana",
+                        "ELK Stack",
+                        "Security"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "module": "Module 4: Projects",
+                    "lessons": [
+                        "E-commerce",
+                        "Social Media",
+                        "Blog",
+                        "Portfolio",
+                        "Admin Panel"
+                    ]
+                }
+            ]
         }
     ]
 }

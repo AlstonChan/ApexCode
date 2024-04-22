@@ -13,6 +13,7 @@
   --accent: #f471b5;
   --accent-hover: #e259a0;
   --neutral: #1e293b;
+  --neutral-light: #394861;
   --neutral-hover: #192232;
   --base-100: #0f172a;
   --base-content: #c8cbd0;
@@ -23,6 +24,7 @@
   --warning: #f4bf50;
   --error: #fb7085;
   /* font size  */
+  --fs-4xl: 3rem; /* 48px */
   --fs-3xl: 2.25rem; /* 36px */
   --fs-2xl: 1.875rem; /* 30px */
   --fs-xl: 1.5rem; /* 24px */
@@ -32,4 +34,8 @@
   --fs-xs: 0.8125rem; /* 13px */
   --fs-xxs: 0.75rem; /* 12px */
   --fs-xxxs: 0.6875rem; /* 11px */
+}
+
+body {
+  min-width: 330px;
 }

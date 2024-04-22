@@ -6,6 +6,7 @@
     <script defer src="/components/head/head.js"></script>
     <script defer src="/components/navbar/navbar.js"></script>
     <script defer src="/components/footer/footer-box.js"></script>
+    <script defer src="/components/accordionBar/accordionBar.js"></script>
     <!-- scripts  -->
     <script defer src="/public/script/course.js"></script>
     <!-- stylesheet -->
@@ -85,8 +86,7 @@
           </div>
         </div>
         <!-- 
-        the highlight section of the course, floating in between the hero
-        section and the next section  
+        the highlight section of the course, floating in between the hero section and the next section  
         -->
         <div class="highlight">
           <div class="box">
@@ -131,7 +131,187 @@
           </div>
         </div>
       </div>
-      <div>aa</div>
+      <!-- what you'll learn section  -->
+      <section>
+        <h2>What you'll learn</h2>
+        <ul class="learningPoints">
+          <li>
+            <img
+              src="/public/assets/images/icons/CheckIcon-white.svg"
+              alt=""
+              width="25"
+              height="25"
+            />
+            <p>Understand the core concepts of Programming</p>
+          </li>
+          <li>
+            <img
+              src="/public/assets/images/icons/CheckIcon-white.svg"
+              alt=""
+              width="25"
+              height="25"
+            />
+            <p>Learn how to write clean and efficient code</p>
+          </li>
+          <li>
+            <img
+              src="/public/assets/images/icons/CheckIcon-white.svg"
+              alt=""
+              width="25"
+              height="25"
+            />
+            <p>Problem solving skills through coding challenges and projects.</p>
+          </li>
+          <li>
+            <img
+              src="/public/assets/images/icons/CheckIcon-white.svg"
+              alt=""
+              width="25"
+              height="25"
+            />
+            <p>Debugging techniques and error troubleshooting</p>
+          </li>
+          <li>
+            <img
+              src="/public/assets/images/icons/CheckIcon-white.svg"
+              alt=""
+              width="25"
+              height="25"
+            />
+            <p>Learn to think algorithmically for efficient problem solving</p>
+          </li>
+          <li>
+            <img
+              src="/public/assets/images/icons/CheckIcon-white.svg"
+              alt=""
+              width="25"
+              height="25"
+            />
+            <p>
+              Best practices for clean, maintainable code including readability and
+              documentation
+            </p>
+          </li>
+        </ul>
+      </section>
+      <!-- course content section -->
+      <section>
+        <h2>Course Content</h2>
+        <p class="desc">
+          <span id="moduleCount"></span> Modules •
+          <span id="lectureCount"></span> lectures
+        </p>
+
+        <div class="content"></div>
+      </section>
+      <section style="padding: 30px 20px 40px">
+        <h2>Prerequisites</h2>
+        <p class="desc">What you need to know before proceeding this course</p>
+        <ul class="prerequisites">
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, excepturi
+            alias libero aliquid id explicabo, dicta perferendis voluptatem debitis
+            voluptas, optio ipsum corrupti. Quo facere a magni! Nobis, suscipit
+            voluptatum?
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, excepturi
+            alias libero aliquid id explicabo, dicta perferendis voluptatem debitis
+            voluptas, optio ipsum corrupti. Quo facere a magni! Nobis, suscipit
+            voluptatum?
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, excepturi
+            alias libero aliquid id explicabo, dicta perferendis voluptatem debitis
+            voluptas, optio ipsum corrupti. Quo facere a magni! Nobis, suscipit
+            voluptatum?
+          </li>
+        </ul>
+      </section>
+      <section class="ratings">
+        <div>
+          <h2>Ratings and reviews</h2>
+          <div class="ratings-top">
+            <h3>4.0</h3>
+            <div>
+              <div class="stars">
+                <!-- 
+              icon here should not have alt text
+              https://html.spec.whatwg.org/multipage/images.html#a-graphical-representation-of-some-of-the-surrounding-text 
+              -->
+                <img
+                  src="/public/assets/images/icons/StarFilledIcon.svg"
+                  width="20"
+                  height="20"
+                  alt=""
+                />
+                <img
+                  src="/public/assets/images/icons/StarFilledIcon.svg"
+                  width="20"
+                  height="20"
+                  alt=""
+                />
+                <img
+                  src="/public/assets/images/icons/StarFilledIcon.svg"
+                  width="20"
+                  height="20"
+                  alt=""
+                />
+                <img
+                  src="/public/assets/images/icons/StarFilledIcon.svg"
+                  width="20"
+                  height="20"
+                  alt=""
+                />
+                <img
+                  src="/public/assets/images/icons/StarIcon.svg"
+                  width="20"
+                  height="20"
+                  alt=""
+                />
+              </div>
+              <p>35 ratings</p>
+            </div>
+          </div>
+          <div class="ratings-body">
+            <div class="bar">
+              <label for="fiveStars">5 stars</label>
+              <progress id="fiveStars" max="100" value="70">70%</progress>
+              <label for="fiveStars">53 %</label>
+            </div>
+            <div class="bar">
+              <label for="fourStars">4 stars</label>
+              <progress id="fourStars" max="100" value="70">70%</progress>
+              <label for="fourStars">53 %</label>
+            </div>
+            <div class="bar">
+              <label for="threeStars">3 stars</label>
+              <progress id="threeStars" max="100" value="70">70%</progress>
+              <label for="threeStars">53 %</label>
+            </div>
+            <div class="bar">
+              <label for="twoStars">2 stars</label>
+              <progress id="twoStars" max="100" value="70">70%</progress>
+              <label for="twoStars">53 %</label>
+            </div>
+            <div class="bar">
+              <label for="oneStars">1 stars</label>
+              <progress id="oneStars" max="100" value="70">70%</progress>
+              <label for="oneStars">53 %</label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="questions">
+          <h2>Have questions?</h2>
+          <p class="desc">
+            We are happy to answer your question about our courses, contact us for any
+            inquiries
+          </p>
+          <a href="/contact-us.html">Contact Us</a>
+        </div>
+      </section>
     </main>
   </body>
 </html>
