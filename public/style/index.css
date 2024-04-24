@@ -192,6 +192,7 @@ main {
   height: 400px;
   width: 400px;
   border-radius: 50px;
+  margin: 0 10px;
 }
 .name > p {
   font-size: var(--fs-lg);
