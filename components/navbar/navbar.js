@@ -1,3 +1,5 @@
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-auth.js";
+import { auth } from "../../public/script/firebase-config.js";
 /**
  *
  * @param {string[]} strings
@@ -39,7 +41,9 @@ navBarTemplate.innerHTML = html`<link
               />
             </button>
           </li>
-          <li><a class="auth" href="/login.html">Log In</a></li>
+          <li id="nav-auth">
+            <a class="auth" href="/login.html">Log In</a>
+          </li>
         </ul>
       </nav>
       <div class="hamburger">
@@ -71,6 +75,7 @@ navBarTemplate.innerHTML = html`<link
 
 class Navigation extends HTMLElement {
   #dropdownIsOpen = false;
+  #authDropdownIsOpen = false;
 
   constructor() {
     super();
@@ -100,6 +105,72 @@ class Navigation extends HTMLElement {
         this.shadowRoot.querySelector(".dropdown").style.opacity = 0;
         menuBtn.style = null;
       }
+    });
+
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        const element = this.#createProfileElement();
+        this.shadowRoot.getElementById("nav-auth").innerHTML = "";
+        this.shadowRoot.getElementById("nav-auth").appendChild(element);
+        this.shadowRoot.getElementById("nav-logout").addEventListener("click", () => {
+          this.#logoutUser();
+        });
+      }
+    });
+  }
+
+  #createProfileElement() {
+    // Profile element
+    const profile = document.createElement("button");
+    profile.className = "profile";
+
+    const img = document.createElement("img");
+    img.src = "/public/assets/images/icons/ProfileIcon-white.svg";
+    img.alt = "profile picture";
+    img.width = 35;
+    img.height = 35;
+    img.classList.add("profile-icon");
+    profile.appendChild(img);
+
+    profile.addEventListener("click", () => {});
+
+    // Dropdown element
+    const dropdown = document.createElement("ul");
+    dropdown.className = "authDropdown";
+    dropdown.innerHTML = `
+      <li><a href="/profile.html">Profile</a></li>
+      <li><p id="nav-logout">Logout</p></li>
+    `;
+
+    profile.addEventListener("click", (e) => {
+      e.stopPropagation();
+      this.#authDropdownIsOpen = !this.#authDropdownIsOpen;
+
+      if (this.#authDropdownIsOpen) {
+        dropdown.style.visibility = "visible";
+        dropdown.style.opacity = 1;
+      } else {
+        dropdown.style.visibility = "hidden";
+        dropdown.style.opacity = 0;
+      }
+    });
+
+    document.body.addEventListener("click", (e) => {
+      if (e.currentTarget !== dropdown) {
+        this.#authDropdownIsOpen = false;
+        this.shadowRoot.querySelector(".authDropdown").style.visibility = "hidden";
+        this.shadowRoot.querySelector(".authDropdown").style.opacity = 0;
+      }
+    });
+
+    profile.appendChild(dropdown);
+
+    return profile;
+  }
+
+  #logoutUser() {
+    auth.signOut().then(() => {
+      window.location.href = "/logout.html";
     });
   }
 }
