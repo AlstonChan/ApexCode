@@ -1,5 +1,3 @@
-@import url("public/style/reset.css");
-
 header {
   margin: 0 auto;
   max-width: 1500px;
@@ -100,6 +98,7 @@ nav > ul > li > button > img {
   right: 15px;
   top: 50px;
 
+  z-index: 1;
   background-color: var(--neutral);
   border-radius: 8px;
   width: 110px;
@@ -160,6 +159,7 @@ nav > ul > li > button > img {
   padding: 4px 6px;
   right: 2px;
   top: 29px;
+  z-index: 1;
 
   width: 110px;
   border-radius: 8px;

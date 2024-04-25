@@ -17,7 +17,7 @@ navBarTemplate.innerHTML = html`<link
   />
   <header>
     <div>
-      <a href="/" class="logoContainer">
+      <a href="index.html" class="logoContainer">
         <img
           src="public/assets/images/logo-100x100.png"
           alt="logo"
