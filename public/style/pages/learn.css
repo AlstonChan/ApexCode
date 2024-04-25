@@ -1,0 +1,136 @@
+main.learn {
+  position: relative;
+  display: flex;
+}
+
+.fixed-drawer {
+  position: sticky;
+  left: 0;
+  min-width: 240px;
+  width: 240px;
+  height: 100%;
+  max-height: 100vh;
+  z-index: 1000;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) var(--base-100);
+}
+#drawer {
+  border-right: 2px solid var(--primary);
+  padding: 0;
+}
+#drawer > .courseTitle {
+  padding: 20px 10px 0;
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  color: var(--base-content);
+  margin: 0;
+}
+#drawer > .courseTitle > a {
+  color: var(--base-content);
+  text-decoration: none;
+  cursor: pointer;
+
+  transition: color 160ms ease-in-out;
+}
+#drawer > .courseTitle > a:hover {
+  color: var(--secondary);
+}
+#drawer > .module {
+  padding: 30px 0 0;
+}
+#drawer > .module:last-child {
+  padding: 30px 0 60px;
+}
+#drawer > .module > .moduleHead {
+  padding: 0 10px;
+  margin: 0;
+}
+#drawer > .module > .completion {
+  display: block;
+  padding: 0 10px;
+  margin: 0 0 8px 0;
+}
+#drawer > .module > ul {
+  border-top: 2px solid var(--primary);
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+#drawer > .module li:first-of-type,
+#drawer > .module li:last-of-type {
+  margin: 6px 0;
+}
+#drawer > .module li {
+  margin: 12px 0;
+}
+#drawer > .module li > .linkContainer {
+  display: flex;
+  align-items: center;
+}
+#drawer > .module li > .linkContainer > a {
+  display: block;
+  font-size: var(--fs-md);
+  color: var(--base-content);
+  text-decoration: none;
+  margin-left: 5px;
+
+  transition: transform 0.2s, color 0.2s;
+}
+#drawer > .module li > .linkContainer > a:hover {
+  color: var(--primary);
+  transform: translateY(1px);
+}
+
+.video-container {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.video-container > video {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.video-container > .lock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+.video-container > .lock p {
+  margin: 5px 0;
+}
+.video-container > .lock a {
+  color: var(--secondary);
+  text-decoration: transparent;
+  font-weight: bold;
+
+  transition: color 160ms ease-in-out;
+}
+.video-container > .lock a:hover {
+  color: var(--secondary-hover);
+}
+.video-container .lock-img {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.video-container > .content {
+  padding: 20px 10px;
+}
+.video-container > .content {
+  padding: 20px 10px;
+}
+.video-container > .content > h1 {
+  font-size: var(--fs-3xl);
+  font-weight: 700;
+  color: var(--base-content);
+  margin: 0;
+}

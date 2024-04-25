@@ -24,7 +24,7 @@ const allCourseCard = [];
 // course card contains information about the course such as title,
 // description, thumbnail, category, level, and ratings
 (async () => {
-  const response = await fetch("/public/course.json");
+  const response = await fetch("public/course.json");
   if (response.ok) {
     /**
      * @type {import("./types").CourseData}
