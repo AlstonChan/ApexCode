@@ -29,6 +29,9 @@
 .icon > img {
   vertical-align: middle;
 }
+.main > p {
+  text-align: left;
+}
 .main > p:last-of-type {
   margin-left: auto;
 }
@@ -53,6 +56,8 @@
 }
 .content > .bar.para > p {
   padding: 10px;
+  text-align: left;
+  margin: 0;
 }
 .content > .bar:first-of-type {
   padding-top: 25px;
@@ -60,7 +65,14 @@
 .content > .bar:last-of-type {
   padding-bottom: 25px;
 }
-.content > .bar > p {
+.content > .bar > a {
   padding: 0 10px;
   margin: 0;
+  text-align: left;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+.content > .bar > a:hover {
+  text-decoration: underline;
 }

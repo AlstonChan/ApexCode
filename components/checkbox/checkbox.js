@@ -11,7 +11,7 @@ function html(strings) {
 const checkboxTemplate = document.createElement("template");
 checkboxTemplate.innerHTML = html`<link
     rel="stylesheet"
-    href="/components/checkbox/checkbox.css"
+    href="components/checkbox/checkbox.css"
   />
   <div class="container">
     <label for="">
@@ -26,13 +26,13 @@ checkboxTemplate.innerHTML = html`<link
   </div>`;
 
 class Checkbox extends HTMLElement {
-  constructor() {
+  constructor(_id, _label) {
     super();
     this.attachShadow({ mode: "open" });
     this.shadowRoot.appendChild(checkboxTemplate.content.cloneNode(true));
 
-    const id = this.getAttribute("id");
-    const label = this.getAttribute("label");
+    const id = this.getAttribute("id") || _id;
+    const label = this.getAttribute("label") || _label;
 
     if (id) {
       this.shadowRoot.querySelector("input").id = id;

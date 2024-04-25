@@ -10,7 +10,7 @@ const fetchStatus = new Proxy(
 );
 
 (async () => {
-  const response = await fetch("/public/course.json");
+  const response = await fetch("public/course.json");
   if (response.ok) {
     /**
      * @type {import("./types").CourseData}
@@ -66,7 +66,7 @@ function updateCourseDetail(course) {
     moduleCount++;
     lectureCount += module.lessons.length;
     const accordionBar = new AccordionBar(module.module, module.lessons.length, false);
-    accordionBar.populateLecture(module.lessons);
+    accordionBar.populateLecture(course.id, module.module, module.lessons);
     courseAccordion.appendChild(accordionBar);
   }
 

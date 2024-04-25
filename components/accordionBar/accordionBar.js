@@ -11,13 +11,13 @@ function html(strings) {
 const accordionBarTemplate = document.createElement("template");
 accordionBarTemplate.innerHTML = html`<link
     rel="stylesheet"
-    href="/components/accordionBar/accordionBar.css"
+    href="components/accordionBar/accordionBar.css"
   />
   <div>
     <button class="main">
       <div class="icon">
         <img
-          src="/public/assets/images/icons/ChevronUpIcon-white.svg"
+          src="public/assets/images/icons/ChevronUpIcon-white.svg"
           alt=""
           width="30"
           height="30"
@@ -75,10 +75,12 @@ class AccordionBar extends HTMLElement {
 
   /**
    * To populate the content of the accordion bar
+   * @param {string} id The id of the course
+   * @param {string} module The module name
    * @param {string[]} lectures
    * @returns {void}
    */
-  populateLecture(lectures) {
+  populateLecture(id, module, lectures) {
     const content = this.shadowRoot.querySelector(".content");
     for (const lecture of lectures) {
       // the bar container for each lecture
@@ -86,16 +88,17 @@ class AccordionBar extends HTMLElement {
       bar.classList.add("bar");
       // the play icon
       const icon = document.createElement("img");
-      icon.src = "/public/assets/images/icons/PlayCircleIcon.svg";
+      icon.src = "public/assets/images/icons/PlayCircleIcon.svg";
       icon.width = 25;
       icon.height = 25;
       icon.alt = "";
       // the lecture title
-      const p = document.createElement("p");
-      p.textContent = lecture;
+      const a = document.createElement("a");
+      a.href = `learn.html?id=${id}&module=${module}&lecture=${lecture}`;
+      a.textContent = lecture;
       // append the icon and the title to the bar
       bar.appendChild(icon);
-      bar.appendChild(p);
+      bar.appendChild(a);
       content.appendChild(bar);
     }
   }
