@@ -6,13 +6,14 @@ main {
   font: bold;
   text-align: center;
   margin: 0;
+  padding: 0 10px ;
 }
 .sectionDesc {
   font-size: var(--fs-lg);
   text-align: center;
   margin: 8px 0 30px 0;
+  padding: 0 10px ;
 }
-
 /* Call to action */
 .cta {
   display: flex;
@@ -25,14 +26,32 @@ main {
   font-size: var(--fs-7xl);
   max-width: 710px;
   margin: 50px auto 0;
+  padding: 0 20px;
 }
 .cta > p {
   font-size: var(--fs-lg);
   font-weight: normal;
   max-width: 500px;
+  padding: 0 20px;
 }
 .course-discover {
-  margin: 20px;
+  margin: 60px 0 0 0;
+}
+
+@media screen and (max-width: 580px) {
+  .cta > h1 {
+    font-size: var(--fs-5xl);
+  }
+}
+@media screen and (max-width: 350px) {
+  .cta > h1 {
+    font-size: var(--fs-2xl);
+    padding: 0 10px;
+  }
+  .cta > p {
+    font-size: var(--fs-md);
+    padding: 0 10px;
+  }
 }
 .course-discover > a {
   appearance: none;
@@ -51,26 +70,20 @@ main {
 }
 /* Top rated course */
 .TopRated {
-  margin: 20px auto;
   max-width: 1200px;
-  margin: 100px auto;
+  margin: 70px auto;
 }
-.TopRated > div {
+.top-course{
   display: flex;
-  justify-content: space-evenly;
+  gap: 25px;
   flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 20px;
 }
-.first-course {
-  flex: 1;
-  margin: 0 12px;
-}
-.second-course {
-  flex: 1;
-  margin: 0 12px;
-}
-.third-course {
-  flex: 1;
-  margin: 0 12px;
+.top-course > course-card {
+  min-width: 250px;
+  max-width: 350px;
+  width: 100%;
 }
 /* choose language */
 .choose-language {
@@ -110,15 +123,15 @@ main {
 
 /* pricing tier */
 .subs {
-  margin: 100px 0;
+  margin: 70px 0;
 }
 .subs .join {
   display: flex;
   flex-direction: column;
   height: 100%;
-  max-width: 1000px;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 20px;
 }
 .subscription {
   display: flex;
@@ -126,10 +139,13 @@ main {
   gap: 20px;
 }
 .membership {
-  padding: 30px 40px;
+  padding: 30px 70px;
   border-radius: 35px;
   background-color: var(--neutral);
   width: 50%;
+
+  display: flex;
+  flex-direction: column;
 }
 .membership > h3 {
   margin: 0;
@@ -145,24 +161,30 @@ main {
   text-align: left;
   list-style: none;
   padding: 0;
+  margin: 0 0 20px 0;
 }
 .details > li {
   display: flex;
   align-items: center;
+}
+.details > li > p {
+  margin: 10px 0;
 }
 .details img {
   display: inline-block;
   margin-right: 10px;
   vertical-align: middle;
 }
-.monthly-membership > button {
+.membership > button {
   border-radius: 10px;
   padding: 15px 70px;
-  margin: 30px;
+  margin: auto 0 0 0;
   border: none;
   background-color: var(--primary);
+  cursor: pointer;
+
 }
-.monthly-membership > button:hover {
+.membership > button:hover {
   background-color: var(--primary-hover);
 }
 .buy-course {
@@ -183,29 +205,67 @@ main {
   font-size: var(--fs-xl);
 }
 
-@media screen and (max-width: 715px) {
-  #buy-now {
-    padding: 10px 20px;
+@media screen and (max-width: 815px) {
+  .subscription {
+    flex-direction: column;
+    margin: 0 auto;
   }
-
+  .membership {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* MOK PLEASE ADD CSS HERE FOR SINGLE COURSE  */
+}
+@media screen and (max-width: 475px) {
+  .membership {
+    border-radius: 20px;
+    padding: 25px 30px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .membership > h3 {
+    font-size: var(--fs-lg);
+  }
+  .membership-desc {
+    font-size: var(--fs-xl);
+  }
 }
 /* Review Say */
-.review {
+.testimonials {
+  margin: 0 0 80px 0;
+}
+.review-box {
+  background-color:var(--neutral);
+  border-radius: 12px;
+  max-width: 350px;
+  padding: 10px 30px 25px;
+  text-align: left;
+}
+.review-box > p.review {
+  margin-bottom: 30px;
+}
+.review-box > div.user {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  align-items: center;
 }
-.name {
-  background-color: var(--neutral);
-  height: 400px;
-  width: 400px;
-  border-radius: 50px;
-  margin: 0 10px;
+.review-box > div.user > img {
+  width: 60px;
+  height: 60px;
 }
-.name > p {
-  font-size: var(--fs-lg);
+.review-box > div.user > div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 8px;
 }
-
+.review-box > div.user > div > * {
+  margin: 0;
+  text-align: left;
+}
+.review-box > div.user > div > h3 {
+  margin: 0 0 5px 0;
+}
 @media screen and (max-width: 666px) {
   .choose-language {
     padding: 200px 20px;
