@@ -11,7 +11,7 @@ function html(strings) {
 const checkboxTemplate = document.createElement("template");
 checkboxTemplate.innerHTML = html`<link
     rel="stylesheet"
-    href="/components/checkbox/checkbox.css"
+    href="components/checkbox/checkbox.css"
   />
   <div class="container">
     <label for="">

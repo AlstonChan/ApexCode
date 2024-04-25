@@ -13,7 +13,7 @@ const fetchStatus = new Proxy(
 );
 
 (async () => {
-  const response = await fetch("/public/course.json");
+  const response = await fetch("public/course.json");
   if (response.ok) {
     /**
      * @type {import("./types").CourseData}
@@ -36,7 +36,7 @@ const fetchStatus = new Proxy(
  */
 function populateDrawer(course) {
   const a = document.createElement("a");
-  a.href = `/course.html?id=${course.id}&category=${course.category}`;
+  a.href = `course.html?id=${course.id}&category=${course.category}`;
   a.textContent = course.title;
   document.querySelector("h2").appendChild(a);
 
@@ -64,10 +64,10 @@ function populateDrawer(course) {
       linkContainer.classList.add("linkContainer");
       const a = document.createElement("a");
       a.textContent = lesson;
-      a.href = `/learn.html?id=${course.id}&module=${content.module}&lecture=${lesson}`;
+      a.href = `learn.html?id=${course.id}&module=${content.module}&lecture=${lesson}`;
 
       const lessonType = document.createElement("img");
-      lessonType.src = "/public/assets/images/icons/PlayCircleIcon.svg";
+      lessonType.src = "public/assets/images/icons/PlayCircleIcon.svg";
       lessonType.width = 25;
       lessonType.height = 25;
       lessonType.alt = "";
@@ -75,7 +75,7 @@ function populateDrawer(course) {
       let completed = false;
       if (completed) {
         const tickImg = document.createElement("img");
-        tickImg.src = "/public/assets/images/icons/CheckIcon-green.svg";
+        tickImg.src = "public/assets/images/icons/CheckIcon-green.svg";
         tickImg.width = 25;
         tickImg.height = 25;
         tickImg.alt = "";
@@ -103,7 +103,7 @@ function populateDrawer(course) {
  */
 function updateCourseDetail(course) {
   const video = document.querySelector("video");
-  video.poster = `/public/assets/images/course-thumbnail/${course.thumbnail}`;
+  video.poster = `public/assets/images/course-thumbnail/${course.thumbnail}`;
 
   const lecture = new URLSearchParams(window.location.search).get("lecture");
 

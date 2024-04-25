@@ -10,7 +10,7 @@ const fetchStatus = new Proxy(
 );
 
 (async () => {
-  const response = await fetch("/public/course.json");
+  const response = await fetch("public/course.json");
   if (response.ok) {
     /**
      * @type {import("./types").CourseData}

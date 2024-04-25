@@ -13,13 +13,13 @@ function html(strings) {
 const navBarTemplate = document.createElement("template");
 navBarTemplate.innerHTML = html`<link
     rel="stylesheet"
-    href="/components/navbar/navbar.css"
+    href="components/navbar/navbar.css"
   />
   <header>
     <div>
       <a href="/" class="logoContainer">
         <img
-          src="/public/assets/images/logo-100x100.png"
+          src="public/assets/images/logo-100x100.png"
           alt="logo"
           width="100"
           height="100"
@@ -34,7 +34,7 @@ navBarTemplate.innerHTML = html`<link
           <li>
             <button class="cart">
               <img
-                src="/public/assets/images/icons/CartIcon-white.svg"
+                src="public/assets/images/icons/CartIcon-white.svg"
                 alt="cart"
                 width="35"
                 height="35"
@@ -49,7 +49,7 @@ navBarTemplate.innerHTML = html`<link
       <div class="hamburger">
         <button class="cart">
           <img
-            src="/public/assets/images/icons/CartIcon-white.svg"
+            src="public/assets/images/icons/CartIcon-white.svg"
             alt="cart"
             width="35"
             height="35"
@@ -57,17 +57,17 @@ navBarTemplate.innerHTML = html`<link
         </button>
         <button id="menu">
           <img
-            src="/public/assets/images/icons/MenuIcon-white.svg"
+            src="public/assets/images/icons/MenuIcon-white.svg"
             alt="menu"
             width="35"
             height="35"
           />
         </button>
         <ul class="dropdown">
-          <li><a href="/all-course.html">All Course</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/pricing.html">Pricing</a></li>
-          <li><a href="/login.html">Log In</a></li>
+          <li><a href="all-course.html">All Course</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="login.html">Log In</a></li>
         </ul>
       </div>
     </div>
@@ -125,7 +125,7 @@ class Navigation extends HTMLElement {
     profile.className = "profile";
 
     const img = document.createElement("img");
-    img.src = "/public/assets/images/icons/ProfileIcon-white.svg";
+    img.src = "public/assets/images/icons/ProfileIcon-white.svg";
     img.alt = "profile picture";
     img.width = 35;
     img.height = 35;
@@ -170,7 +170,7 @@ class Navigation extends HTMLElement {
 
   #logoutUser() {
     auth.signOut().then(() => {
-      window.location.href = "/logout.html";
+      window.location.href = "logout.html";
     });
   }
 }

@@ -11,7 +11,7 @@ function html(strings) {
 const footerBoxTemplate = document.createElement("template");
 footerBoxTemplate.innerHTML = html`<link
     rel="stylesheet"
-    href="/components/footer/footer-box.css"
+    href="components/footer/footer-box.css"
   />
   <footer>
     <div class="footer-content">
@@ -30,16 +30,16 @@ footerBoxTemplate.innerHTML = html`<link
         <h3>Quick Links</h3>
         <div class="links">
           <ul class="dropdown">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/all-course.html">All Course</a></li>
-            <li><a href="/faq.html">FAQ</a></li>
-            <li><a href="/about.html">About</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="all-course.html">All Course</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">About</a></li>
           </ul>
           <ul class="dropdown">
-            <li><a href="/pricing.html">Pricing</a></li>
-            <li><a href="/LICENSE.md">License</a></li>
-            <li><a href="/login.html">Login</a></li>
-            <li><a href="/signup.html">Sign Up</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="LICENSE.md">License</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
           </ul>
         </div>
       </div>
