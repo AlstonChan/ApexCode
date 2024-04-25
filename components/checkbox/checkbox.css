@@ -7,6 +7,7 @@
   position: relative;
   display: block;
   float: left;
+  min-width: 18px;
   width: 18px;
   height: 18px;
   border-radius: 4px;
@@ -35,7 +36,7 @@
   user-select: none;
 }
 .container label {
-  display: inline-block;
+  display: inline-flex;
   cursor: pointer;
 }
 .container input[type="checkbox"] {
