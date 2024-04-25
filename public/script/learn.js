@@ -1,4 +1,8 @@
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-auth.js";
+import { auth } from "../../public/script/firebase-config.js";
+
 const drawer = document.getElementById("drawer");
+const videoContainer = document.getElementById("video-container");
 
 const fetchStatus = new Proxy(
   { error: null, data: null },
@@ -102,10 +106,56 @@ function populateDrawer(course) {
  * @param {import("./types").CourseDetails} course
  */
 function updateCourseDetail(course) {
-  const video = document.querySelector("video");
-  video.poster = `public/assets/images/course-thumbnail/${course.thumbnail}`;
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      // User is signed in, see docs for a list of available properties
+      // https://firebase.google.com/docs/reference/js/auth.user
+      const uid = user.uid;
+
+      const video = createVideo(course.thumbnail);
+      videoContainer.insertBefore(video, videoContainer.children[0]);
+    } else {
+      // User is signed out
+      // ...
+      const lock = createLockAccess();
+      videoContainer.insertBefore(lock, videoContainer.children[0]);
+    }
+  });
 
   const lecture = new URLSearchParams(window.location.search).get("lecture");
 
   document.getElementById("lecture-title").textContent = lecture;
+}
+
+/**
+ * Create video element
+ * @param {string} thumbnail
+ * @returns {HTMLVideoElement}
+ */
+function createVideo(thumbnail) {
+  const video = document.createElement("video");
+  video.autoplay = false;
+  video.controls = true;
+  video.loop = false;
+  video.poster = `public/assets/images/course-thumbnail/${thumbnail}`;
+
+  const source = document.createElement("source");
+  source.src = `public/assets/videos/course.mp4`;
+  source.type = "video/mp4";
+  video.appendChild(source);
+  return video;
+}
+
+function createLockAccess() {
+  const lock = document.createElement("div");
+  lock.classList.add("lock");
+  lock.innerHTML = `
+    <img class="lock-img" src="public/assets/images/icons/LockIcon-white.svg" alt="lock icon" width="50" height="50" />
+    <h3>Course content Locked</h3>
+    <p>Unlock this lecture by enrolling in the course</p>
+    <p>If you're already enrolled, 
+      <a href="login.html">you'll need to login</a>
+    .</p>
+  `;
+  return lock;
 }

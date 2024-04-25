@@ -96,6 +96,35 @@ main.learn {
   max-width: 1000px;
   margin: 0 auto;
 }
+.video-container > .lock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+.video-container > .lock p {
+  margin: 5px 0;
+}
+.video-container > .lock a {
+  color: var(--secondary);
+  text-decoration: transparent;
+  font-weight: bold;
+
+  transition: color 160ms ease-in-out;
+}
+.video-container > .lock a:hover {
+  color: var(--secondary-hover);
+}
+.video-container .lock-img {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.video-container > .content {
+  padding: 20px 10px;
+}
 .video-container > .content {
   padding: 20px 10px;
 }
