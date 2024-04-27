@@ -12,12 +12,12 @@ viewportDefault.setAttribute("content", "width=device-width, initial-scale=1.0")
 // Create a link for the global css
 const globalCss = document.createElement("link");
 globalCss.setAttribute("rel", "stylesheet");
-globalCss.setAttribute("href", "/public/style/global.css");
+globalCss.setAttribute("href", "public/style/global.css");
 
 // Create a link for the favicon
 const favicon = document.createElement("link");
 favicon.setAttribute("rel", "shortcut icon");
-favicon.setAttribute("href", "/public/assets/images/favicon.ico");
+favicon.setAttribute("href", "public/assets/images/favicon.ico");
 favicon.setAttribute("type", "image/x-icon");
 
 // Create a meta tag with the name and content attributes

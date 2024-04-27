@@ -21,5 +21,6 @@
     "titleBar.inactiveForeground": "#15202b99"
   },
   "peacock.color": "#2fcef9",
+  "editor.formatOnSave": true,
   "cSpell.words": ["Firestore", "Flexbox", "IIFE", "MERN", "nuxt", "vuejs"]
 }

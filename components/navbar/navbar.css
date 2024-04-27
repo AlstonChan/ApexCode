@@ -1,5 +1,3 @@
-@import url("/public/style/reset.css");
-
 header {
   margin: 0 auto;
   max-width: 1500px;
@@ -80,12 +78,61 @@ nav > ul > li > button > img {
 .auth:hover {
   background-color: var(--base-content-hover);
 }
+.profile {
+  display: block;
+  position: relative;
+  padding: 0 5px 0 10px;
+  cursor: pointer;
+}
+.profile-icon {
+  transition: transform 160ms ease-in-out;
+  vertical-align: middle;
+}
+.profile:hover .profile-icon {
+  display: block;
+  transform: translateY(2px);
+}
+.profile > .authDropdown {
+  visibility: hidden;
+  position: absolute;
+  right: 15px;
+  top: 50px;
+
+  z-index: 1;
+  background-color: var(--neutral);
+  border-radius: 8px;
+  width: 110px;
+
+  box-shadow: 0 3px 10px -3px rgba(56, 71, 97, 0.75);
+  transition: opacity 160ms ease-in-out;
+
+  list-style: none;
+  padding: 10px 7px;
+}
+.profile > .authDropdown > li > a,
+.profile > .authDropdown > li > p {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin: 0;
+  padding: 5px 8px;
+  text-align: left;
+}
+.profile > .authDropdown > li {
+  border-radius: 5px;
+  margin: 2px 0;
+  transition: background-color 160ms ease-in-out;
+}
+.profile > .authDropdown > li:hover {
+  background-color: var(--neutral-light);
+}
+
 .cart {
   cursor: pointer;
   transition: transform 160ms ease-in-out;
 }
 .cart:hover {
-  transform: scale(1.05);
+  transform: translateY(2px);
 }
 
 .hamburger {
@@ -112,23 +159,24 @@ nav > ul > li > button > img {
   padding: 4px 6px;
   right: 2px;
   top: 29px;
+  z-index: 1;
 
-  width: 90px;
+  width: 110px;
   border-radius: 8px;
-  background-color: var(--base-content);
-  box-shadow: 0 3px 10px -3px rgba(200, 203, 208, 0.75);
+  background-color: var(--neutral);
+  box-shadow: 0 3px 10px -3px rgba(56, 71, 97, 0.75);
   transition: opacity 160ms ease-in-out;
 }
 .hamburger > .dropdown > li > a {
   display: block;
   text-decoration: none;
-  color: var(--base-100);
-  padding: 4px 6px;
+  color: #fff;
+  padding: 6px 8px;
   transition: background-color 160ms ease-in-out;
+  border-radius: 5px;
 }
 .hamburger > .dropdown > li > a:hover {
-  border-radius: 5px;
-  background-color: var(--base-content-hover);
+  background-color: var(--neutral-light);
 }
 
 @media screen and (max-width: 738px) {

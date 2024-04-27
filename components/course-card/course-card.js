@@ -10,8 +10,8 @@ function html(strings) {
 // Web Component
 const courseCardTemplate = document.createElement("template");
 courseCardTemplate.innerHTML = html`
-  <link rel="stylesheet" href="/components/course-card/course-card.css" />
-  <a href="/course.html" class="main">
+  <link rel="stylesheet" href="components/course-card/course-card.css" />
+  <a href="course.html" class="main">
     <div class="thumbnail">
       <img
         src="https://placehold.co/345x200"
@@ -30,31 +30,31 @@ courseCardTemplate.innerHTML = html`
       <div class="badges"></div>
       <div class="ratings">
         <img
-          src="/public/assets/images/icons/StarFilledIcon.svg"
+          src="public/assets/images/icons/StarFilledIcon.svg"
           width="20"
           height="20"
           alt=""
         />
         <img
-          src="/public/assets/images/icons/StarFilledIcon.svg"
+          src="public/assets/images/icons/StarFilledIcon.svg"
           width="20"
           height="20"
           alt=""
         />
         <img
-          src="/public/assets/images/icons/StarFilledIcon.svg"
+          src="public/assets/images/icons/StarFilledIcon.svg"
           width="20"
           height="20"
           alt=""
         />
         <img
-          src="/public/assets/images/icons/StarFilledIcon.svg"
+          src="public/assets/images/icons/StarFilledIcon.svg"
           width="20"
           height="20"
           alt=""
         />
         <img
-          src="/public/assets/images/icons/StarIcon.svg"
+          src="public/assets/images/icons/StarIcon.svg"
           width="20"
           height="20"
           alt=""
@@ -87,7 +87,7 @@ class CourseCard extends HTMLElement {
     if (thumbnail) {
       this.shadowRoot.querySelector(
         "img"
-      ).src = `/public/assets/images/course-thumbnail/${thumbnail}`;
+      ).src = `public/assets/images/course-thumbnail/${thumbnail}`;
     }
     if (category) {
       const badge = document.createElement("p");
@@ -119,7 +119,7 @@ class CourseCard extends HTMLElement {
     if (id && category) {
       this.shadowRoot.querySelector(
         "a"
-      ).href = `/course.html?id=${id}&category=${category}`;
+      ).href = `course.html?id=${id}&category=${category}`;
     }
   }
 }
