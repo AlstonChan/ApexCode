@@ -4,8 +4,6 @@
     <title>ApexCode | Login</title>
     <!-- component  -->
     <script defer src="components/head/head.js"></script>
-    <script defer type="module" src="components/navbar/navbar.js"></script>
-    <script defer src="components/footer/footer-box.js"></script>
     <!-- scripts -->
     <script defer type="module" src="public/script/firebase-config.js"></script>
     <script defer type="module" src="public/script/login.js"></script>
@@ -13,21 +11,42 @@
     <link rel="stylesheet" href="public/style/pages/auth.css" />
   </head>
   <body>
-    <form id="login-form">
-      <div>
-        <label for="loginEmail">Email</label>
-        <input required type="email" name="loginEmail" id="loginEmail" />
-        <label for="loginEmail" class="errorLabel" id="emailLoginError"></label>
+    <div class="header">
+      <img src="public\assets\images\high-res-logo.png" alt="Apex Code Logo" class="logo" />
+      <h1 class="title">Apex Code</h1>
+    </div>
+    <div class="container right-panel-active">
+      <!-- Sign Up -->
+      <div class="container__form container--signup">
+        <form action="#" class="form" id="form1">
+          <h2 class="form__title">Sign Up</h2>
+          <input type="text" placeholder="User" class="input" />
+          <input type="email" placeholder="Email" class="input" />
+          <input type="password" placeholder="Password" class="input" />
+          <button class="btn">Sign Up</button>
+        </form>
       </div>
-      <div>
-        <label for="loginPassword">Password</label>
-        <input required type="password" name="loginPassword" id="loginPassword" />
-        <label for="loginPassword" class="errorLabel" id="passLoginError"></label>
+      <!-- Sign In -->
+      <div class="container__form container--signin">
+        <form action="#" class="form" id="form2">
+          <h2 class="form__title">Sign In</h2>
+          <input type="email" placeholder="Email" class="input" />
+          <input type="password" placeholder="Password" class="input" />
+          <a href="#" class="link">Forgot your password?</a>
+          <button class="btn">Sign In</button>
+        </form>
       </div>
-      <button type="submit">Login</button>
-    </form>
-    <p class="errorLabel" id="generalError"></p>
-    <p>Don't have an account yet? <a href="/signup.html">Sign Up</a></p>
+      <div class="container__overlay">
+        <div class="overlay">
+          <div class="overlay__panel overlay--left">
+            <button class="btn" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay__panel overlay--right">
+            <button class="btn" id="signUp">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
 <!-- alston@test.com -->
