@@ -6,13 +6,13 @@ main {
   font: bold;
   text-align: center;
   margin: 0;
-  padding: 0 10px ;
+  padding: 0 10px;
 }
 .sectionDesc {
   font-size: var(--fs-lg);
   text-align: center;
   margin: 8px 0 30px 0;
-  padding: 0 10px ;
+  padding: 0 10px;
 }
 /* Call to action */
 .cta {
@@ -73,7 +73,7 @@ main {
   max-width: 1200px;
   margin: 70px auto;
 }
-.top-course{
+.top-course {
   display: flex;
   gap: 25px;
   flex-wrap: wrap;
@@ -106,10 +106,10 @@ main {
 }
 .choose-language::before {
   top: 0;
-  background-image: url(/public/assets/images/wave-top.svg);
+  background-image: url(../assets/images/wave-top.svg);
 }
 .choose-language::after {
-  background-image: url(/public/assets/images/wave-bottom.svg);
+  background-image: url(../assets/images/wave-bottom.svg);
   background-position: bottom;
   bottom: 0;
 }
@@ -182,7 +182,6 @@ main {
   border: none;
   background-color: var(--primary);
   cursor: pointer;
-
 }
 .membership > button:hover {
   background-color: var(--primary-hover);
@@ -236,7 +235,7 @@ main {
   margin: 0 0 80px 0;
 }
 .review-box {
-  background-color:var(--neutral);
+  background-color: var(--neutral);
   border-radius: 12px;
   max-width: 350px;
   padding: 10px 30px 25px;
