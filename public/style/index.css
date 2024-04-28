@@ -1,0 +1,272 @@
+main {
+  text-align: center;
+}
+.sectionHead {
+  font-size: var(--fs-3xl);
+  font: bold;
+  text-align: center;
+  margin: 0;
+  padding: 0 10px;
+}
+.sectionDesc {
+  font-size: var(--fs-lg);
+  text-align: center;
+  margin: 8px 0 30px 0;
+  padding: 0 10px;
+}
+/* Call to action */
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0 120px;
+}
+.cta > h1 {
+  font-size: var(--fs-7xl);
+  max-width: 710px;
+  margin: 50px auto 0;
+  padding: 0 20px;
+}
+.cta > p {
+  font-size: var(--fs-lg);
+  font-weight: normal;
+  max-width: 500px;
+  padding: 0 20px;
+}
+.course-discover {
+  margin: 60px 0 0 0;
+}
+
+@media screen and (max-width: 580px) {
+  .cta > h1 {
+    font-size: var(--fs-5xl);
+  }
+}
+@media screen and (max-width: 350px) {
+  .cta > h1 {
+    font-size: var(--fs-2xl);
+    padding: 0 10px;
+  }
+  .cta > p {
+    font-size: var(--fs-md);
+    padding: 0 10px;
+  }
+}
+.course-discover > a {
+  appearance: none;
+  text-decoration: none;
+  border: none;
+  background-color: var(--primary);
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: var(--fs-xl);
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+.course-discover > a:hover {
+  background-color: var(--primary-hover);
+}
+/* Top rated course */
+.TopRated {
+  max-width: 1200px;
+  margin: 70px auto;
+}
+.top-course {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 20px;
+}
+.top-course > course-card {
+  min-width: 250px;
+  max-width: 350px;
+  width: 100%;
+}
+/* choose language */
+.choose-language {
+  width: 100%;
+  background-color: var(--secondary);
+  position: relative;
+  padding: 250px 20px;
+  color: #fff;
+}
+.choose-language::before,
+.choose-language::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 200px;
+  background-repeat: repeat-x;
+  background-size: cover;
+  left: 0;
+}
+.choose-language::before {
+  top: 0;
+  background-image: url(../assets/images/wave-top.svg);
+}
+.choose-language::after {
+  background-image: url(../assets/images/wave-bottom.svg);
+  background-position: bottom;
+  bottom: 0;
+}
+.choose-language > div > img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  padding: 20px 0;
+  max-width: 1000px;
+}
+
+/* pricing tier */
+.subs {
+  margin: 70px 0;
+}
+.subs .join {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.subscription {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.membership {
+  padding: 30px 70px;
+  border-radius: 35px;
+  background-color: var(--neutral);
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+}
+.membership > h3 {
+  margin: 0;
+  font-size: var(--fs-xl);
+  font-weight: 400;
+}
+.membership-desc {
+  font-size: var(--fs-3xl);
+  font-weight: 700;
+  margin: 15px 0;
+}
+.details {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+.details > li {
+  display: flex;
+  align-items: center;
+}
+.details > li > p {
+  margin: 10px 0;
+}
+.details img {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.membership > button {
+  border-radius: 10px;
+  padding: 15px 70px;
+  margin: auto 0 0 0;
+  border: none;
+  background-color: var(--primary);
+  cursor: pointer;
+}
+.membership > button:hover {
+  background-color: var(--primary-hover);
+}
+.buy-course {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+.one-course {
+  background-color: var(--neutral);
+  width: 1200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 40px;
+}
+.price-buy {
+  font: bold;
+  font-size: var(--fs-xl);
+}
+
+@media screen and (max-width: 815px) {
+  .subscription {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .membership {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* MOK PLEASE ADD CSS HERE FOR SINGLE COURSE  */
+}
+@media screen and (max-width: 475px) {
+  .membership {
+    border-radius: 20px;
+    padding: 25px 30px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .membership > h3 {
+    font-size: var(--fs-lg);
+  }
+  .membership-desc {
+    font-size: var(--fs-xl);
+  }
+}
+/* Review Say */
+.testimonials {
+  margin: 0 0 80px 0;
+}
+.review-box {
+  background-color: var(--neutral);
+  border-radius: 12px;
+  max-width: 350px;
+  padding: 10px 30px 25px;
+  text-align: left;
+}
+.review-box > p.review {
+  margin-bottom: 30px;
+}
+.review-box > div.user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.review-box > div.user > img {
+  width: 60px;
+  height: 60px;
+}
+.review-box > div.user > div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 8px;
+}
+.review-box > div.user > div > * {
+  margin: 0;
+  text-align: left;
+}
+.review-box > div.user > div > h3 {
+  margin: 0 0 5px 0;
+}
+@media screen and (max-width: 666px) {
+  .choose-language {
+    padding: 200px 20px;
+  }
+}
