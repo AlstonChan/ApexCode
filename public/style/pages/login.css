@@ -39,7 +39,7 @@ h1{
 	color: red;	
 	font-size: 12px;
 }
-  
+
 .right-half {
 	position: relative;
 	flex: 1;
@@ -101,11 +101,6 @@ h1{
   
 .form_card button:hover {
 	background-color: #269ed1;
-}
-  
-.reset{
-	text-decoration: underline;
-	font-weight: normal;
 }
 
 .welcome{
