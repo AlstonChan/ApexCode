@@ -12,44 +12,44 @@
     max-width: 600px;
     text-align: center;
 }
-.users{
-    background-color: var(--neutral);
-    height:250px;
-    margin-bottom: 100px;
-    margin-top: 100px;
-}
-.i{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-.j{
+.number{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-
+    justify-content: space-between;
+    background-color: var(--neutral);
+    margin: 150px 0 200px;
 }
-.language > h1{
-    font-size: var(--fs-3xl);
-    text-align: center;
-    margin-top: 100px;
-    justify-content: center;
+.intro{
+    padding: 0 100px;
 }
-.people{
-    justify-content: center;
+.intro > h2{
+    font-size: var(--fs-2xl);
+    text-align: left;
+    margin-top: 50px;
 }
-.people > h1{
-font-size: var(--fs-2xl);
-margin-top: 40px;
-}
-.people > p{
+.intro > p{
     font-size: var(--fs-lg);
-    text-align: center;
+    text-align: left;
+    margin-bottom: 50px;
 }
-.language{
-    display: flex;
-    margin-bottom: 100px;
-
+@media screen and (max-width: 768px) {
+    .number{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro{
+        padding: 0 50px;
+    }
+    .intro > h2{
+        text-align: center;
+        margin-top: 50px;
+    }
+    .intro > p{
+        text-align: center;
+        margin-bottom: 50px;
+    }
 }
 .all{
     display: flex;
@@ -66,18 +66,45 @@ margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    margin-bottom: 100px;
+    text-align: left;
     background-color: var(--neutral);
     border-radius: 50px;
     margin: 0 10px;
-    width: 370px;
+    padding: 15px;
 }
 .history > h1{
     font-size: var(--fs-2xl);
 }
 .history > p{
-    font-size: var(--fs-md);
-    height: 250px;
+    font-size: var(--fs-lg);
+    height: 350px;
     max-width: 350px;
+    padding: 5px;
+}
+@media screen and (max-width: 768px) {
+    .hand{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .history{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: var(--neutral);
+        border-radius: 50px;
+        margin: 0 10px 20px;
+        padding: 15px;
+    }
+    .history > h1{
+        font-size: var(--fs-2xl);
+    }
+    .history > p{
+        font-size: var(--fs-lg);
+        height: 350px;
+        max-width: 350px;
+        padding: 10px;
+    }
+    
 }
