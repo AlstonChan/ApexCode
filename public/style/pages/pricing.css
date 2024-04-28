@@ -58,10 +58,22 @@
 .individual {
   text-align: center;
   border-radius: 15px;
+  background-color: var(--neutral-light);
+  padding: 20px 0 40px 0;
+  margin: 20px 440px;
+}
+.individual > h4 {
+  margin: 0;
+  font-size: var(--fs-xl);
+}
+.individual > h5 {
+  margin: 0;
+  font-size: var(--fs-lg);
 }
 .individual > a {
   margin: 15px 0;
 }
+
 ul {
   list-style: none;
   padding: 0;
@@ -74,27 +86,38 @@ ul > li {
 ul > li > p {
   margin: 0;
 }
-.individual li {
-  margin: 0 auto;
-  padding: 0 0 0 500px;
-}
 
 .difference {
   display: flex;
   justify-content: center;
   margin: 50px auto;
   text-align: center;
+  background-color: var(--info);
+  padding: 10px 0 40px 0;
+}
+
+caption {
+  font-size: var(--fs-3xl);
+  color: var(--base-100);
 }
 
 tr,
 th,
 td {
-  border: black solid 1px;
   padding: 10px;
+}
+
+tr:nth-of-type(3) {
+  background-color: var(--neutral-light);
+}
+tr:nth-last-of-type(2) {
+  background-color: var(--neutral-light);
 }
 
 table {
   background-color: var(--neutral);
+  box-shadow: 5px 5px 5px 5px var(--base-content);
+  border-radius: 10px;
 }
 
 a {
