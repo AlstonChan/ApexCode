@@ -155,7 +155,7 @@ main {
 .membership-desc {
   font-size: var(--fs-3xl);
   font-weight: 700;
-  margin: 15px 0;
+  margin: 15px -14px;
 }
 .details {
   text-align: left;
@@ -204,7 +204,10 @@ main {
   font: bold;
   font-size: var(--fs-xl);
 }
-
+.details{
+margin: auto;
+padding: 20px;
+}
 @media screen and (max-width: 815px) {
   .subscription {
     flex-direction: column;
@@ -215,7 +218,11 @@ main {
   }
 }
 @media screen and (max-width: 640px) {
-  /* MOK PLEASE ADD CSS HERE FOR SINGLE COURSE  */
+  .one-course{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
 }
 @media screen and (max-width: 475px) {
   .membership {
@@ -265,6 +272,9 @@ main {
 }
 .review-box > div.user > div > h3 {
   margin: 0 0 5px 0;
+}
+.user > img{
+  border-radius: 50px;
 }
 @media screen and (max-width: 666px) {
   .choose-language {
