@@ -4,25 +4,26 @@
     <title>ApexCode | Customer Feedback</title>
     <!-- component  -->
     <script defer src="/components/head/head.js"></script>
-    <script defer src="/components/navbar/navbar.js"></script>
+    <script defer type="module" src="/components/navbar/navbar.js"></script>
     <script defer src="/components/course-card/course-card.js"></script>
     <script defer src="/components/footer/footer-box.js"></script>
     <!-- scripts -->
     <script defer src="/public/script/all-course.js"></script>
     <!-- stylesheet -->
-    <link
-      rel="stylesheet"
-      href="public/style/pages/customer_feedback_page.css"
-    />
+    <link rel="stylesheet" href="public/style/pages/customer_feedback.css" />
   </head>
+
   <body>
-    <h1>Customer Feedback</h1>
-    <p>
-      Share your experience with us! <br />
-      Whether it's a suggestion, complaint, or compliment, <br />
-      your feedback helps us understand your needs better.
-    </p>
-    <form class="form" action="" method="">
+    <div class="hero">
+      <h1>Customer Feedback</h1>
+      <p>
+        Share your experience with us! <br />
+        Whether it's a <br />
+        suggestion, complaint, or compliment, <br />
+        your feedback helps us understand your needs better.
+      </p>
+    </div>
+    <form class="form" action="" method="get">
       <div class="textarea">
         <div class="left">
           <label for="name">Name:</label><br />
@@ -45,6 +46,7 @@
             required
             rows="6"
             cols="25"
+            resize="none"
           ></textarea>
         </div>
       </div>
