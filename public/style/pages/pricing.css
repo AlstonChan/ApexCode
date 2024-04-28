@@ -92,13 +92,14 @@ ul > li > p {
   justify-content: center;
   margin: 50px auto;
   text-align: center;
-  background-color: var(--info);
+  background-color: var(--secondary);
   padding: 10px 0 40px 0;
 }
 
 caption {
   font-size: var(--fs-3xl);
   color: var(--base-100);
+  font-weight: 500;
 }
 
 tr,
