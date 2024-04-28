@@ -10,7 +10,10 @@
     <!-- scripts -->
     <script defer src="/public/script/all-course.js"></script>
     <!-- stylesheet -->
-    <link rel="stylesheet" href="" />
+    <link
+      rel="stylesheet"
+      href="public/style/pages/customer_feedback_page.css"
+    />
   </head>
   <body>
     <h1>Customer Feedback</h1>
@@ -19,24 +22,35 @@
       Whether it's a suggestion, complaint, or compliment, <br />
       your feedback helps us understand your needs better.
     </p>
-    <form>
-      <fieldset>
-        <label for="name">Name:</label><br />
-        <input type="text" id="name" /><br />
-        <label for="email">Email:</label><br />
-        <input type="email" id="email" /><br />
-        <label for="subject">Subject:</label><br />
-        <input type="text" id="subject" /><br />
-        <label for="message">Feedback:</label><br />
-        <textarea
-          id="feedback"
-          placeholder="Write your feedback here."
-          rol="50"
-          cols="60"
-        ></textarea
-        ><br />
+    <form class="form" action="" method="">
+      <div class="textarea">
+        <div class="left">
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" required /><br />
+          <label for="email">Email:</label><br />
+          <input
+            type="email"
+            id="email"
+            placeholder="abc@gmail.com"
+            required
+          /><br />
+          <label for="subject">Subject:</label><br />
+          <input type="text" id="subject" required /><br />
+        </div>
+        <div class="right">
+          <label for="message">Feedback:</label><br />
+          <textarea
+            id="feedback"
+            placeholder="Write your feedback here."
+            required
+            rows="6"
+            cols="25"
+          ></textarea>
+        </div>
+      </div>
+      <div style="display: flex">
         <button id="submit">Submit</button>
-      </fieldset>
+      </div>
     </form>
   </body>
 </html>

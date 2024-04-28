@@ -1,0 +1,17 @@
+.form {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+}
+.textarea {
+  display: flex;
+  resize: none;
+  max-width: 100%;
+  min-width: 100%;
+}
+#submit {
+  margin: 0 0 0 auto;
+}
