@@ -11,8 +11,10 @@ body {
     font-style: normal;
 }
     
-h1{
-    font-size: 40px;
+h1 a{
+    font-size: 36px;
+	text-decoration: none;
+	color: inherit;
 }
 
 .container {
@@ -63,9 +65,20 @@ h1{
     
 .input_grp input {
     width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+	padding: 8px 12px;
+	font-size: 16px;
+	line-height: 1.5;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	box-sizing: border-box;
+	background-color: #fff;
+	border: 1px solid #dfe3e8;
+	border-radius: 4px;
+}
+
+.input_grp:focus {
+    border-color: #5e6c84;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(95, 115, 140, 0.3);
 }
     
 .form_card button {
@@ -86,7 +99,7 @@ h1{
 
 .new_acc{
     font-weight: bold;
-    font-size: 25px;
+    font-size: 28px;
 }
   
 .link_login a {
