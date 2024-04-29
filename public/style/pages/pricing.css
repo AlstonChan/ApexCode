@@ -1,6 +1,6 @@
 .hero {
-  padding: 30px 20px;
-  margin-bottom: 50px;
+  padding: 30px 20px 40px;
+  margin-bottom: 80px;
   text-align: center;
   background-color: var(--neutral);
   color: var(--base-content);
@@ -17,6 +17,7 @@
   font-size: var(--fs-lg);
   margin: 0 auto 10px;
   max-width: 400px;
+  line-height: 1.9rem;
 }
 
 .priceList {
@@ -27,18 +28,25 @@
   margin: 10px 0 30px;
   font-size: var(--fs-2xl);
 }
+.priceContent {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+}
 .cardContainer {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   margin: 0 auto;
   gap: 50px;
-  max-width: 800px;
+  width: 100%;
 }
 .card {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 
+  max-width: 400px;
   padding: 30px;
   border-radius: 15px;
   background-color: var(--neutral-light);
@@ -46,32 +54,57 @@
   box-shadow: 10px 10px 30px -10px #3948618c;
   width: 100%;
 }
+.individual > h3,
 .card > h3 {
   margin: 0;
   font-size: var(--fs-xl);
 }
+.individual > p,
 .card > p.price {
   margin: 5px 0;
   font-size: var(--fs-3xl);
 }
 
+@media screen and (max-width: 850px) {
+  .cardContainer {
+    gap: 30px;
+  }
+}
+
 .individual {
+  display: flex;
+  flex-direction: column;
+
   text-align: center;
   border-radius: 15px;
   background-color: var(--neutral-light);
-  padding: 20px 0 40px 0;
-  margin: 20px 440px;
+  padding: 20px 30px 40px;
+  margin: 30px 0;
+  width: 100%;
+
+  box-shadow: 10px 10px 30px -10px #3948618c;
 }
-.individual > h4 {
-  margin: 0;
-  font-size: var(--fs-xl);
+.individual > ul {
+  text-align: left;
+  padding: 20px 0 30px;
+  max-width: 300px;
+  margin: 0 auto;
+  width: 100%;
 }
-.individual > h5 {
-  margin: 0;
-  font-size: var(--fs-lg);
-}
-.individual > a {
-  margin: 15px 0;
+
+@media screen and (max-width: 800px) {
+  .cardContainer {
+    flex-direction: column;
+  }
+  .card > ul {
+    max-width: 300px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .individual {
+    max-width: 400px;
+    margin: 30px auto 0;
+  }
 }
 
 ul {
@@ -90,10 +123,21 @@ ul > li > p {
 .difference {
   display: flex;
   justify-content: center;
-  margin: 50px auto;
+  margin: 50px auto 0;
   text-align: center;
   background-color: var(--secondary);
-  padding: 10px 0 40px 0;
+  padding: 100px 0 120px 0;
+
+  background: linear-gradient(
+    180deg,
+    rgba(15, 23, 42, 1) 0%,
+    rgba(129, 140, 248, 1) 50%,
+    rgba(30, 41, 59, 1) 100%
+  );
+}
+.difference > div {
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 caption {
@@ -117,8 +161,16 @@ tr:nth-last-of-type(2) {
 
 table {
   background-color: var(--neutral);
-  box-shadow: 5px 5px 5px 5px var(--base-content);
   border-radius: 10px;
+  overflow: scroll;
+
+  box-shadow: 10px 10px 30px -5px #3948618c;
+}
+table > caption {
+  font-size: var(--fs-3xl);
+  color: #fff;
+  font-weight: 500;
+  padding: 20px 10px;
 }
 
 a {
@@ -140,7 +192,4 @@ a {
 a:hover {
   background-color: var(--neutral-hover);
   box-shadow: 10px 10px 30px 6px #1e293ba3;
-}
-
-@media screen and (max-width: 350px) {
 }
