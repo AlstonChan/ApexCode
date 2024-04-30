@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ApexCode | Payment Gateway</title>
+    <!-- component  -->
+    <script defer src="/components/head/head.js"></script>
+    <script defer src="/components/navbar/navbar.js"></script>
+    <script defer src="/components/course-card/course-card.js"></script>
+    <script defer src="/components/footer/footer-box.js"></script>
+    <!-- scripts -->
+    <script defer src="/public/script/all-course.js"></script>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="public/style/pages/payment_gateway.css" />
+  </head>
+  <body>
+    <h1>Payment Gateway</h1>
+    <br />
+    <div id="display_price"><h1>RM</h1></div>
+    <div id="payment_form">
+      <form id="payment_gateway">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" required /><br />
+        <label for="card_number">Card number:</label><br />
+        <input
+          type="text"
+          id="card_number"
+          placeholder="**** **** **** ****"
+          required
+        /><br />
+        <label for="CVC/CVV2">CVC/CVV2:</label><br />
+        <input type="text" id="CVC/CVV2" placeholder="***" required /><br />
+        <label for="date">Expiry date:</label><br />
+        <input type="month" id="date" required /><br />
+        <label for="country">Issuing Country:</label><br />
+        <input type="text" id="country" required /><br />
+        <label for="bank">Issuing Bank:</label><br />
+        <input type="text" id="bank" required /><br />
+        <button id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
