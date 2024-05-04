@@ -37,9 +37,9 @@
 .left,
 .right {
   padding: 10px 10px;
-  background-color: var(--info);
   color: var(--info-content);
   border-radius: 3px;
+  background-color: var(--info);
 }
 .right > textarea {
   display: flex;

@@ -1,3 +1,68 @@
-form {
-  float: right;
+.payment {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 200px;
+}
+
+#price {
+  font-size: var(--fs-2xl);
+}
+
+.gateway {
+  font-size: var(--fs-lg);
+  margin: 0 0 50px 0;
+}
+
+.success {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#spinner {
+  display: none;
+  padding: 0 0 0 40px;
+  animation-name: spinner;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.pop_up {
+  display: none;
+}
+#popup {
+  display: none;
+  flex-direction: column;
+}
+
+span {
+  font-size: var(--fs-lg);
+}
+
+a {
+  margin: auto;
+  text-align: center;
+  max-width: 150px;
+
+  color: var(--primary);
+  background-color: var(--neutral);
+
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 800;
+  box-shadow: 10px 10px 30px 1px #1e293ba3;
+
+  transition: box-shadow 0.3s, background-color 0.3s;
+}
+a:hover {
+  background-color: var(--neutral-hover);
+  box-shadow: 10px 10px 30px 6px #1e293ba3;
 }
