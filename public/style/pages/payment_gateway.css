@@ -1,16 +1,43 @@
+.hero {
+  padding: 30px 20px 40px;
+  margin-bottom: 80px;
+  text-align: center;
+  background-color: var(--neutral);
+  color: var(--base-content);
+}
+#price {
+  font-size: var(--fs-2xl);
+}
+
 .payment {
   display: flex;
   justify-content: space-evenly;
   gap: 200px;
 }
 
-#price {
-  font-size: var(--fs-2xl);
+.payment_form {
+  background-color: var(--neutral-light);
+  padding: 10px 20px;
+  margin: 100px 0;
+  border-radius: 15px;
 }
-
+.payment_form > h3 {
+  text-align: center;
+}
 .gateway {
-  font-size: var(--fs-lg);
-  margin: 0 0 50px 0;
+  font-size: var(--fs-xl);
+  margin: 0 0 20px 0;
+}
+.btn {
+  text-align: center;
+}
+.btn > button {
+  font-weight: 500;
+  margin-top: 20px;
+  padding: 0 70px;
+}
+input {
+  border-radius: 10px;
 }
 
 .success {
@@ -65,4 +92,10 @@ a {
 a:hover {
   background-color: var(--neutral-hover);
   box-shadow: 10px 10px 30px 6px #1e293ba3;
+}
+
+@media screen and (max-width: 800px) {
+  .payment {
+    flex-direction: column;
+  }
 }

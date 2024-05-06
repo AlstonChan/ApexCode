@@ -2,6 +2,7 @@ var price = document.getElementById("price");
 localStorage.getItem("price"); //follow martin part
 document.write("RM" + price);
 
+document.getElementById("spinner").addEventListener(onclick,animationFunction());
 var spinner = document.getElementById("spinner");
 
 var popup = document.getElementById("popup");
