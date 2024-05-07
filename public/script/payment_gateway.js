@@ -2,19 +2,22 @@ var price = document.getElementById("price");
 localStorage.getItem("price"); //follow martin part
 document.write("RM" + price);
 
-document.getElementById("spinner").addEventListener(onclick,animationFunction());
-var spinner = document.getElementById("spinner");
+//document.getElementById("pay").addEventListener("click", displayFunction);
 
+var audio = document.getElementById("audio");
 var popup = document.getElementById("popup");
 
-var id = document.getElementById("audio");
+//function displayFunction() {
+//  audio.play();
+//  popup.style.display = "flex";
+//}
 
-function animationFunction(){
-    spinner.style.display = "block";
-    setTimeout(function(){
-        spinner.style.display = "none";
-        popup.style.display = "flex";
-    },2000)
-    
+//document.getElementById("pay").addEventListener("click", () => {
+//  audio.play();
+//  popup.style.display = "flex";
+//});
+
+if (document.getElementById("pay").click) {
+  audio.play();
+  popup.setAttribute("style", "display: flex");
 }
-

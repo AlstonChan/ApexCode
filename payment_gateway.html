@@ -19,45 +19,47 @@
     </div>
     <div class="payment">
       <div id="price"><h1>RM</h1></div>
-      <div class="success">
-        <div id="spinner">
-          <img
-            src="public/assets/images/spinner.png"
-            alt="spinner"
-            height="200"
-            width="200"
-          />
-        </div>
-        <div class="pop_up">
-          <div id="popup">
-            <audio id="audio" autoplay>
-              <source src="public/assets/audio/payment_successful.mp3" />
-            </audio>
-            <span>Congrats! Payment successfully</span><br />
-            <a href="learn.html">Back to the course</a>
-          </div>
+      <div>
+        <div id="popup">
+          <audio id="audio">
+            <source src="public/assets/audio/payment_successful.mp3" />
+          </audio>
+          <span>Congrats! Payment successfully</span><br />
+          <a href="learn.html">Back to the course</a>
         </div>
       </div>
       <div class="payment_form">
         <h3>Payment Form</h3>
         <form class="gateway">
-          <label for="name">Name:</label><br />
-          <input type="text" id="name" required /><br />
-          <label for="card_number">Card number:</label><br />
-          <input
-            type="text"
-            id="card_number"
-            placeholder="0000 0000 0000 0000"
-            required
-          /><br />
-          <label for="CVC/CVV2">CVC/CVV2:</label><br />
-          <input type="text" id="CVC/CVV2" placeholder="000" required /><br />
-          <label for="date">Expiry date:</label><br />
-          <input type="month" id="date" required /><br />
-          <label for="country">Issuing Country:</label><br />
-          <input type="text" id="country" required /><br />
-          <label for="bank">Issuing Bank:</label><br />
-          <input type="text" id="bank" required /><br />
+          <div class="info">
+            <label for="name">Name</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="info">
+            <label for="card_number">Card number</label>
+            <input
+              type="text"
+              id="card_number"
+              placeholder="0000 0000 0000 0000"
+              required
+            />
+          </div>
+          <div class="info">
+            <label for="CVC/CVV2">CVC/CVV2</label>
+            <input type="text" id="CVC/CVV2" placeholder="000" required />
+          </div>
+          <div class="info">
+            <label for="date">Expiry date</label>
+            <input type="month" id="date" required />
+          </div>
+          <div class="info">
+            <label for="country">Issuing Country</label>
+            <input type="text" id="country" required />
+          </div>
+          <div class="info">
+            <label for="bank">Issuing Bank</label>
+            <input type="text" id="bank" required />
+          </div>
           <div class="btn"><button id="pay">Pay</button></div>
         </form>
       </div>

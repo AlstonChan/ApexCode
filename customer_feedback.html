@@ -24,30 +24,37 @@
     <form class="form" action="customer_feedback.html" method="get">
       <div class="textarea">
         <div class="left">
-          <label for="name">Name</label><br />
-          <input name="name" type="text" id="name" required /><br />
-          <label for="email">Email</label><br />
-          <input
-            name="email"
-            type="email"
-            id="email"
-            placeholder="abc@gmail.com"
-            required
-          /><br />
-          <label for="subject">Subject</label><br />
-          <input name="subject" type="text" id="subject" required /><br />
+          <div class="form_detail">
+            <label for="name">Name</label>
+            <input name="name" type="text" id="name" required />
+          </div>
+          <div class="form_detail">
+            <label for="email">Email</label>
+            <input
+              name="email"
+              type="email"
+              id="email"
+              placeholder="abc@gmail.com"
+              required
+            />
+          </div>
+          <div class="form_detail">
+            <label for="subject">Subject</label>
+            <input name="subject" type="text" id="subject" required />
+          </div>
         </div>
         <div class="right">
-          <label for="message">Feedback</label><br />
-          <textarea
-            id="feedback"
-            placeholder="Write your feedback here."
-            required
-            rows="6"
-            cols="25"
-            resize="none"
-            name="feedback"
-          ></textarea>
+          <div class="form_detail">
+            <label for="message">Feedback</label>
+            <textarea
+              id="feedback"
+              placeholder="Write your feedback here."
+              required
+              rows="6"
+              cols="25"
+              name="feedback"
+            ></textarea>
+          </div>
         </div>
       </div>
       <div>
