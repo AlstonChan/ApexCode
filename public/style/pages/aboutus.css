@@ -1,4 +1,3 @@
-
 .about-apex{
     display: flex;
     flex-direction: column;
@@ -18,7 +17,10 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: var(--neutral);
-    margin: 150px 0 140px;
+    max-width: 2400px;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 140px;
 }
 .intro{
     padding: 0 100px;
