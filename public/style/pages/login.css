@@ -3,24 +3,51 @@
   font-size: var(--fs-sm);
 }
 
-body {
-	margin: 0;
+main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex: 100;
+    margin-bottom: 100px;
+  }
+  
+nav {
+    padding: 30px 20px;
+    display: flex;
+	
+}
+
+.logo{
+	margin-bottom: 600px;
 }
   
-h1 a{
-	font-size: 36px;
-	text-decoration: none;
-	color: inherit;
+nav > a > img {
+    width: 80px;
+    height: auto;
 }
+
+nav > a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+nav > a > h1 {
+    font-size: var(--fs-2xl);
+    color: #fff;
+    margin-left: 10px;
+}
+
+nav > a:hover > h1 {
+    text-decoration: underline;
+}
+
 .container {
 	display: flex;
 	height: 100vh;
 	background-image: url("/public/assets/images/lang.jpg");
 }
   
-.logo{
-	margin-right: 20px;
-}
 .left-half {
 	flex: 1;
 	padding: 20px;

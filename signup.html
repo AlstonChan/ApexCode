@@ -12,38 +12,72 @@
   </head>
   <body>
     <div class="container">
-      <div class="left-half">
-        <div class="logo">
-          <a href="index.html"><img src="public\assets\images\high-res-logo.png" alt="Apex Logo"></a>
+      <nav class="logo">
+        <a href="index.html">
+          <img
+            src="public/assets/images/high-res-logo.png"
+            width="50"
+            height="50"
+            alt="Apex Logo"
+          />
+          <h1>Apex Code</h1>
+        </a>
+        <div class="link_login">
+          <p>Already have an account ? &nbsp; <a href="login.html"> Login</a></p>
         </div>
-        <h1><a href="index.html">Apex Code</a></h1>
+      </nav>
+      <main>
         <div class="form_card">
           <p class="new_acc">Create Account</p>
-          <form id="form_card">
+          <form id="signup-form">
             <div class="input_grp">
-              <input required type="text" name="signUpUsername" id="signUpUsername" placeholder="Username" required/>
-              <label for="signUpUsername" class="errorLabel" id="usernameSignUpError"></label>
+              <input
+                type="text"
+                name="signUpUsername"
+                id="signUpUsername"
+                placeholder="Username"
+                required
+              />
+              <label
+                for="signUpUsername"
+                class="errorLabel"
+                id="usernameSignUpError"
+              ></label>
             </div>
             <div class="input_grp">
-              <input required type="email" name="signUpEmail" id="signUpEmail" placeholder="Email" required/>
+              <input
+                type="email"
+                name="signUpEmail"
+                id="signUpEmail"
+                placeholder="Email"
+                required
+              />
               <label for="signUpEmail" class="errorLabel" id="emailSignUpError"></label>
             </div>
             <div class="input_grp">
-              <input required type="password" name="signUpPassword" id="signUpPassword" placeholder="Password" required/>
+              <input
+                type="password"
+                name="signUpPassword"
+                id="signUpPassword"
+                placeholder="Password"
+                required
+              />
               <label for="signUpPassword" class="errorLabel" id="passSignUpError"></label>
             </div>
             <div class="input_grp">
-              <input required type="password" name="confPass" id="confPass" placeholder="Confirm Password"/>
+              <input
+                type="password"
+                name="confPass"
+                id="confPass"
+                placeholder="Confirm Password"
+              />
               <label for="confPass" class="errorLabel" id="confPassError"></label>
             </div>
             <button type="submit">Sign Up</button>
           </form>
-
         </div>
-        <div class="link_login">
-          <p>Already have an account ? &nbsp; <a href="/login.html"> Login</a></p>
-        </div>
-      </div>
+      </main>
     </div>
+
   </body>
 </html>
