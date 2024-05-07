@@ -10,7 +10,6 @@
   <body>
     <div class="container">
       <!--Left-->
-      <div class="left-half">
         <nav class="logo">
           <a href="index.html">
             <img
@@ -21,30 +20,28 @@
             />
             <h1>Apex Code</h1>
           </a>
+          <div class="link_login">
+            <p>New Here ?  &nbsp; <a href="signup.html">Register now</a></p>
+          </div>
         </nav>
-        <div class="form_card">
-          <p class="welcome">Welcome Back !</p>
-          <form id="login-form">
-            <div class="input_grp">
-              <input required type="email" name="loginEmail" id="loginEmail" placeholder="Email" required/>
-              <label for="loginEmail" class="errorLabel" id="emailLoginError"></label>
-            </div>
-            <div class="input_grp">
-              <input required type="password" name="loginPassword" id="loginPassword" placeholder="Password" required/>
-              <label for="loginPassword" class="errorLabel" id="passLoginError"></label>
-            </div>
-            <button type="submit">Login</button>
-          </form>
-          <p class="errorLabel" id="generalError"></p>
-        </div>
-      </div>
-      <!--Right-->
-      <div class="right-half">
-        <div class="new">
-          <p>New Here ?</p>
-          <p><a href="/signup.html" style="text-decoration: none; color: #b0ceef;"><u>Register now</u></a> and unlock</p>
-          <p>A world of new knowledge !</p>
-        </div>
+        <main>
+          <div class="form_card">
+            <p class="welcome">Welcome Back !</p>
+            <form id="login-form">
+              <div class="input_grp">
+                <input required type="email" name="loginEmail" id="loginEmail" placeholder="Email" required/>
+                <label for="loginEmail" class="errorLabel" id="emailLoginError"></label>
+              </div>
+              <div class="input_grp">
+                <input required type="password" name="loginPassword" id="loginPassword" placeholder="Password" required/>
+                <label for="loginPassword" class="errorLabel" id="passLoginError"></label>
+              </div>
+              <button type="submit">Login</button>
+            </form>
+            <p class="errorLabel" id="generalError"></p>
+          </div>
+        </main>
     </div>
+       
   </body>
 </html>
