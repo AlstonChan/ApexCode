@@ -6,13 +6,13 @@ main {
   font: bold;
   text-align: center;
   margin: 0;
-  padding: 0 10px ;
+  padding: 0 10px;
 }
 .sectionDesc {
   font-size: var(--fs-lg);
   text-align: center;
   margin: 8px 0 30px 0;
-  padding: 0 10px ;
+  padding: 0 10px;
 }
 /* Call to action */
 .cta {
@@ -73,7 +73,7 @@ main {
   max-width: 1200px;
   margin: 70px auto;
 }
-.top-course{
+.top-course {
   display: flex;
   gap: 25px;
   flex-wrap: wrap;
@@ -160,8 +160,8 @@ main {
 .details {
   text-align: left;
   list-style: none;
-  padding: 0;
-  margin: 0 0 20px 0;
+  padding: 20px 0;
+  margin: 0;
 }
 .details > li {
   display: flex;
@@ -182,7 +182,6 @@ main {
   border: none;
   background-color: var(--primary);
   cursor: pointer;
-
 }
 .membership > button:hover {
   background-color: var(--primary-hover);
@@ -199,15 +198,13 @@ main {
   justify-content: space-evenly;
   align-items: center;
   border-radius: 40px;
+  padding: 10px;
 }
 .price-buy {
   font: bold;
   font-size: var(--fs-xl);
 }
-.details{
-margin: auto;
-padding: 20px;
-}
+
 @media screen and (max-width: 815px) {
   .subscription {
     flex-direction: column;
@@ -218,7 +215,7 @@ padding: 20px;
   }
 }
 @media screen and (max-width: 640px) {
-  .one-course{
+  .one-course {
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -243,23 +240,29 @@ padding: 20px;
   margin: 0 0 80px 0;
 }
 .review-box {
-  background-color:var(--neutral);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--neutral);
   border-radius: 12px;
   max-width: 350px;
-  padding: 10px 30px 25px;
+  gap: 20px;
+  padding: 30px;
   text-align: left;
 }
 .review-box > p.review {
-  margin-bottom: 30px;
+  margin: 0;
 }
 .review-box > div.user {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin: auto 0 0 0;
 }
 .review-box > div.user > img {
   width: 60px;
   height: 60px;
+  object-fit: cover;
+  object-position: center;
 }
 .review-box > div.user > div {
   display: flex;
@@ -273,7 +276,7 @@ padding: 20px;
 .review-box > div.user > div > h3 {
   margin: 0 0 5px 0;
 }
-.user > img{
+.user > img {
   border-radius: 50px;
 }
 @media screen and (max-width: 666px) {

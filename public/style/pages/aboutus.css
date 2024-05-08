@@ -1,178 +1,192 @@
-.about-apex{
-    display: flex;
-    flex-direction: column;
+.about-apex {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
 }
-.about-apex > h1{
-    font-size: var(--fs-7xl);
-    text-align: center;
-    margin: 100px 0 20px;
+.about-apex > h1 {
+  font-size: var(--fs-7xl);
+  text-align: center;
+  margin: 100px 0 20px;
 }
-.about-apex > p{
-    font-size: var(--fs-xl);
-    max-width: 600px;
-    text-align: center;
+.about-apex > p {
+  font-size: var(--fs-xl);
+  max-width: 600px;
+  text-align: center;
 }
-.number{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: var(--neutral);
-    max-width: 2400px;
-    margin: auto;
-    margin-top: 150px;
-    margin-bottom: 140px;
+.numberContainer {
+  background-color: var(--neutral);
 }
-.intro{
-    padding: 0 100px;
+.number {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: auto;
+  margin-top: 150px;
+  margin-bottom: 140px;
 }
-.intro > h2{
-    font-size: var(--fs-2xl);
-    text-align: left;
-    margin-top: 50px;
+.intro {
+  padding: 40px 20px;
 }
-.intro > p{
-    font-size: var(--fs-lg);
-    text-align: left;
-    margin-bottom: 50px;
+.intro > h2 {
+  font-size: var(--fs-3xl);
+  text-align: left;
+  margin: 0 0 10px 0;
+}
+.intro > p {
+  font-size: var(--fs-lg);
+  text-align: left;
+  margin: 0;
+  max-width: 350px;
 }
 @media screen and (max-width: 768px) {
-    .number{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .intro{
-        padding: 0 50px;
-    }
-    .intro > h2{
-        text-align: center;
-        margin-top: 50px;
-    }
-    .intro > p{
-        text-align: center;
-        margin-bottom: 50px;
-    }
-}
-.all{
+  .number {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+  }
+  .intro {
+    padding: 0 50px;
+  }
+  .intro > h2 {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .intro > p {
+    text-align: center;
+    margin-bottom: 50px;
+  }
 }
-.miss-and-viss{
+.all {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.miss-and-viss {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  max-width: 100%;
+}
+.history1 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 10px;
+  justify-content: space-evenly;
+}
+.history {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: var(--neutral);
+  border-radius: 20px;
+  padding: 40px 50px;
+}
+.history > h2 {
+  font-size: var(--fs-3xl);
+  margin: 0;
+}
+.history > p {
+  font-size: var(--fs-xl);
+  max-width: 500px;
+}
+.value {
+  display: flex;
+  gap: 10px;
+}
+.value-head {
+  background-color: var(--neutral);
+  border-radius: 20px;
+  max-width: 500px;
+  padding: 40px 50px;
+  flex: 1 1 0;
+}
+.value-head > h2 {
+  font-size: var(--fs-3xl);
+  margin: 0 0 20px;
+}
+.value-head > p {
+  font-size: var(--fs-xl);
+}
+.value-details {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1 1 0;
+  gap: 10px;
+}
+.value-det1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.value-det {
+  background-color: var(--neutral);
+  border-radius: 20px;
+  max-width: 360px;
+  padding: 30px;
+  flex: 1;
+}
+.value-det > h3 {
+  font-size: var(--fs-xl);
+  margin: 0;
+}
+.value-det > p {
+  font-size: var(--fs-lg);
+  margin: 0;
+}
+@media screen and (max-width: 980px) {
+  .value {
     display: flex;
     flex-direction: column;
-    margin-bottom: 100px;
+    align-items: center;
+  }
+  .value-head {
+    width: 100%;
+    max-width: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .history1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .history {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 630px) {
+  .value-details {
+    flex-direction: column;
+  }
+  .value-det {
     max-width: 100%;
-}
-.history1{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 10px;
-    justify-content: space-evenly;
-}
-.history{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    background-color: var(--neutral);
-    border-radius: 20px;
-    margin: 0 10px;
-    padding: 20px 50px 0;
-    height: 300px;
-}
-.history > h1{
-    font-size: var(--fs-3xl);
-    margin: 35px 0 -15px;
-}
-.history > p{
-    font-size: var(--fs-xl);
-    height: 170px;
-    max-width: 500px;
-}
-.value{
-    display: flex; 
-}
-.value-head{
-    background-color: var(--neutral);
-    border-radius: 20px;
-    max-width: 500px;
-    margin: 10px 10px 0;
-    padding: 50px 50px 0;   
-    max-height: 300px;
-    flex: 1 1 0;
-}
-.value-head > h2{
-    font-size: var(--fs-3xl);
-    margin: 0 0 20px;
-}
-.value-head > p{
-    font-size: var(--fs-xl);
-}
-.value-details{
-    display: flex;
-    justify-content: space-evenly;
-    max-height: 300px;
-    flex: 1 1 0;
-}
-.value-det{
-    background-color: var(--neutral);
-    border-radius: 20px;
-    height: 165px;
-    max-width: 350px;
-    height: 140px;
-    max-width: 360px;
-    margin: 10px 5px 0;
-    padding: 23px 12px 1px;
-}
-.value-det > h3{
-    font-size: var(--fs-xl);
-    margin: 0;
-}
-.value-det > p{
+  }
+  .about-apex > h1 {
+    font-size: var(--fs-5xl);
+  }
+  .about-apex > p {
     font-size: var(--fs-lg);
-    margin: 0;
+  }
 }
-@media screen and (max-width: 900px){
-    .history1{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .history{
-        margin: 10px;
-        padding: 0px 12px 6px;
-    }
-}
-@media screen and (max-width: 980px){
-    .value{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-@media screen and (max-width: 500px){
-    .history{
-        text-align: center;
-    }
-    .value-head{
-        text-align: center;
-    }
-    .value-details{
-        display: flex;
-        flex-direction: column;
-        max-height: 900px;
-    }
-    .value-det{
-        max-width: 250px;
-        max-height: 500px;
-        text-align: center;
-    }
-}
-@media screen and (max-width: 620px){
-    .about-apex > h1{
-        font-size: var(--fs-5xl);
-    }
-    .about-apex > p{
-        font-size: var(--fs-lg);
-    }
+@media screen and (max-width: 500px) {
+  .history,
+  .value-head {
+    padding: 30px 20px;
+  }
+  .history > h2,
+  .value-head > h2 {
+    font-size: var(--fs-2xl);
+  }
+  .history > p,
+  .value-head > p {
+    font-size: var(--fs-lg);
+  }
+  .value-det {
+    padding: 30px 20px;
+  }
 }
