@@ -1,4 +1,6 @@
 const courseCardContainer = document.getElementById("course-card-container");
+// search
+const searchInput = document.getElementById("course-search");
 // Get filter button
 const filterDrawer = document.getElementById("filter-drawer");
 const filterBtn = document.getElementById("filter");
@@ -102,6 +104,29 @@ const filterState = new Proxy(
     },
   }
 );
+
+const showList = () => {
+  const matchedCourses = allCourseCard.filter((course) => {
+    const title = course.shadowRoot.querySelector("h2").textContent.toLowerCase();
+    const description = course.shadowRoot.querySelector("p").textContent.toLowerCase();
+    return title.includes(search_term) || description.includes(search_term);
+  });
+
+  allCourseCard.forEach((course) => {
+    if (matchedCourses.includes(course)) {
+      course.style.display = "block";
+    } else {
+      course.style.display = "none";
+    }
+  });
+
+  return matchedCourses;
+};
+
+searchInput.addEventListener("input", (e) => {
+  search_term = event.target.value.toLowerCase();
+  console.log(showList());
+});
 
 // toggleFilterDrawer(true);
 filterBtn.addEventListener("click", () => {

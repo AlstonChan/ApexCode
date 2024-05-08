@@ -1,0 +1,61 @@
+.hero {
+  padding: 10px 10px;
+  margin-bottom: 50px;
+  text-align: center;
+  background-color: var(--neutral);
+  color: var(--base-content);
+}
+.hero > h1 {
+  font-size: var(--fs-4xl);
+  margin-bottom: 15px;
+}
+.hero > p {
+  font-size: var(--fs-xl);
+  margin: 0 auto 10px;
+  max-width: 400px;
+  width: 500px;
+}
+
+.form {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  padding: 10px 100px 10px 100px;
+}
+.textarea {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: row;
+  max-width: 500px;
+  width: 100%;
+  font-size: var(--fs-2xl);
+}
+.left,
+.right {
+  padding: 10px 10px;
+  background-color: var(--info);
+  color: var(--info-content);
+  border-radius: 3px;
+}
+.right > textarea {
+  display: flex;
+  resize: none;
+  max-width: 100%;
+  min-width: 100%;
+}
+#submit {
+  margin: 10px auto;
+  font-size: var(--fs-xl);
+  box-shadow: 2px 1px var(--base-content);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .textarea {
+    flex-direction: column;
+  }
+}

@@ -134,3 +134,47 @@ main.learn {
   color: var(--base-content);
   margin: 0;
 }
+
+.star-ratings {
+  background-color: var(--neutral);
+  padding: 20px 30px;
+  margin: 30px 0 0 0;
+  border-radius: 20px;
+}
+.star-ratings > h2 {
+  font-size: var(--fs-2xl);
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+.rating > div {
+  display: flex;
+  align-items: center;
+  margin: 0 0 12px;
+}
+label[data-stars] {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 0 0 5px;
+}
+button[type="submit"] {
+  appearance: none;
+  background-color: var(--primary);
+  border: 0;
+  border-radius: 7px;
+  padding: 12px 24px;
+  font-weight: bold;
+  box-shadow: #38bdf840 0px 50px 100px -10px, #38bdf84d 0px 30px 60px -30px;
+  cursor: pointer;
+
+  transition: background-color 160ms ease-in-out;
+}
+button[type="submit"]:hover {
+  background-color: var(--primary-hover);
+}
+button[type="submit"]:disabled {
+  cursor: not-allowed;
+}
+button[type="submit"]:disabled:hover {
+  background-color: var(--primary);
+}
