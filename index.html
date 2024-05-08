@@ -8,7 +8,7 @@
     <script defer src="components/footer/footer-box.js"></script>
     <script defer src="components/course-card/course-card.js"></script>
     <!-- scripts  -->
-    <script src="public/script/index.js"></script>
+    <script defer type="module" src="public/script/index.js"></script>
     <!-- stylesheet -->
     <link rel="stylesheet" href="public/style/index.css" />
   </head>
@@ -29,11 +29,7 @@
       <section class="TopRated">
         <h2 class="sectionHead">Our Top Rated Courses</h2>
         <p class="sectionDesc">Here are our top rated courses among the users</p>
-        <div class="top-course">
-          <course-card></course-card>
-          <course-card></course-card>
-          <course-card></course-card>
-        </div>
+        <div class="top-course" id="top-course"></div>
         <div class="course-discover">
           <a href="all-course.html"> View All </a>
         </div>
