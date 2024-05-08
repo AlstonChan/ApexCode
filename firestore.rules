@@ -12,8 +12,8 @@ service cloud.firestore {
     }
 
     match /ratings/{uid} {
-          allow create: if isSignedIn();
-          allow read, write: if isSignedIn();
+          allow create, write: if isSignedIn();
+          allow read: if true;  
     }
   }
 }
