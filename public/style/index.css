@@ -139,7 +139,7 @@ main {
   gap: 20px;
 }
 .membership {
-  padding: 30px 70px;
+  padding: 30px 56px;
   border-radius: 35px;
   background-color: var(--neutral);
   width: 50%;
@@ -155,13 +155,13 @@ main {
 .membership-desc {
   font-size: var(--fs-3xl);
   font-weight: 700;
-  margin: 15px 0;
+  margin: 15px -14px;
 }
 .details {
   text-align: left;
   list-style: none;
-  padding: 0;
-  margin: 0 0 20px 0;
+  padding: 20px 0;
+  margin: 0;
 }
 .details > li {
   display: flex;
@@ -198,6 +198,7 @@ main {
   justify-content: space-evenly;
   align-items: center;
   border-radius: 40px;
+  padding: 10px;
 }
 .price-buy {
   font: bold;
@@ -214,7 +215,11 @@ main {
   }
 }
 @media screen and (max-width: 640px) {
-  /* MOK PLEASE ADD CSS HERE FOR SINGLE COURSE  */
+  .one-course {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
 }
 @media screen and (max-width: 475px) {
   .membership {
@@ -235,23 +240,29 @@ main {
   margin: 0 0 80px 0;
 }
 .review-box {
+  display: flex;
+  flex-direction: column;
   background-color: var(--neutral);
   border-radius: 12px;
   max-width: 350px;
-  padding: 10px 30px 25px;
+  gap: 20px;
+  padding: 30px;
   text-align: left;
 }
 .review-box > p.review {
-  margin-bottom: 30px;
+  margin: 0;
 }
 .review-box > div.user {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin: auto 0 0 0;
 }
 .review-box > div.user > img {
   width: 60px;
   height: 60px;
+  object-fit: cover;
+  object-position: center;
 }
 .review-box > div.user > div {
   display: flex;
@@ -264,6 +275,9 @@ main {
 }
 .review-box > div.user > div > h3 {
   margin: 0 0 5px 0;
+}
+.user > img {
+  border-radius: 50px;
 }
 @media screen and (max-width: 666px) {
   .choose-language {
