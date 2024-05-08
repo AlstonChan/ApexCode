@@ -4,6 +4,7 @@ import {
   setDoc,
   getDoc,
   updateDoc,
+  arrayUnion,
   arrayRemove,
 } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore.js";
 import { auth, db } from "../../public/script/firebase-config.js";
@@ -83,33 +84,41 @@ ratingForm.addEventListener("submit", async (e) => {
   const docSnap = await getDoc(docRef);
 
   if (docSnap.exists()) {
-    if (fetchStatus.rating && fetchStatus.rating != rating) {
-      console.log(fetchStatus.rating, rating);
+    if (
+      fetchStatus.rating === 0 ||
+      (fetchStatus.rating && fetchStatus.rating != rating)
+    ) {
       await updateDoc(docRef, {
         [fetchStatus.rating]: arrayRemove(auth.currentUser.uid),
-        [rating]: [auth.currentUser.uid],
+        [rating]: arrayUnion(auth.currentUser.uid),
       });
       fetchStatus.rating = rating;
 
       const prevRate = document.querySelector('[data-prev-rate="true"]');
       if (prevRate) {
         prevRate.remove();
-
-        const span = document.createElement("span");
-        span.textContent = "You rated this course";
-        span.style.color = "var(--success)";
-        span.style.marginLeft = "1rem";
-        span.dataset.prevRate = "true";
-        const ratingRadio = document.querySelector(
-          `input[type="radio"][value="${rating}"]`
-        );
-        ratingRadio.nextElementSibling.appendChild(span);
       }
+      const span = document.createElement("span");
+      span.textContent = "You rated this course";
+      span.style.color = "var(--success)";
+      span.style.marginLeft = "1rem";
+      span.dataset.prevRate = "true";
+      const ratingRadio = document.querySelector(
+        `input[type="radio"][value="${rating}"]`
+      );
+      ratingRadio.nextElementSibling.appendChild(span);
     } else {
       alert("You have already rated this course");
     }
   } else {
     await setDoc(docRef, { [rating]: [auth.currentUser.uid] });
+    const span = document.createElement("span");
+    span.textContent = "You rated this course";
+    span.style.color = "var(--success)";
+    span.style.marginLeft = "1rem";
+    span.dataset.prevRate = "true";
+    const ratingRadio = document.querySelector(`input[type="radio"][value="${rating}"]`);
+    ratingRadio.nextElementSibling.appendChild(span);
   }
 });
 

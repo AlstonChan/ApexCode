@@ -14,11 +14,9 @@ const topCourse = document.getElementById("top-course");
     const data = doc.data();
 
     const totalUserRated = Object.keys(data).reduce((acc, key) => {
-      if (key === "id") return acc;
       return acc + data[key].length;
     }, 0);
     const overallRating = Object.keys(data).reduce((acc, key) => {
-      if (key === "id") return acc;
       return acc + data[key].length * Number(key);
     }, 0);
 
@@ -36,6 +34,21 @@ const topCourse = document.getElementById("top-course");
      * @type {import("./types").CourseData}
      */
     const data = await response.json();
+
+    switch (topThreeCourse.length) {
+      case 0:
+        // Randomly select 3 courses if there are no ratings
+        topThreeCourse.push({ id: 1 }, { id: 2 }, { id: 3 });
+        break;
+      case 1:
+        // Randomly select 2 courses if there is only 1 rating
+        topThreeCourse.push({ id: 1 }, { id: 2 });
+        break;
+      case 2:
+        // Randomly select 1 course if there are only 2 ratings
+        topThreeCourse.push({ id: 1 });
+        break;
+    }
 
     topThreeCourse.forEach((course) => {
       const courseData = data.courses.find((c) => c.id === Number(course.id));
