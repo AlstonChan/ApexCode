@@ -4,8 +4,8 @@ document.write("RM" + price);
 
 //document.getElementById("pay").addEventListener("click", displayFunction);
 
-var audio = document.getElementById("audio");
-var popup = document.getElementById("popup");
+//var audio = document.getElementById("audio");
+//var popup = document.getElementById("popup");
 
 //function displayFunction() {
 //  audio.play();
@@ -17,7 +17,7 @@ var popup = document.getElementById("popup");
 //  popup.style.display = "flex";
 //});
 
-if (document.getElementById("pay").click) {
-  audio.play();
-  popup.setAttribute("style", "display: flex");
-}
+//if (document.getElementById("pay").click) {
+//  audio.play();
+//  popup.setAttribute("style", "display: flex");
+//}

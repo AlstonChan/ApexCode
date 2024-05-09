@@ -20,10 +20,16 @@
   padding: 10px 40px;
   margin: 50px 0 100px 0;
   border-radius: 15px;
+  box-shadow: 10px 10px var(--neutral-hover);
+}
+img {
+  margin: 0 0 0 110px;
+  border-radius: 50px;
 }
 .payment_form > h3 {
   font-size: var(--fs-2xl);
   text-align: center;
+  padding: 10px 0 0 0;
 }
 .gateway {
   font-size: var(--fs-xl);
@@ -32,6 +38,15 @@
 .info {
   display: flex;
   flex-direction: column;
+}
+
+.select_date {
+  display: flex;
+  flex-direction: row;
+}
+.date {
+  cursor: pointer;
+  margin: 0 0 0 5px;
 }
 
 .btn {
@@ -50,15 +65,16 @@ label {
   margin: 5px 5px;
   font-weight: 600;
 }
-input {
+.input {
   border-radius: 15px;
-  margin: 8px 10px;
+  margin: 1px 1px 10px 0;
+  padding: 0 0 0 10px;
   font-size: var(--fs-xl);
-  font-weight: 200;
+  font-weight: 400;
 }
 
 #popup {
-  display: none;
+  display: flex;
   flex-direction: column;
   margin: 150px 0 0 0;
   color: var(--neutral-hover);
@@ -95,5 +111,17 @@ a:hover {
 @media screen and (max-width: 800px) {
   .payment {
     flex-direction: column;
+  }
+
+  .payment_form {
+    max-width: fit-content;
+    margin: 30px auto;
+  }
+  #price {
+    text-align: center;
+  }
+  #popup {
+    text-align: center;
+    margin: 0 100px;
   }
 }

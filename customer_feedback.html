@@ -13,53 +13,57 @@
 
   <body>
     <div class="hero">
-      <h1>Customer Feedback</h1>
-      <p>
+      <h1>Give Us Feedback!</h1>
+    </div>
+    <div class="feedback">
+      <p class="detail">
         Share your experience with us! <br />
-        Whether it's a <br />
-        suggestion, complaint, or compliment, <br />
+        Whether it's a suggestion, complaint, or compliment, <br />
         your feedback helps us understand your needs better.
       </p>
+
+      <div class="detail">
+        <form class="form" action="customer_feedback.html" method="get">
+          <div class="textarea">
+            <div class="left">
+              <div class="form_detail">
+                <label for="name">Name</label>
+                <input name="name" type="text" id="name" required />
+              </div>
+              <div class="form_detail">
+                <label for="email">Email</label>
+                <input
+                  name="email"
+                  type="email"
+                  id="email"
+                  placeholder="abc@gmail.com"
+                  required
+                />
+              </div>
+              <div class="form_detail">
+                <label for="subject">Subject</label>
+                <input name="subject" type="text" id="subject" required />
+              </div>
+            </div>
+            <div class="right">
+              <div class="form_detail">
+                <label for="message">Feedback</label>
+                <textarea
+                  id="feedback"
+                  placeholder="Write your feedback here."
+                  required
+                  rows="8"
+                  cols="25"
+                  name="feedback"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <div>
+            <button id="submit" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
     </div>
-    <form class="form" action="customer_feedback.html" method="get">
-      <div class="textarea">
-        <div class="left">
-          <div class="form_detail">
-            <label for="name">Name</label>
-            <input name="name" type="text" id="name" required />
-          </div>
-          <div class="form_detail">
-            <label for="email">Email</label>
-            <input
-              name="email"
-              type="email"
-              id="email"
-              placeholder="abc@gmail.com"
-              required
-            />
-          </div>
-          <div class="form_detail">
-            <label for="subject">Subject</label>
-            <input name="subject" type="text" id="subject" required />
-          </div>
-        </div>
-        <div class="right">
-          <div class="form_detail">
-            <label for="message">Feedback</label>
-            <textarea
-              id="feedback"
-              placeholder="Write your feedback here."
-              required
-              rows="6"
-              cols="25"
-              name="feedback"
-            ></textarea>
-          </div>
-        </div>
-      </div>
-      <div>
-        <button id="submit" type="submit">Submit</button>
-      </div>
-    </form>
   </body>
 </html>
