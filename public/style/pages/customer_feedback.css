@@ -1,23 +1,16 @@
-.hero {
-  padding: 10px 10px 50px 10px;
-  margin-bottom: 50px;
-  text-align: center;
-  background-color: var(--neutral);
-  color: var(--base-content);
-}
-.hero > h1 {
-  font-size: var(--fs-4xl);
-  margin-bottom: 15px;
-}
 
 .feedback {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 50px;
-  margin: 0 0 0 30px;
+  margin: 30px 0 0 30px;
+  padding: 60px 0 0 0;
 }
-.feedback > p {
+.detail > h1 {
+  font-size: var(--fs-3xl);
+}
+.detail > p {
   font-size: var(--fs-xl);
   margin: 0 10px;
   padding: 0 10px;

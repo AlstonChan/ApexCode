@@ -1,18 +1,21 @@
 .hero {
-  padding: 30px 20px 40px;
-  margin-bottom: 80px;
-  text-align: center;
-  background-color: var(--neutral);
+  padding: 30px 20px 10px;
+  margin-bottom: 50px;
+  text-align: left;
   color: var(--base-content);
+  text-decoration: underline;
+}
+.hero > h1{
+  font-size: var(--fs-3xl);
 }
 #price {
-  font-size: var(--fs-2xl);
+  font-size: var(--fs-xl);
 }
 
 .payment {
   display: flex;
   justify-content: space-evenly;
-  gap: 150px;
+  gap: 100px;
 }
 
 .payment_form {
@@ -38,6 +41,13 @@ img {
 .info {
   display: flex;
   flex-direction: column;
+}
+.card_number::placeholder {
+  color: var(--base-content);
+}
+
+.CVC::placeholder {
+  color: var(--base-content);
 }
 
 .select_date {
@@ -77,7 +87,7 @@ input {
 }
 
 #popup {
-  display: flex;
+  display: none;
   flex-direction: column;
   margin: 150px 0 0 0;
   color: var(--neutral-hover);
