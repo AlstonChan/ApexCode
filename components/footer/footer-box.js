@@ -37,7 +37,7 @@ footerBoxTemplate.innerHTML = html`<link
           </ul>
           <ul class="dropdown">
             <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="LICENSE.md">License</a></li>
+            <li><a href="customer_feedback.html">Feedback</a></li>
             <li><a href="login.html">Login</a></li>
             <li><a href="signup.html">Sign Up</a></li>
           </ul>

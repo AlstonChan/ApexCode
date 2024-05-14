@@ -11,8 +11,9 @@ main {
 .sectionDesc {
   font-size: var(--fs-lg);
   text-align: center;
-  margin: 8px 0 30px 0;
+  margin: 8px auto 30px;
   padding: 0 10px;
+  max-width: 700px;
 }
 /* Call to action */
 .cta {
@@ -215,10 +216,14 @@ main {
   }
 }
 @media screen and (max-width: 640px) {
+  .buy-course {
+    margin: 20px 0;
+  }
   .one-course {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    max-width: 380px;
   }
 }
 @media screen and (max-width: 475px) {
