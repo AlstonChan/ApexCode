@@ -1,6 +1,6 @@
 var price = document.getElementById("price");
 localStorage.getItem("price"); //follow martin part
-document.write("RM" + price);
+document.write("TOTAL: RM" + price);
 
 var audio = document.getElementById("audio");
 var popup = document.getElementById("popup");
