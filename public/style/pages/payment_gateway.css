@@ -15,48 +15,53 @@
 .payment {
   display: flex;
   justify-content: space-evenly;
-  gap: 100px;
+  gap: 50px;
 }
 
 .payment_form {
   background-color: var(--neutral-light);
-  padding: 10px 40px;
-  margin: 50px 0 100px 0;
+  padding: 10px 10px;
+  margin: 50px 20px 100px 20px;
   border-radius: 15px;
   box-shadow: 10px 10px var(--neutral-hover);
 }
 img {
-  margin: 0 0 0 110px;
+  margin: 0 250px;
   border-radius: 50px;
+  z-index: 1;
 }
-.payment_form > h3 {
+.text{
+  display: flex;
+  flex-direction: column;
+}
+.text > h3 {
   font-size: var(--fs-2xl);
   text-align: center;
   padding: 10px 0 0 0;
+  margin: 0;
+}
+.text > p{
+  font-size: var(--fs-lg);
+  text-align: center;
+  margin: 0;
 }
 .gateway {
   font-size: var(--fs-xl);
-  margin: 0 0 20px 0;
+  margin: 20px 20px 50px 20px;
 }
 .info {
   display: flex;
   flex-direction: column;
 }
-.card_number::placeholder {
-  color: var(--base-content);
-}
-
-.CVC::placeholder {
-  color: var(--base-content);
-}
 
 .select_date {
   display: flex;
   flex-direction: row;
+
 }
 .date {
   cursor: pointer;
-  margin: 0 0 0 5px;
+  margin: 0 0 10px 5px;
 }
 
 .btn {
@@ -76,14 +81,21 @@ label {
   font-weight: 600;
 }
 .input {
-  border-radius: 15px;
   margin: 1px 1px 10px 0;
   padding: 0 0 0 10px;
   font-size: var(--fs-xl);
-  font-weight: 400;
+  font-weight: 100;
+  height: 50px;
 }
-input {
-  border-radius: 15px;
+input, select {
+  border-radius: 4px;
+  font-size: var(--fs-lg);
+}
+input{
+  width:500px ;
+}
+select{
+  width: 245px;
 }
 
 #popup {
