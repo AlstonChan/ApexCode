@@ -6,6 +6,7 @@ main.learn {
 .fixed-drawer {
   position: sticky;
   left: 0;
+  top: 0;
   min-width: 240px;
   width: 240px;
   height: 100%;
@@ -90,6 +91,7 @@ main.learn {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  height: fit-content;
 }
 .video-container > video {
   width: 100%;
