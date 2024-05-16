@@ -109,7 +109,9 @@
 
 ul {
   list-style: none;
-  padding: 0;
+  padding: 15px 0;
+  max-width: 300px;
+  margin: 0 auto;
 }
 ul > li {
   display: flex;
