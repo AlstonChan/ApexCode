@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ApexCode | Customer Feedback</title>
+    <title>ApexCode | Feedback</title>
     <!-- component  -->
     <script defer src="components/head/head.js"></script>
     <script defer type="module" src="components/navbar/navbar.js"></script>
@@ -27,31 +27,43 @@
             <div class="left">
               <div class="form_detail">
                 <label for="name">Name</label>
-                <input name="name" type="text" id="name" required />
+                <input
+                  class="polaris"
+                  name="name"
+                  type="text"
+                  id="name"
+                  required
+                />
               </div>
               <div class="form_detail">
                 <label for="email">Email</label>
                 <input
+                  class="polaris"
                   name="email"
                   type="email"
                   id="email"
-                  placeholder="abc@gmail.com"
                   required
                 />
               </div>
               <div class="form_detail">
                 <label for="subject">Subject</label>
-                <input name="subject" type="text" id="subject" required />
+                <input
+                  class="polaris"
+                  name="subject"
+                  type="text"
+                  id="subject"
+                  required
+                />
               </div>
             </div>
             <div class="right">
               <div class="form_detail">
                 <label for="message">Feedback</label>
                 <textarea
+                  class="polaris"
                   id="feedback"
-                  placeholder="Write your feedback here."
                   required
-                  rows="8"
+                  rows="7"
                   cols="25"
                   name="feedback"
                 ></textarea>
