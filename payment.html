@@ -8,105 +8,108 @@
     <script defer src="components/course-card/course-card.js"></script>
     <script defer src="components/footer/footer-box.js"></script>
     <!-- scripts -->
-    <script defer src="public/script/all-course.js"></script>
     <script defer src="public/script/payment.js"></script>
     <!-- stylesheet -->
     <link rel="stylesheet" href="public/style/pages/payment.css" />
   </head>
-  <body>
-    <div class="hero">
-      <h1>PAYMENT GATEWAY</h1>
-    </div>
-    <div class="payment">
-      <div id="price"><h2>TOTAL: RM</h1></div>
-      <div>
-        <div id="popup">
-          <audio id="audio">
-            <source src="public/assets/audio/payment_successful.mp3" />
-          </audio>
-          <span>Congrats! Payment successfully</span><br />
-          <a href="learn.html">Back to the course</a>
-        </div>
-      </div>
-      <div class="payment_form">
-        <div class="pic">
-          <img
-            src="public/assets/images/icons/cardIcon.jpg"
-            width="50"
-            height="50"
-            alt="card icon"
-          />
-        </div>
-        <div class="text">
-          <h3>Payment Form</h3>
-          <p>* Only accept Debit/Credit Card</p>
-        </div>
 
-        <form class="gateway">
-          <div class="info">
-            <label for="name">Name</label>
-            <div class="input"><input type="text" id="name" required /></div>
-          </div>
-          <div class="info">
-            <label for="card_number">Card number</label>
-            <div class="input">
-              <input
-                type="text"
-                id="card_number"
-                placeholder="0000 0000 0000 0000"
-                required
-              />
-            </div>
-          </div>
-          <div class="info">
-            <label for="CVC/CVV2">CVC/CVV2</label>
-            <div class="input">
-              <input type="text" id="CVC" placeholder="000" required />
-            </div>
-          </div>
-          <div class="info">
-            <label for="date">Expiry date</label>
-            <div class="select_date">
-              <div class="date">
-                <select class="date">
-                  <option value="01">01 - January</option>
-                  <option value="02">02 - February</option>
-                  <option value="03">03 - March</option>
-                  <option value="04">04 - April</option>
-                  <option value="05">05 - May</option>
-                  <option value="06">06 - June</option>
-                  <option value="07">07 - July</option>
-                  <option value="08">08 - August</option>
-                  <option value="09">09 - September</option>
-                  <option value="10">10 - October</option>
-                  <option value="11">11 - November</option>
-                  <option value="12">12 - December</option>
-                </select>
-              </div>
-              <div class="date">
-                <select class="date">
-                  <option value="2024">2024</option>
-                  <option value="2025">2025</option>
-                  <option value="2026">2026</option>
-                  <option value="2027">2027</option>
-                  <option value="2028">2028</option>
-                  <option value="2029">2029</option>
-                  <option value="2030">2030</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="info">
-            <label for="country">Issuing Country</label>
-            <div class="input"><input type="text" id="country" required /></div>
-          </div>
-          <div class="info">
-            <label for="bank">Issuing Bank</label>
-            <div class="input"><input type="text" id="bank" required /></div>
-          </div>
-          <div class="btn"><button id="pay">Pay</button></div>
-        </form>
+  <body>
+    <div id="popup" class="hidden">
+      <audio id="audio">
+        <source src="public/assets/audio/payment_successful.mp3" />
+      </audio>
+      <div class="content">
+        <h1>Payment Successful!</h1>
+        <p>Thank you for your purchase!</p>
+        <a href="profile.html">Back to profile</a>
       </div>
     </div>
+
+    <main>
+      <div class="content">
+        <div class="left">
+          <a href="cart.html" class="paymentNavBack">
+            <img
+              src="public/assets/images/icons/CircleLeftIcon-white.svg"
+              width="35"
+              height="35"
+              alt=""
+              class="backIcon"
+            />
+            <p class="companyName">ApexCode SDN BHD</p>
+          </a>
+          <div class="paymentInfo">
+            <p>Pay ApexCode SDN BHD</p>
+            <h1>RM <span data-price="price">39.99</span></h1>
+            <p><small>* Only accept Debit/Credit Card</small></p>
+          </div>
+        </div>
+        <div class="right">
+          <form id="paymentForm">
+            <div class="inputBox">
+              <label for="name">Email</label>
+              <input class="polaris" type="email" id="email" required />
+            </div>
+
+            <div class="cardDetails">
+              <label for="cardInfo">
+                <p>Card Information</p>
+                <input
+                  type="text"
+                  name="cardNum"
+                  id="cardNum"
+                  placeholder="XXXX XXXX XXXX XXXX"
+                  required
+                  class="polaris up"
+                />
+                <div class="cardImportant">
+                  <select class="polaris bottomLeft" required>
+                    <option value="01">01 - January</option>
+                    <option value="02">02 - February</option>
+                    <option value="03">03 - March</option>
+                    <option value="04">04 - April</option>
+                    <option value="05">05 - May</option>
+                    <option value="06">06 - June</option>
+                    <option value="07">07 - July</option>
+                    <option value="08">08 - August</option>
+                    <option value="09">09 - September</option>
+                    <option value="10">10 - October</option>
+                    <option value="11">11 - November</option>
+                    <option value="12">12 - December</option>
+                  </select>
+
+                  <select class="polaris bottomRight" required>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                  </select>
+                </div>
+              </label>
+            </div>
+
+            <div class="inputBox">
+              <label for="name">Name on Card</label>
+              <input class="polaris" type="text" id="name" minlength="3" required />
+            </div>
+
+            <div class="inputBox">
+              <label for="country">Issuing Country</label>
+              <input class="polaris" type="text" name="country" id="country" required />
+            </div>
+
+            <div class="inputBox">
+              <label for="bank">Issuing Bank</label>
+              <input class="polaris" type="text" name="bank" id="bank" required />
+            </div>
+
+            <button type="submit">Pay RM <span data-price="price">39.99</span></button>
+          </form>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
