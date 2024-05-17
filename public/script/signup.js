@@ -82,8 +82,8 @@ signupForm.addEventListener("submit", async (e) => {
         createdAt: Date(),
       });
 
-      console.log(userCredential);
       signupForm.reset();
+      window.location.href = "/";
     }
   } catch (error) {
     console.error(error);

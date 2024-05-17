@@ -1,0 +1,154 @@
+.errorLabel {
+  color: var(--error) !important;
+  font-size: var(--fs-sm) !important;
+}
+
+.container {
+  min-height: 100vh;
+  height: 100%;
+  background-image: url("../../assets/images/lang.jpg");
+  display: flex;
+  flex-direction: column;
+}
+main {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex: 100;
+  margin-bottom: 100px;
+}
+nav {
+  padding: 30px 20px;
+  display: flex;
+}
+
+nav > a > img {
+  width: 80px;
+  height: auto;
+}
+nav > a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+nav > a > h1 {
+  font-size: var(--fs-2xl);
+  color: #fff;
+  margin-left: 10px;
+}
+nav > a:hover > h1 {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav > .link_login {
+    margin: 0;
+  }
+}
+
+main {
+  display: flex !important;
+  width: 100%;
+}
+
+.link_login {
+  display: flex;
+  align-items: center;
+
+  margin-left: auto;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.link_login a {
+  color: #fff;
+  text-decoration: none;
+}
+.link_login a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.left-half {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  border-right: 1px solid #095475;
+}
+
+div.input_grp > label {
+  text-align: left;
+  font-size: var(--fs-md);
+  color: var(--base-content);
+}
+.form_card {
+  margin: auto;
+  text-align: center;
+  width: 200px;
+  font-size: 16px;
+}
+
+.input_grp {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input_grp label {
+  margin: 5px 0;
+}
+
+.input_grp input {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #dfe3e8;
+  border-radius: 4px;
+}
+
+.input_grp input:focus {
+  outline: 2px solid var(--primary);
+  box-shadow: 0 0 0 2px rgba(95, 115, 140, 0.3);
+}
+
+.form_card button {
+  appearance: none;
+  padding: 10px 26px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  font-size: var(--fs-lg);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.form_card button:hover {
+  background-color: var(--primary-hover);
+}
+
+.form_card button:active {
+  background-color: #186d91;
+}
+
+.new_acc {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.welcome {
+  font-weight: bold;
+  font-size: 28px;
+}
