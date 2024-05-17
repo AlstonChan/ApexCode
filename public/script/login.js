@@ -51,7 +51,7 @@ loginForm.addEventListener("submit", async (e) => {
   try {
     if (formState.email === null && formState.password === null) {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
-      window.location.href = "/";
+      window.location.href = window.location.pathname.replace("login.html", "index.html");
     }
   } catch (error) {
     // A general vague error message is shown to the user in case of any error

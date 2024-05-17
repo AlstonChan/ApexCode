@@ -83,7 +83,7 @@ signupForm.addEventListener("submit", async (e) => {
       });
 
       signupForm.reset();
-      window.location.href = "/";
+      window.location.href = window.location.pathname.replace("login.html", "index.html");
     }
   } catch (error) {
     console.error(error);
