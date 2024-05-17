@@ -92,3 +92,4 @@ function setInputError(formState) {
     generalError.textContent = "";
   }
 }
+

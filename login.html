@@ -2,32 +2,53 @@
 <html lang="en">
   <head>
     <title>ApexCode | Login</title>
-    <!-- component  -->
     <script defer src="components/head/head.js"></script>
-    <script defer type="module" src="components/navbar/navbar.js"></script>
-    <script defer src="components/footer/footer-box.js"></script>
-    <!-- scripts -->
     <script defer type="module" src="public/script/firebase-config.js"></script>
     <script defer type="module" src="public/script/login.js"></script>
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="public/style/pages/auth.css" />
+    <link rel="stylesheet" href="public/style/pages/login.css" />
   </head>
   <body>
-    <form id="login-form">
-      <div>
-        <label for="loginEmail">Email</label>
-        <input required type="email" name="loginEmail" id="loginEmail" />
-        <label for="loginEmail" class="errorLabel" id="emailLoginError"></label>
-      </div>
-      <div>
-        <label for="loginPassword">Password</label>
-        <input required type="password" name="loginPassword" id="loginPassword" />
-        <label for="loginPassword" class="errorLabel" id="passLoginError"></label>
-      </div>
-      <button type="submit">Login</button>
-    </form>
-    <p class="errorLabel" id="generalError"></p>
-    <p>Don't have an account yet? <a href="signup.html">Sign Up</a></p>
+    <div class="container">
+      <!--Left-->
+      <nav class="logo">
+        <a href="index.html">
+          <img
+            src="public/assets/images/high-res-logo.png"
+            width="50"
+            height="50"
+            alt="Apex Logo"
+          />
+          <h1>Apex Code</h1>
+        </a>
+        <div class="link_login">
+          <p>New Here ? &nbsp; <a href="signup.html">Register now</a></p>
+        </div>
+      </nav>
+      <main>
+        <div class="form_card">
+          <p class="welcome">Welcome Back !</p>
+          <form id="login-form">
+            <div class="input_grp">
+              <label for="loginEmail">Email</label>
+              <input required type="email" name="loginEmail" id="loginEmail" required />
+              <label for="loginEmail" class="errorLabel" id="emailLoginError"></label>
+            </div>
+            <div class="input_grp">
+              <label for="loginPassword">Password</label>
+              <input
+                required
+                type="password"
+                name="loginPassword"
+                id="loginPassword"
+                required
+              />
+              <label for="loginPassword" class="errorLabel" id="passLoginError"></label>
+            </div>
+            <button type="submit">Login</button>
+          </form>
+          <p class="errorLabel" id="generalError"></p>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
-<!-- alston@test.com -->
