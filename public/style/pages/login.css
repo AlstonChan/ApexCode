@@ -84,7 +84,7 @@ main {
   border-right: 1px solid #095475;
 }
 
-div.input_grp > label{
+div.input_grp > label {
   text-align: left;
   font-size: var(--fs-md);
   color: var(--base-content);
@@ -119,13 +119,13 @@ div.input_grp > label{
 }
 
 .input_grp input:focus {
-  outline : 2px solid var(--primary);
+  outline: 2px solid var(--primary);
   box-shadow: 0 0 0 2px rgba(95, 115, 140, 0.3);
 }
 
 .form_card button {
-  width: 50%;
-  padding: 5px;
+  appearance: none;
+  padding: 10px 26px;
   background-color: var(--primary);
   color: white;
   border: none;
@@ -139,7 +139,7 @@ div.input_grp > label{
   background-color: var(--primary-hover);
 }
 
-.form_card button:active{
+.form_card button:active {
   background-color: #186d91;
 }
 
