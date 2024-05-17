@@ -45,6 +45,9 @@ div.form_detail {
   flex-direction: column;
   margin: 0 0 5px 0;
 }
+.right > div.form_detail {
+  height: 100%;
+}
 div.form_detail > label {
   font-size: var(--fs-md);
   font-weight: 400;
@@ -61,7 +64,7 @@ textarea.polaris {
   font-size: var(--fs-md);
 }
 textarea.polaris {
-  height: auto;
+  height: 100%;
   padding: 10px;
 }
 input.polaris:active,
