@@ -1,6 +1,6 @@
 .errorLabel {
-  color: var(--error);
-  font-size: var(--fs-sm);
+  color: var(--error) !important;
+  font-size: var(--fs-sm) !important;
 }
 
 .container {
@@ -98,7 +98,7 @@ div.input_grp > label {
 }
 
 .input_grp {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   display: flex;
   flex-direction: column;
 }
