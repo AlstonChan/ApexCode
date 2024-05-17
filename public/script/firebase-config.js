@@ -31,7 +31,7 @@ export const db = getFirestore(app);
 
 // Connect to the Firebase emulators
 // Both are emulator but have different params :)
-connectAuthEmulator(auth, "http://127.0.0.1:9099");
-connectFirestoreEmulator(db, "127.0.0.1", 8080);
+// connectAuthEmulator(auth, "http://127.0.0.1:9099");
+// connectFirestoreEmulator(db, "127.0.0.1", 8080);
 
 const analytics = getAnalytics(app);

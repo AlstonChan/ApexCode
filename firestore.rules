@@ -10,5 +10,10 @@ service cloud.firestore {
           allow create: if isSignedIn();
           allow read, write: if isSignedIn() && request.auth.uid == uid;
     }
+
+    match /ratings/{uid} {
+          allow create, write: if isSignedIn();
+          allow read: if true;  
+    }
   }
 }
