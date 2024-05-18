@@ -84,6 +84,7 @@ signupForm.addEventListener("submit", async (e) => {
 
       console.log(userCredential);
       signupForm.reset();
+      window.location.href = "index.html";
     }
   } catch (error) {
     console.error(error);

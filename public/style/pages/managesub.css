@@ -40,8 +40,8 @@ hr {
 .card-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Added flex-wrap: wrap */
-    gap: 20px; /* Added gap for spacing between cards */
+    flex-wrap: wrap; 
+    gap: 20px; 
     width: 100%;
 }
 
