@@ -40,7 +40,7 @@ hr {
 .card-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;  /* Added flex wrap */
     gap: 20px; 
     width: 100%;
 }
