@@ -1,0 +1,75 @@
+.main {
+    margin-top: 2%;
+    margin-left: 10%;
+    font-size: 28px;
+    padding: 0 10px;
+    width: 58%;
+}
+
+.main h2 {
+    font-size: var(--fs-xl);
+    margin-bottom: 10px;
+}
+
+.main .pcard {
+    border-radius: 18px;
+    box-shadow: 1px 1px 8px 0 var(--primary);
+    height: auto;
+    width: 60%;
+    margin-bottom: 20px;
+    padding: 20px 0 20px 50px;
+}
+
+.main .pcard table {
+    border: none;
+    font-size: 18px;
+    height: 120px;
+    width: 60%;
+}
+
+hr{
+    width: 45%;
+    margin-left: 0;
+}
+
+.sub hr{
+    width: 22%;
+    margin-left: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+
+.card {
+	border-radius: 18px;
+	display: block;
+	position: relative;
+	align-items: left;
+	max-width: 400px;
+    height: 230px;
+    box-shadow: 1px 1px 8px 0 var(--primary);
+}
+
+.card-content {
+	margin: 24px;
+	text-align: left;
+}
+
+.plan-name {
+	padding-top: 8px;
+	font-size: var(--fs-xxl);
+}
+
+.content {
+	text-align: left;
+	justify-content: center;
+	margin-top: 12px;
+}
+
+.description {
+	margin-top: 32px;
+	font-size: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    
+}
