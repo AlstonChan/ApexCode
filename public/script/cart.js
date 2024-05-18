@@ -5,3 +5,18 @@ document.getElementById('open-cart').addEventListener('click', function() {
   document.getElementById('close-cart').addEventListener('click', function() {
     document.querySelector('.cart-container').style.right = '-300px';
   });
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  const itemPrices = document.querySelectorAll('.item-price');
+
+  let totalPrice = 0;
+
+  itemPrices.forEach(function(item) {
+      const priceString = item.textContent.trim().substring(3); 
+      const price = parseFloat(priceString);
+      totalPrice += price;
+  });
+  const totalPriceElement = document.querySelector('.total-container h2');
+  totalPriceElement.textContent = 'Total: RM ' + totalPrice.toFixed(2);
+});
