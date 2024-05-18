@@ -80,7 +80,7 @@ body {
     right: -300px;
     width: 300px;
     height: 100%;
-    background-color: #f9f9f9;
+    background-color: var(--neutral);
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
     transition: right 0.3s ease;
   }
@@ -95,7 +95,6 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    color: var(--info-content);
   }
   
   .cart-items {
@@ -105,7 +104,6 @@ body {
   
   .cart-total {
     margin-top: auto;
-    color: var(--info-content);
   }
   
   .content {
