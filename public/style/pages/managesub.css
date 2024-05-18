@@ -40,6 +40,8 @@ hr {
 .card-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Added flex-wrap: wrap */
+    gap: 20px; /* Added gap for spacing between cards */
     width: 100%;
 }
 
@@ -108,22 +110,21 @@ hr {
 
 .action-btn {
     padding: 8px 8px;
-  background-color: var(--primary);
-  color: white;
-  border: none;
-  font-size: var(--fs-md);
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-  }
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    font-size: var(--fs-md);
+    border-radius: 8px;
+    cursor: pointer;
+}
   
-  .action-btn:hover {
+.action-btn:hover {
     background-color: var(--primary-hover);
-  }
+}
 
-  .action-btn;active{
+.action-btn;active {
     background-color: #186d91;
-  }
+}
 
 @media screen and (max-width: 600px) {
     .main {
