@@ -10,38 +10,45 @@
   <body>
     <div class="container">
       <!--Left-->
-        <nav class="logo">
-          <a href="index.html">
-            <img
-              src="public/assets/images/high-res-logo.png"
-              width="50"
-              height="50"
-              alt="Apex Logo"
-            />
-            <h1>Apex Code</h1>
-          </a>
-          <div class="link_login">
-            <p>New Here ?  &nbsp; <a href="signup.html">Register now</a></p>
-          </div>
-        </nav>
-        <main>
-          <div class="form_card">
-            <p class="welcome">Welcome Back !</p>
-            <form id="login-form">
-              <div class="input_grp">
-                <label for="loginEmail" class="errorLabel" id="emailLoginError">Email</label>
-                <input required type="email" name="loginEmail" id="loginEmail" required/>
-              </div>
-              <div class="input_grp">
-                <label for="loginPassword" class="errorLabel" id="passLoginError">Password</label>
-                <input required type="password" name="loginPassword" id="loginPassword" required/>
-              </div>
-              <button type="submit">Login</button>
-            </form>
-            <p class="errorLabel" id="generalError"></p>
-          </div>
-        </main>
+      <nav class="logo">
+        <a href="index.html">
+          <img
+            src="public/assets/images/high-res-logo.png"
+            width="50"
+            height="50"
+            alt="Apex Logo"
+          />
+          <h1>Apex Code</h1>
+        </a>
+        <div class="link_login">
+          <p>New Here ? &nbsp; <a href="signup.html">Register now</a></p>
+        </div>
+      </nav>
+      <main>
+        <div class="form_card">
+          <p class="welcome">Welcome Back !</p>
+          <form id="login-form">
+            <div class="input_grp">
+              <label for="loginEmail">Email</label>
+              <input required type="email" name="loginEmail" id="loginEmail" required />
+              <label for="loginEmail" class="errorLabel" id="emailLoginError"></label>
+            </div>
+            <div class="input_grp">
+              <label for="loginPassword">Password</label>
+              <input
+                required
+                type="password"
+                name="loginPassword"
+                id="loginPassword"
+                required
+              />
+              <label for="loginPassword" class="errorLabel" id="passLoginError"></label>
+            </div>
+            <button type="submit">Login</button>
+          </form>
+          <p class="errorLabel" id="generalError"></p>
+        </div>
+      </main>
     </div>
-       
   </body>
 </html>

@@ -42,7 +42,7 @@ navBarTemplate.innerHTML = html`<link
             </button>
           </li>
           <li id="nav-auth">
-            <a class="auth" href="/login.html">Log In</a>
+            <a class="auth" href="login.html">Log In</a>
           </li>
         </ul>
       </nav>
