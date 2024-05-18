@@ -69,5 +69,51 @@ hr{
 }
 
 @media screen and (max-width: 600px) {
-    
+    .main {
+        margin: 2% 5%;
+        font-size: 22px;
+        width: 90%;
+        padding: 0 5px;
+    }
+
+    .main h2 {
+        font-size: 19px;
+    }
+
+    .main .pcard {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .main .pcard table {
+        font-size: 16px;
+        height: auto;
+        width: 100%;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    .sub hr {
+        width: 50%;
+    }
+
+    .card {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .card-content {
+        margin: 12px;
+    }
+
+    .plan-name {
+        font-size: 20px;
+    }
+
+    .description {
+        margin-top: 16px;
+        font-size: 0.9rem;
+    }
 }
