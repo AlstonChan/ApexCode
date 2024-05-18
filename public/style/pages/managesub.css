@@ -116,6 +116,7 @@ hr {
     font-size: var(--fs-md);
     border-radius: 8px;
     cursor: pointer;
+    text-decoration: none;
 }
   
 .action-btn:hover {
