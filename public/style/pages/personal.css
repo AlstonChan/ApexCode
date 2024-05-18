@@ -10,7 +10,7 @@
     align-items: center;
 }
 
-.main h2 {
+.main h1 {
     font-size: var(--fs-xl);
     margin-bottom: 10px;
 }
@@ -19,10 +19,17 @@
     border-radius: 18px;
     box-shadow: 1px 1px 8px 0 var(--primary);
     height: auto;
-    width: 60%;
+    width: 400px;
+   
     margin-bottom: 20px;
     font-size: var(--fs-md);
     padding: 20px 0 20px 50px;
+}
+
+.pcard-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main .pcard-body {
@@ -33,6 +40,9 @@
 
 .flex-row {
     display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-right: 50px;
   }
   
   .flex-item {
