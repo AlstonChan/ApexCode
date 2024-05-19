@@ -2,35 +2,38 @@
 <html lang="en">
   <head>
     <title>Apex Code | Cart</title>
+    <!-- component  -->
     <script defer src="components/head/head.js"></script>
     <script defer type="module" src="components/navbar/navbar.js"></script>
-    <script defer src="public/script/cart.js"></script>
     <script defer src="components/footer/footer-box.js"></script>
+    <!-- scripts  -->
+    <script defer src="public/script/cart.js"></script>
+    <!-- stylesheet -->
     <link rel="stylesheet" href="public/style/pages/cart.css" />
   </head>
   <body class="body">
     <div class="container">
       <h1>Shopping Cart</h1>
-      <hr>
+      <hr />
       <div class="item">
-          <img src="public/assets/images/course-thumbnail/css3.png" alt="Product Image">
-          <div class="item-details">
-              <p class="item-name">CSS3 For Beginners</p>
-              <button class="remove-button">Remove</button>
-              <p class="item-price">RM 89.99</p>
-          </div>
+        <img src="public/assets/images/course-thumbnail/css3.png" alt="Product Image" />
+        <div class="item-details">
+          <p class="item-name">CSS3 For Beginners</p>
+          <button class="remove-button">Remove</button>
+          <p class="item-price">RM 89.99</p>
+        </div>
       </div>
       <div class="item">
-          <img src="public/assets/images/course-thumbnail/html5.png" alt="Product Image">
-          <div class="item-details">
-              <p class="item-name">HTML5 For Beginners</p>
-              <button class="remove-button">Remove</button>
-              <p class="item-price">RM 89.99</p>
-          </div>
+        <img src="public/assets/images/course-thumbnail/html5.png" alt="Product Image" />
+        <div class="item-details">
+          <p class="item-name">HTML5 For Beginners</p>
+          <button class="remove-button">Remove</button>
+          <p class="item-price">RM 89.99</p>
+        </div>
       </div>
-      <hr>
+      <hr />
       <div class="total-container">
-        <h2 class="total-price-side-button">Total: </h2>
+        <h2 class="total-price-side-button">Total:</h2>
         <a href="payment.html" class="checkout-button">Checkout</a>
       </div>
     </div>
@@ -39,7 +42,14 @@
       <div class="cart">
         <div class="cart-header">
           <h2>Shopping Cart</h2>
-          <button id="close-cart">&times;</button>
+          <button id="close-cart">
+            <img
+              src="public/assets/images/icons/XIcon-white.svg"
+              alt="close drawer"
+              width="20"
+              height="20"
+            />
+          </button>
         </div>
         <div class="cart-items">
           <!--Items-->
@@ -48,23 +58,37 @@
               <h3 class="slide-cart-name">CSS3 For Beginners</h3>
               <p class="slide-cart-price">RM 89.90</p>
             </div>
-            <button class="remove-item">&times;</button>
-          </div>    
+            <button class="remove-item">
+              <img
+                src="public/assets/images/icons/XIcon-white.svg"
+                alt="cancel"
+                width="20"
+                height="20"
+              />
+            </button>
+          </div>
           <div class="cart-item">
             <div class="item-details">
               <h3 class="slide-cart-name">HTML5 For Beginners</h3>
               <p class="slide-cart-price">RM 89.90</p>
             </div>
-            <button class="remove-item">&times;</button>
-          </div>      
+            <button class="remove-item">
+              <img
+                src="public/assets/images/icons/XIcon-white.svg"
+                alt="cancel"
+                width="20"
+                height="20"
+              />
+            </button>
+          </div>
         </div>
-        
+
         <div class="cart-total">
           <p>Total: <span id="cart-total-price">RM </span></p>
         </div>
       </div>
     </div>
-    
+
     <div class="content">
       <!-- idk how to link to the navbar cart icon -->
       <button id="open-cart">open</button>

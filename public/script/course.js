@@ -32,6 +32,8 @@ const fetchStatus = new Proxy(
  * @param {import("./types").CourseDetails} course
  */
 function updateCourseDetail(course) {
+  document.title = `Apex Code | ${course.title}`;
+
   const title = document.querySelector("h1");
   title.textContent = course.title;
 

@@ -1,10 +1,15 @@
 body {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
+footer-box {
+  margin-top: auto;
 }
 
 .container {
   max-width: 800px;
+  width: 100%;
   margin: 20px auto;
   padding: 20px;
   border-radius: 8px;
@@ -53,14 +58,16 @@ body {
   cursor: pointer;
   border-radius: 8px;
   margin-right: 30px;
+
+  transition: background-color 0.3s ease;
 }
 
 .remove-button:hover {
-  background-color: var(--warning);
+  background-color: var(--error-hover);
 }
 
 .checkout-button {
-  width: 12%;
+  display: block;
   padding: 10px;
   background-color: var(--primary);
   color: white;
@@ -99,6 +106,13 @@ body {
   margin-bottom: 20px;
 }
 
+#close-cart {
+  aspect-ratio: 1 / 1;
+}
+#close-cart > img {
+  vertical-align: middle;
+}
+
 .cart-items {
   max-height: 300px;
   overflow-y: auto;
@@ -118,6 +132,8 @@ button {
   border: none;
   cursor: pointer;
   border-radius: 8px;
+
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -134,9 +150,10 @@ button:hover {
 
 .cart-item .item-details {
   display: flex;
+
   align-items: center;
   justify-content: space-between;
-  width: calc(100% - 40px); /* Adjusted to leave space for the remove button */
+  padding-right: 5px;
 }
 
 .cart-item .slide-cart-name {
@@ -164,6 +181,7 @@ button:hover {
 }
 
 .item-details p {
+  white-space: nowrap;
   margin: 0;
 }
 
@@ -213,8 +231,8 @@ button:hover {
     width: 100%;
   }
 
-  .item-name {
-    margin-bottom: 5px;
+  .item-details p {
+    margin: 10px 0;
   }
 
   .item-price {
