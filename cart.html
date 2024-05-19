@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Apex Code | Cart</title>
+    <script defer src="components/head/head.js"></script>
+    <script defer type="module" src="components/navbar/navbar.js"></script>
+    <script defer src="public/script/cart.js"></script>
+    <script defer src="components/footer/footer-box.js"></script>
+    <script defer src="public/script/cart.js"></script>
+    <!-- scripts  -->
+    <link rel="stylesheet" href="public/style/pages/cart.css" />
+  </head>
+  <body class="body">
+    <div class="container">
+      <h1>Shopping Cart</h1>
+      <hr>
+      <div class="item">
+          <img src="public\assets\images\course-thumbnail\css3.png" alt="Product Image">
+          <div class="item-details">
+              <div class="item-name">CSS3 For Beginners</div>
+              <button class="remove-button">Remove</button>
+              <div class="item-price">RM 89.90</div>
+          </div>
+      </div>
+      <div class="item">
+          <img src="public\assets\images\course-thumbnail\html5.png" alt="Product Image">
+          <div class="item-details">
+              <div class="item-name">HTML5 For Beginners</div>
+              <button class="remove-button">Remove</button>
+              <div class="item-price">RM 89.90</div>
+          </div>
+      </div>
+      <div class="total-container">
+        <hr>
+        <h2>Total: </h2>
+        <a href="payment.html" class="checkout-button">Checkout</a>
+    </div>
+    </div>
+    <!--Slide Cart-->
+    <div class="cart-container">
+      <div class="cart">
+        <div class="cart-header">
+          <h2>Shopping Cart</h2>
+          <button id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+          <!--Items-->
+          <div class="cart-item">
+            <div class="item-details">
+              <h3></h3>
+              <p></p>
+            </div>
+            <button class="remove-item">&times;</button>
+          </div>    
+          <div class="cart-item">
+            <div class="item-details">
+              <h3></h3>
+              <p></p>
+            </div>
+            <button class="remove-item">&times;</button>
+          </div>      
+        </div>
+        
+        <div class="cart-total">
+          <p>Total: <span id="cart-total-price">RM </span></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="content">
+      <!-- idk how to link to the navbar cart icon -->
+      <button id="open-cart">open</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
