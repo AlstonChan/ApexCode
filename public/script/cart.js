@@ -55,7 +55,6 @@ const cartContainer = document.getElementById("cartContainer");
     function removeItem(event) {
       const itemContainer = event.target.closest(".item");
       const itemId = event.target.getAttribute("data-id");
-      console.log(itemId);
       // remove the item from the cart
       itemContainer.remove();
       // remove the item (id) from the local storage
