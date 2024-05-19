@@ -235,7 +235,7 @@ function updateCourseDetail(course) {
 
   const lecture = new URLSearchParams(window.location.search).get("lecture");
 
-  document.title = `Apex Code | ${lecture}`;
+  document.title = `ApexCode | ${lecture}`;
   document.getElementById("lecture-title").textContent = lecture;
 }
 

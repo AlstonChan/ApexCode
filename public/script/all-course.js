@@ -136,7 +136,7 @@ const filterState = new Proxy(
   }
 );
 
-const showList = () => {
+const showList = (search_term) => {
   const matchedCourses = allCourseCard.filter((course) => {
     const title = course.shadowRoot.querySelector("h2").textContent.toLowerCase();
     const description = course.shadowRoot.querySelector("p").textContent.toLowerCase();
@@ -155,8 +155,8 @@ const showList = () => {
 };
 
 searchInput.addEventListener("input", (e) => {
-  search_term = event.target.value.toLowerCase();
-  console.log(showList());
+  const search_term = e.target.value.toLowerCase();
+  showList(search_term);
 });
 
 // toggleFilterDrawer(true);
