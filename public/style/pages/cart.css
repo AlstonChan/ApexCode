@@ -41,6 +41,8 @@ body {
   font-weight: bold;
   margin-left: 20px;
   white-space: nowrap;
+  width: 80px; /* Ensure a fixed width */
+  text-align: right; /* Align text to the right */
 }
 
 .remove-button {
@@ -130,11 +132,24 @@ button:hover {
   padding: 10px 0;
 }
 
-.item-details {
+.cart-item .item-details {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: calc(100% - 40px); /* Adjusted to leave space for the remove button */
+}
+
+.cart-item .slide-cart-name {
+  font-weight: bold;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.cart-item .slide-cart-price {
+  font-weight: bold;
+  white-space: nowrap;
+  width: 80px; /* Ensure a fixed width */
+  text-align: right; /* Align text to the right */
 }
 
 .item-details h3 {
@@ -176,50 +191,50 @@ button:hover {
 
 @media screen and (max-width: 600px) {
   .container {
-      padding: 10px;
-      margin: 10px auto;
+    padding: 10px;
+    margin: 10px auto;
   }
 
   .item {
-      flex-direction: column;
-      align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .item img {
-      width: 35%;
-      height: auto;
-      margin-bottom: 10px;
+    width: 35%;
+    height: auto;
+    margin-bottom: 10px;
   }
 
   .item-details {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
   }
 
   .item-name {
-      margin-bottom: 5px;
+    margin-bottom: 5px;
   }
 
   .item-price {
-      align-self: flex-end;
+    align-self: flex-end;
   }
 
   .remove-button {
-      margin-left: 0;
-      margin-bottom: 5px;
+    margin-left: 0;
+    margin-bottom: 5px;
   }
 
   .total-container {
-      flex-direction: column;
-      align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .checkout-button {
-      width: 40%;
-      padding: 10px;
-      text-align: center;
-      margin-top: 10px;
+    width: 40%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
   }
 }
