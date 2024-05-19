@@ -26,14 +26,14 @@ form.addEventListener("submit", (event) => {
 
       const cartContent = JSON.parse(localStorage.getItem("cart")) || [];
 
-      if (cartContent.length > 0) {
-        const docRef = doc(db, "accounts", `${uid}`);
-        const docSnap = await getDoc(docRef);
+      if (methodId === "0") {
+        if (cartContent.length > 0) {
+          const docRef = doc(db, "accounts", `${uid}`);
+          const docSnap = await getDoc(docRef);
 
-        if (docSnap.exists()) {
-          const data = docSnap.data();
+          if (docSnap.exists()) {
+            const data = docSnap.data();
 
-          if (methodId === "0") {
             if (data.membership) {
               alert("You already have a membership, all courses are free for you");
               return;
@@ -70,30 +70,36 @@ form.addEventListener("submit", (event) => {
               // remove the cart from the local storage
               localStorage.removeItem("cart");
             }
+          }
+        } else [alert("Cart is empty, please add some items")];
+      } else {
+        const docRef = doc(db, "accounts", `${uid}`);
+        const docSnap = await getDoc(docRef);
+
+        if (docSnap.exists()) {
+          const data = docSnap.data();
+          if (data.membership) {
+            alert("You already have a membership");
+            return;
           } else {
-            if (data.membership) {
-              alert("You already have a membership");
-              return;
+            const membership = new URLSearchParams(window.location.search).get(
+              "membership"
+            );
+            if (membership === "0") {
+              updateDoc(docRef, {
+                membership: "monthly",
+              });
             } else {
-              const membership = new URLSearchParams(window.location.search).get(
-                "membership"
-              );
-              if (membership === "0") {
-                updateDoc(docRef, {
-                  membership: "monthly",
-                });
-              } else {
-                updateDoc(docRef, {
-                  membership: "yearly",
-                });
-              }
-              // payment success
-              audio.play();
-              popup.classList.remove("hidden");
+              updateDoc(docRef, {
+                membership: "yearly",
+              });
             }
+            // payment success
+            audio.play();
+            popup.classList.remove("hidden");
           }
         }
-      } else [alert("Cart is empty, please add some items")];
+      }
     } else {
       alert("You need to sign in first");
     }

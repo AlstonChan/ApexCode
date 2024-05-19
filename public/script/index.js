@@ -53,6 +53,10 @@ const topCourse = document.getElementById("top-course");
     topThreeCourse.forEach((course) => {
       const courseData = data.courses.find((c) => c.id === Number(course.id));
       const courseCard = document.createElement("course-card");
+
+      const rating = course.rating ? course.rating.toFixed(0) : 0;
+
+      courseCard.setAttribute("ratings", rating);
       courseCard.setAttribute("id", courseData.id);
       courseCard.setAttribute("title", courseData.title);
       courseCard.setAttribute("description", courseData.description);

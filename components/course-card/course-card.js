@@ -28,38 +28,7 @@ courseCardTemplate.innerHTML = html`
         lectus eu ut proin lectus tortor tortor aliquam. Mauris augue tristique
       </p>
       <div class="badges"></div>
-      <div class="ratings">
-        <img
-          src="public/assets/images/icons/StarFilledIcon.svg"
-          width="20"
-          height="20"
-          alt=""
-        />
-        <img
-          src="public/assets/images/icons/StarFilledIcon.svg"
-          width="20"
-          height="20"
-          alt=""
-        />
-        <img
-          src="public/assets/images/icons/StarFilledIcon.svg"
-          width="20"
-          height="20"
-          alt=""
-        />
-        <img
-          src="public/assets/images/icons/StarFilledIcon.svg"
-          width="20"
-          height="20"
-          alt=""
-        />
-        <img
-          src="public/assets/images/icons/StarIcon.svg"
-          width="20"
-          height="20"
-          alt=""
-        />
-      </div>
+      <div class="ratings"></div>
       <div class="price">RM 89.99</div>
     </div>
   </a>
@@ -77,6 +46,7 @@ class CourseCard extends HTMLElement {
     const thumbnail = this.getAttribute("thumbnail");
     const category = this.getAttribute("category");
     const level = this.getAttribute("level");
+    const ratings = this.getAttribute("ratings");
 
     if (title) {
       this.shadowRoot.querySelector("h2").textContent = title;
@@ -120,6 +90,30 @@ class CourseCard extends HTMLElement {
       this.shadowRoot.querySelector(
         "a"
       ).href = `course.html?id=${id}&category=${category}`;
+    }
+
+    const rating = this.shadowRoot.querySelector(".ratings");
+    if (ratings) {
+      for (let i = 0; i < 5; i++) {
+        const star = document.createElement("img");
+        star.src =
+          i < ratings
+            ? "public/assets/images/icons/StarFilledIcon.svg"
+            : "public/assets/images/icons/StarIcon.svg";
+        star.width = 20;
+        star.height = 20;
+        star.alt = "";
+        rating.appendChild(star);
+      }
+    } else {
+      for (let i = 0; i < 5; i++) {
+        const star = document.createElement("img");
+        star.src = "public/assets/images/icons/StarIcon.svg";
+        star.width = 20;
+        star.height = 20;
+        star.alt = "";
+        rating.appendChild(star);
+      }
     }
   }
 }

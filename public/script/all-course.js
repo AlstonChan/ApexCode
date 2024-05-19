@@ -1,3 +1,9 @@
+import {
+  collection,
+  getDocs,
+} from "https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore.js";
+import { db } from "./firebase-config.js";
+
 const courseCardContainer = document.getElementById("course-card-container");
 // search
 const searchInput = document.getElementById("course-search");
@@ -33,14 +39,39 @@ const allCourseCard = [];
      */
     const data = await response.json();
 
+    const querySnapshot = await getDocs(collection(db, "ratings"));
+    const ratings = [];
+
+    querySnapshot.forEach((doc) => {
+      const data = doc.data();
+
+      const totalUserRated = Object.keys(data).reduce((acc, key) => {
+        return acc + data[key].length;
+      }, 0);
+      const overallRating = Object.keys(data).reduce((acc, key) => {
+        return acc + data[key].length * Number(key);
+      }, 0);
+
+      ratings.push({
+        id: doc.id,
+        rating: overallRating / totalUserRated,
+      });
+    });
+
     for (let i = 0; i < data.courses.length; i++) {
       const courseCard = document.createElement("course-card");
-      courseCard.setAttribute("id", data.courses[i].id);
+
+      const courseId = data.courses[i].id;
+      const rating =
+        ratings.find((r) => Number(r.id) === courseId)?.rating.toFixed(0) || 0;
+
+      courseCard.setAttribute("id", courseId);
       courseCard.setAttribute("title", data.courses[i].title);
       courseCard.setAttribute("description", data.courses[i].description);
       courseCard.setAttribute("thumbnail", data.courses[i].thumbnail);
       courseCard.setAttribute("category", data.courses[i].category);
       courseCard.setAttribute("level", data.courses[i].level);
+      courseCard.setAttribute("ratings", rating);
       const element = courseCard.cloneNode(true);
       allCourseCard.push(element);
       courseCardContainer.appendChild(element);
