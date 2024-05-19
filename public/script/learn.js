@@ -194,14 +194,36 @@ function populateDrawer(course) {
  * @param {import("./types").CourseDetails} course
  */
 function updateCourseDetail(course) {
-  onAuthStateChanged(auth, (user) => {
+  onAuthStateChanged(auth, async (user) => {
     if (user) {
       // User is signed in, see docs for a list of available properties
       // https://firebase.google.com/docs/reference/js/auth.user
       const uid = user.uid;
 
-      const video = createVideo(course.thumbnail);
-      videoContainer.insertBefore(video, videoContainer.children[0]);
+      const docRef = doc(db, "accounts", `${uid}`);
+      const docSnap = await getDoc(docRef);
+      const data = docSnap.data();
+
+      if (data.membership) {
+        const video = createVideo(course.thumbnail);
+        videoContainer.insertBefore(video, videoContainer.children[0]);
+      } else if (data.course) {
+        const courseIdRegistered = data.course.some(
+          (courseId) => Number(courseId) === course.id
+        );
+        if (courseIdRegistered) {
+          const video = createVideo(course.thumbnail);
+          videoContainer.insertBefore(video, videoContainer.children[0]);
+        } else {
+          const lock = createLockAccess(false);
+          videoContainer.insertBefore(lock, videoContainer.children[0]);
+          submitRating.disabled = true;
+        }
+      } else {
+        const lock = createLockAccess(false);
+        videoContainer.insertBefore(lock, videoContainer.children[0]);
+        submitRating.disabled = true;
+      }
     } else {
       // User is signed out
       // ...
@@ -236,10 +258,11 @@ function createVideo(thumbnail) {
   return video;
 }
 
-function createLockAccess() {
+function createLockAccess(isGuest = true) {
   const lock = document.createElement("div");
   lock.classList.add("lock");
-  lock.innerHTML = `
+  if (isGuest) {
+    lock.innerHTML = `
     <img class="lock-img" src="public/assets/images/icons/LockIcon-white.svg" alt="lock icon" width="50" height="50" />
     <h3>Course content Locked</h3>
     <p>Unlock this lecture by enrolling in the course</p>
@@ -247,6 +270,16 @@ function createLockAccess() {
       <a href="login.html">you'll need to login</a>
     .</p>
   `;
+  } else {
+    lock.innerHTML = `
+    <img class="lock-img" src="public/assets/images/icons/LockIcon-white.svg" alt="lock icon" width="50" height="50" />
+    <h3>Course content Locked</h3>
+    <p>Unlock this lecture by enrolling in the course</p>
+    <p> You can enroll in the course by visiting the
+      <a href="course.html?id=${fetchStatus.data.id}&category=${fetchStatus.data.category}">course page</a>
+    </p>
+  `;
+  }
   return lock;
 }
 

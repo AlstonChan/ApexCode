@@ -6,20 +6,21 @@
     <script defer src="components/head/head.js"></script>
     <script defer type="module" src="components/navbar/navbar.js"></script>
     <script defer src="components/footer/footer-box.js"></script>
+    <!-- script -->
+    <script defer type="module" src="public/script/manage-sub.js"></script>
     <!-- stylesheet -->
     <link rel="stylesheet" href="public/style/pages/manage-sub.css" />
   </head>
   <body>
     <div class="main">
-      <br />
       <div class="sub-header">
         <h1>Current Subscription</h1>
         <a href="personal.html" class="upgrade-btn">Back</a>
       </div>
-      <br />
+
       <div class="main-content">
         <div class="card-container">
-          <div class="card">
+          <div class="card hidden" id="member-monthly">
             <div class="card-content">
               <div>
                 <div class="plan-name">
@@ -35,17 +36,35 @@
                   - Project based learning<br />
                   - Monthly live Q&A session
                 </div>
-                <button class="action-btn">Cancel Subscription</button>
+                <button class="action-btn" data-cancel="0">Cancel Subscription</button>
+              </div>
+            </div>
+          </div>
+          <div class="card hidden" id="member-yearly">
+            <div class="card-content">
+              <div>
+                <div class="plan-name">
+                  <strong>Yearly Membership</strong>
+                  <h2>RM 399.99</h2>
+                </div>
+              </div>
+              <div class="description">
+                <div class="subscription-content">
+                  - All benefits for monthly plans<br />
+                  - Personalized learning plans<br />
+                  - Code review and feedback<br />
+                  - Access of to private community<br />
+                  - Cheaper than monthly plans
+                </div>
+                <button class="action-btn" data-cancel="1">Cancel Subscription</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <br />
       <div class="sub-header">
         <h2>Manage your subscription</h2>
       </div>
-      <br />
       <div class="main-content card-container manage-subscription">
         <div class="card">
           <div class="card-content">
@@ -53,7 +72,9 @@
               <div class="plan-name">
                 <strong>Monthly Membership</strong>
                 <h2>RM 39.99</h2>
-                <a href="payment.html" class="action-btn">Subscribe</a>
+                <a href="payment.html?method=1&membership=0" class="action-btn"
+                  >Subscribe</a
+                >
               </div>
             </div>
             <div class="description">
@@ -73,7 +94,9 @@
               <div class="plan-name">
                 <strong>Yearly Membership</strong>
                 <h2>RM 399.99</h2>
-                <a href="payment.html" class="action-btn">Subscribe</a>
+                <a href="payment.html?method=1&membership=1" class="action-btn"
+                  >Subscribe</a
+                >
               </div>
             </div>
             <div class="description">

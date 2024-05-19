@@ -1,89 +1,100 @@
-document.getElementById('open-cart').addEventListener('click', function() {
-  document.querySelector('.cart-container').style.right = '0';
-});
-  
-document.getElementById('close-cart').addEventListener('click', function() {
-  document.querySelector('.cart-container').style.right = '-300px';
-});
+const fetchStatus = new Proxy(
+  { error: null, data: null },
+  {
+    set(obj, prop, value) {
+      obj[prop] = value;
+      return Reflect.set(...arguments);
+    },
+  }
+);
 
-//sync main cart and slide cart
-function synchronizeItems() {
-  const mainCartItems = document.querySelectorAll('.item');
+const cartContainer = document.getElementById("cartContainer");
 
-  const slideCartItemsContainer = document.querySelector('.cart-items');
+(async () => {
+  const response = await fetch("public/course.json");
+  if (response.ok) {
+    /**
+     * @type {import("./types").CourseData}
+     */
+    const data = await response.json();
 
-  slideCartItemsContainer.innerHTML = '';
+    fetchStatus.data = data.courses;
 
-  mainCartItems.forEach(function(item) {
-      const clonedItem = item.cloneNode(true);
-      const removeButton = clonedItem.querySelector('.remove-button');
-      if (removeButton) {
-          removeButton.remove();
+    if (cartContainer) {
+      // Get the data from local storage and create the item container
+      // for each item in the cart. The cart only stores the id of the course
+
+      const cart = JSON.parse(localStorage.getItem("cart")) || [];
+      if (cart) {
+        cart.forEach((courseId) => {
+          const item = document.createElement("div");
+          item.classList.add("item");
+
+          // Get the course details from the fetchStatus object
+          const course = fetchStatus.data.find(
+            (course) => course.id === Number(courseId)
+          );
+
+          if (course) {
+            item.innerHTML = `
+            <img src="public/assets/images/course-thumbnail/${course.thumbnail}" alt="${course.title}" />
+            <div class="item-details">
+                <p class="item-name">${course.title}</p>
+                <button data-id=${course.id} class="remove-button">Remove</button>
+                <p class="item-price">RM 89.99</p>
+            </div>
+        `;
+            cartContainer.appendChild(item);
+          }
+        });
       }
-      const itemName = clonedItem.querySelector('.item-name').textContent;
-      const itemPrice = clonedItem.querySelector('.item-price').textContent;
-      const slideCartItem = document.createElement('div');
-      slideCartItem.classList.add('cart-item');
-      slideCartItem.innerHTML = `
-          <div class="item-details">
-              <h3>${itemName}</h3>
-              <p>${itemPrice}</p>
-          </div>
-          <button class="remove-item">&times;</button>
-      `;
-      slideCartItemsContainer.appendChild(slideCartItem);
-  });
-}
+    }
 
-document.addEventListener("DOMContentLoaded", function() {
-  synchronizeItems();
-});
+    //remove button
+    const removeButtons = document.querySelectorAll("[data-id]");
+    function removeItem(event) {
+      const itemContainer = event.target.closest(".item");
+      const itemId = event.target.getAttribute("data-id");
+      console.log(itemId);
+      // remove the item from the cart
+      itemContainer.remove();
+      // remove the item (id) from the local storage
+      const cart = JSON.parse(localStorage.getItem("cart")) || [];
+      const newCart = cart.filter((id) => id !== itemId);
+      localStorage.setItem("cart", JSON.stringify(newCart));
+      // recalculate the total price
+      calculateTotal();
 
-const slideCartRemoveButtons = document.querySelectorAll('.cart-item .remove-item');
+      // if the cart is empty, show a message
+      if (cartContainer.children.length === 0) {
+        cartContainer.innerHTML = "<p>Your cart is empty</p>";
+      }
+    }
+    removeButtons.forEach((button) => {
+      button.addEventListener("click", removeItem);
+    });
 
-function removeSlideCartItem(event) {
-  const itemContainer = event.target.closest('.cart-item');
-  itemContainer.remove();
-}
+    //calculate total price for main cart
+    function calculateTotal() {
+      const itemPrices = document.querySelectorAll(".item-price");
 
-slideCartRemoveButtons.forEach(button => {
-  button.addEventListener('click', removeSlideCartItem);
-});
+      let totalPrice = 0;
 
-document.getElementById('open-cart').addEventListener('click', function() {
-  document.querySelector('.cart-container').style.right = '0';
-});
+      itemPrices.forEach(function (item) {
+        const priceString = item.textContent.trim().substring(3);
+        const price = parseFloat(priceString);
+        totalPrice += price;
+      });
+      const totalPriceElement = document.querySelector(".total-container h2");
+      totalPriceElement.textContent = "Total: RM " + totalPrice.toFixed(2);
+    }
+    calculateTotal();
 
-document.getElementById('close-cart').addEventListener('click', function() {
-  document.querySelector('.cart-container').style.right = '-300px';
-});
-
-
-//remove button
-const removeButtons = document.querySelectorAll('.remove-button');
-
-function removeItem(event) {
-    const itemContainer = event.target.closest('.item');
-    itemContainer.remove();
-}
-
-removeButtons.forEach(button => {
-    button.addEventListener('click', removeItem);
-});
-
-//calculate total price for main cart
-document.addEventListener("DOMContentLoaded", function() {
-
-  const itemPrices = document.querySelectorAll('.item-price');
-
-  let totalPrice = 0;
-
-  itemPrices.forEach(function(item) {
-      const priceString = item.textContent.trim().substring(3); 
-      const price = parseFloat(priceString);
-      totalPrice += price;
-  });
-  const totalPriceElement = document.querySelector('.total-container h2');
-  totalPriceElement.textContent = 'Total: RM ' + totalPrice.toFixed(2);
-});
-
+    // if the cart is empty, show a message
+    if (cartContainer.children.length === 0) {
+      cartContainer.innerHTML = "<p>Your cart is empty</p>";
+    }
+  } else {
+    fetchStatus.error = "Course not found";
+  }
+})();

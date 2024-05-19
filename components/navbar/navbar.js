@@ -32,14 +32,14 @@ navBarTemplate.innerHTML = html`<link
           <li><a href="about.html">About</a></li>
           <li><a href="pricing.html">Pricing</a></li>
           <li>
-            <button class="cart">
+            <a href="cart.html" class="cart">
               <img
                 src="public/assets/images/icons/CartIcon-white.svg"
                 alt="cart"
                 width="35"
                 height="35"
               />
-            </button>
+            </a>
           </li>
           <li id="nav-auth">
             <a class="auth" href="login.html">Log In</a>
@@ -138,7 +138,7 @@ class Navigation extends HTMLElement {
     const dropdown = document.createElement("ul");
     dropdown.className = "authDropdown";
     dropdown.innerHTML = `
-      <li><a href="profile.html">Profile</a></li>
+      <li><a href="personal.html">Profile</a></li>
       <li><p id="nav-logout">Logout</p></li>
     `;
 

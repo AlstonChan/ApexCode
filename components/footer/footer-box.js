@@ -42,6 +42,10 @@ footerBoxTemplate.innerHTML = html`<link
             <li><a href="login.html">Login</a></li>
             <li><a href="signup.html">Sign Up</a></li>
           </ul>
+          <ul class="dropdown">
+            <li><a href="personal.html">Profile</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
         </div>
       </div>
     </div>

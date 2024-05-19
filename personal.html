@@ -7,7 +7,7 @@
     <script defer type="module" src="components/navbar/navbar.js"></script>
     <script defer src="components/footer/footer-box.js"></script>
     <!-- scripts  -->
-    <script defer src="public/script/personal.js"></script>
+    <script defer type="module" src="public/script/personal.js"></script>
     <!-- stylesheet -->
     <link rel="stylesheet" href="public/style/pages/personal.css" />
   </head>
@@ -21,24 +21,24 @@
           <div class="flex-row">
             <div class="flex-item flex-item-label">Username</div>
             <div class="flex-item flex-item-separator">:</div>
-            <div class="flex-item flex-item-value">MOKKKKK</div>
+            <div class="flex-item flex-item-value" id="username"></div>
           </div>
           <div class="flex-row">
             <div class="flex-item flex-item-label">Email</div>
             <div class="flex-item flex-item-separator">:</div>
-            <div class="flex-item flex-item-value">mokishandsome@gmail.com</div>
+            <div class="flex-item flex-item-value" id="email"></div>
           </div>
         </div>
       </div>
       <br />
       <div class="sub-header">
-        <h1>Current Subscription</h1>
+        <h2>Current Subscription</h2>
         <a href="manage-sub.html" class="upgrade-btn">Manage</a>
       </div>
       <br />
       <div class="main-content">
         <div class="card-container">
-          <div class="hydrogen-card">
+          <div class="hydrogen-card hidden" id="member-monthly">
             <div class="card-content">
               <div>
                 <div class="plan-name">
@@ -56,11 +56,26 @@
               </div>
             </div>
           </div>
+          <div class="hydrogen-card hidden" id="member-yearly">
+            <div class="card-content">
+              <div>
+                <div class="plan-name">
+                  <strong>Yearly Membership</strong>
+                </div>
+              </div>
+              <div class="row-description-content">
+                <div class="subscription-content">
+                  - All benefits for monthly plans<br />
+                  - Personalized learning plans<br />
+                  - Code review and feedback<br />
+                  - Access of to private community<br />
+                  - Cheaper than monthly plans
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <br />
-    <br />
-    <br />
   </body>
 </html>

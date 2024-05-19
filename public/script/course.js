@@ -1,3 +1,5 @@
+const addToCart = document.getElementById("addToCart");
+
 const fetchStatus = new Proxy(
   { error: null, data: null },
   {
@@ -77,3 +79,15 @@ function updateCourseDetail(course) {
   const lectureCountElement = document.getElementById("lectureCount");
   lectureCountElement.textContent = lectureCount;
 }
+
+addToCart.addEventListener("click", function () {
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const id = new URLSearchParams(window.location.search).get("id");
+  if (cart.includes(id)) {
+    alert("Course already added to cart");
+    return;
+  }
+  cart.push(id);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  alert("Course added to cart");
+});
