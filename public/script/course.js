@@ -75,7 +75,7 @@ const fetchStatus = new Proxy(
             (docData[bar.getAttribute("data-ratingBar")]?.length / totalUserRated) *
               100 || 0;
           bar.value = value;
-          bar.nextElementSibling.textContent = `${value}%`;
+          bar.nextElementSibling.textContent = `${value.toFixed(1)}%`;
         });
       } else {
         ratingCount.forEach((count) => {
