@@ -86,3 +86,4 @@ document.addEventListener("DOMContentLoaded", function() {
   const totalPriceElement = document.querySelector('.total-container h2');
   totalPriceElement.textContent = 'Total: RM ' + totalPrice.toFixed(2);
 });
+
