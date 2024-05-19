@@ -1,6 +1,6 @@
 # ApexCode
 
-description here
+An online coding course website written in pure HTML, CSS and Javascript
 
 ## Local development
 
