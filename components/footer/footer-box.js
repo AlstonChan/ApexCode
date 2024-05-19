@@ -17,13 +17,14 @@ footerBoxTemplate.innerHTML = html`<link
     <div class="footer-content">
       <div class="left">
         <h2>ApexCode</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Per ornare odio</p>
+        <p>Next generation programming teaching websites</p>
         <address>
           <p>
             Email address:
             <a href="mailto:support@apexcode.com">support@apexcode.com</a>
           </p>
           <p>Phone: <a href="tel:+1234567890">+1234567890</a></p>
+          <a href="#">Discord</a>
         </address>
       </div>
       <div class="right">
@@ -40,6 +41,10 @@ footerBoxTemplate.innerHTML = html`<link
             <li><a href="feedback.html">Feedback</a></li>
             <li><a href="login.html">Login</a></li>
             <li><a href="signup.html">Sign Up</a></li>
+          </ul>
+          <ul class="dropdown">
+            <li><a href="personal.html">Profile</a></li>
+            <li><a href="cart.html">Cart</a></li>
           </ul>
         </div>
       </div>

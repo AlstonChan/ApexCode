@@ -22,5 +22,5 @@
   },
   "peacock.color": "#2fcef9",
   "editor.formatOnSave": true,
-  "cSpell.words": ["Firestore", "Flexbox", "IIFE", "MERN", "nuxt", "vuejs"]
+  "cSpell.words": ["Firestore", "Flexbox", "IIFE", "MERN", "nuxt", "pcard", "vuejs"]
 }

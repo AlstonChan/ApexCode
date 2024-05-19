@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ApexCode | Manage plan</title>
+    <!-- component  -->
+    <script defer src="components/head/head.js"></script>
+    <script defer type="module" src="components/navbar/navbar.js"></script>
+    <script defer src="components/footer/footer-box.js"></script>
+    <!-- script -->
+    <script defer type="module" src="public/script/manage-sub.js"></script>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="public/style/pages/manage-sub.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="sub-header">
+        <h1>Current Subscription</h1>
+        <a href="personal.html" class="upgrade-btn">Back</a>
+      </div>
+
+      <div class="main-content">
+        <div class="card-container">
+          <div class="card hidden" id="member-monthly">
+            <div class="card-content">
+              <div>
+                <div class="plan-name">
+                  <strong>Monthly Membership</strong>
+                  <h2>RM 39.99</h2>
+                </div>
+              </div>
+              <div class="description">
+                <div class="subscription-content">
+                  - Access to comprehensive library<br />
+                  - Regularly update content<br />
+                  - Access to coding exercises<br />
+                  - Project based learning<br />
+                  - Monthly live Q&A session
+                </div>
+                <button class="action-btn" data-cancel="0">Cancel Subscription</button>
+              </div>
+            </div>
+          </div>
+          <div class="card hidden" id="member-yearly">
+            <div class="card-content">
+              <div>
+                <div class="plan-name">
+                  <strong>Yearly Membership</strong>
+                  <h2>RM 399.99</h2>
+                </div>
+              </div>
+              <div class="description">
+                <div class="subscription-content">
+                  - All benefits for monthly plans<br />
+                  - Personalized learning plans<br />
+                  - Code review and feedback<br />
+                  - Access of to private community<br />
+                  - Cheaper than monthly plans
+                </div>
+                <button class="action-btn" data-cancel="1">Cancel Subscription</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sub-header">
+        <h2>Manage your subscription</h2>
+      </div>
+      <div class="main-content card-container manage-subscription">
+        <div class="card">
+          <div class="card-content">
+            <div>
+              <div class="plan-name">
+                <strong>Monthly Membership</strong>
+                <h2>RM 39.99</h2>
+                <a href="payment.html?method=1&membership=0" class="action-btn"
+                  >Subscribe</a
+                >
+              </div>
+            </div>
+            <div class="description">
+              <div class="subscription-content">
+                - Access to comprehensive library<br />
+                - Regularly update content<br />
+                - Access to coding exercises<br />
+                - Project based learning<br />
+                - Monthly live Q&A session
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div>
+              <div class="plan-name">
+                <strong>Yearly Membership</strong>
+                <h2>RM 399.99</h2>
+                <a href="payment.html?method=1&membership=1" class="action-btn"
+                  >Subscribe</a
+                >
+              </div>
+            </div>
+            <div class="description">
+              <div class="subscription-content">
+                - All benefits for monthly plans<br />
+                - Personalized learning plans<br />
+                - Code review and feedback<br />
+                - Access of to private community<br />
+                - Cheaper than monthly plans
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div>
+              <div class="plan-name">
+                <strong>Individual courses</strong>
+                <h2>RM 89.99</h2>
+                <a href="all-course.html" class="action-btn">View courses</a>
+              </div>
+            </div>
+            <div class="description">
+              <div class="subscription-content">
+                - Single payment, lifetime access<br />
+                - Access to the latest content<br />
+                - Flexibility to choose<br />
+                - Targeted learning<br />
+                - Potentially lower overall cost
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

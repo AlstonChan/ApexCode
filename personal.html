@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ApexCode | Account Details</title>
+    <!-- component  -->
+    <script defer src="components/head/head.js"></script>
+    <script defer type="module" src="components/navbar/navbar.js"></script>
+    <script defer src="components/footer/footer-box.js"></script>
+    <!-- scripts  -->
+    <script defer type="module" src="public/script/personal.js"></script>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="public/style/pages/personal.css" />
+  </head>
+  <body>
+    <div class="main">
+      <br />
+      <h1>Account Details & Personal Information</h1>
+      <br />
+      <div class="pcard">
+        <div class="pcard-body">
+          <div class="flex-row">
+            <div class="flex-item flex-item-label">Username</div>
+            <div class="flex-item flex-item-separator">:</div>
+            <div class="flex-item flex-item-value" id="username"></div>
+          </div>
+          <div class="flex-row">
+            <div class="flex-item flex-item-label">Email</div>
+            <div class="flex-item flex-item-separator">:</div>
+            <div class="flex-item flex-item-value" id="email"></div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="sub-header">
+        <h2>Current Subscription</h2>
+        <a href="manage-sub.html" class="upgrade-btn">Manage</a>
+      </div>
+      <br />
+      <div class="main-content">
+        <div class="card-container">
+          <div class="hydrogen-card hidden" id="member-monthly">
+            <div class="card-content">
+              <div>
+                <div class="plan-name">
+                  <strong>Monthly Membership</strong>
+                </div>
+              </div>
+              <div class="row-description-content">
+                <div class="subscription-content">
+                  - Access to comprehensive library<br />
+                  - Regularly update content<br />
+                  - Access to coding exercises<br />
+                  - Project based learning<br />
+                  - Monthly live Q&A session
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hydrogen-card hidden" id="member-yearly">
+            <div class="card-content">
+              <div>
+                <div class="plan-name">
+                  <strong>Yearly Membership</strong>
+                </div>
+              </div>
+              <div class="row-description-content">
+                <div class="subscription-content">
+                  - All benefits for monthly plans<br />
+                  - Personalized learning plans<br />
+                  - Code review and feedback<br />
+                  - Access of to private community<br />
+                  - Cheaper than monthly plans
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

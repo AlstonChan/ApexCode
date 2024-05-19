@@ -23,6 +23,7 @@
   --success: #2dd4bf;
   --warning: #f4bf50;
   --error: #fb7085;
+  --error-hover: #d8586b;
   /* font size  */
   --fs-7xl: 4.5rem; /* 72px */
   --fs-5xl: 3rem;

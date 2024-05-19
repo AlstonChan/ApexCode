@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ApexCode | Payment Gateway</title>
+    <title>ApexCode | Payment</title>
     <!-- component  -->
     <script defer src="components/head/head.js"></script>
     <script defer type="module" src="components/navbar/navbar.js"></script>
-    <script defer src="components/course-card/course-card.js"></script>
     <script defer src="components/footer/footer-box.js"></script>
     <!-- scripts -->
-    <script defer src="public/script/payment.js"></script>
+    <script defer type="module" src="public/script/payment.js"></script>
     <!-- stylesheet -->
     <link rel="stylesheet" href="public/style/pages/payment.css" />
   </head>
@@ -21,7 +20,7 @@
       <div class="content">
         <h1>Payment Successful!</h1>
         <p>Thank you for your purchase!</p>
-        <a href="profile.html">Back to profile</a>
+        <a href="personal.html">Back to profile</a>
       </div>
     </div>
 
@@ -36,11 +35,11 @@
               alt=""
               class="backIcon"
             />
-            <p class="companyName">ApexCode SDN BHD</p>
+            <p class="backToCart">Back to Cart</p>
           </a>
           <div class="paymentInfo">
             <p>Pay ApexCode SDN BHD</p>
-            <h1>RM <span data-price="price">39.99</span></h1>
+            <h1>RM <span data-price="price">0.00</span></h1>
             <p><small>* Only accept Debit/Credit Card</small></p>
           </div>
         </div>
@@ -106,7 +105,7 @@
               <input class="polaris" type="text" name="bank" id="bank" required />
             </div>
 
-            <button type="submit">Pay RM <span data-price="price">39.99</span></button>
+            <button type="submit">Pay RM <span data-price="price">0.00</span></button>
           </form>
         </div>
       </div>

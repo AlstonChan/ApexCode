@@ -80,7 +80,7 @@ main > .content > .left {
   margin: 0 0 20px 0;
   text-decoration: none;
 }
-.paymentNavBack > p.companyName {
+.paymentNavBack > p.backToCart {
   font-size: var(--fs-lg);
   font-weight: bold;
   margin: 0 0 0 10px;
@@ -89,7 +89,7 @@ main > .content > .left {
 .paymentNavBack > img.backIcon {
   transition: transform 160ms ease-in-out;
 }
-.paymentNavBack:hover p.companyName {
+.paymentNavBack:hover p.backToCart {
   text-decoration: underline;
 }
 .paymentNavBack:hover img.backIcon {
