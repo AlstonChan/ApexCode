@@ -1,4 +1,15 @@
+import {
+  doc,
+  getDoc,
+} from "https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore.js";
+import { db } from "./firebase-config.js";
+
 const addToCart = document.getElementById("addToCart");
+
+const ratingNum = document.querySelectorAll("[data-ratingNum]");
+const ratingStars = document.querySelectorAll("[data-ratingStars]");
+const ratingCount = document.querySelectorAll("[data-ratingCount]");
+const ratingBar = document.querySelectorAll("[data-ratingBar]");
 
 const fetchStatus = new Proxy(
   { error: null, data: null },
@@ -23,6 +34,72 @@ const fetchStatus = new Proxy(
     const course = data.courses.find((course) => course.id === Number(id));
     if (course) {
       fetchStatus.data = course;
+      const docRef = doc(db, "ratings", `${id}`);
+      const docSnap = await getDoc(docRef);
+
+      if (docSnap.exists()) {
+        const docData = docSnap.data();
+
+        // Calculate the average rating
+        const totalUserRated = Object.keys(docData).reduce((acc, key) => {
+          return acc + docData[key].length;
+        }, 0);
+        const overallRating = Object.keys(docData).reduce((acc, key) => {
+          return acc + docData[key].length * Number(key);
+        }, 0);
+        const averageRating = overallRating / totalUserRated;
+
+        ratingCount.forEach((count) => {
+          count.textContent = totalUserRated;
+        });
+        ratingNum.forEach((num) => {
+          num.textContent = averageRating.toFixed(1);
+        });
+
+        // Populate the rating stars
+        for (let i = 0; i < 5; i++) {
+          const star = document.createElement("img");
+          star.width = 25;
+          star.height = 25;
+          star.src =
+            i < averageRating
+              ? "public/assets/images/icons/StarFilledIcon.svg"
+              : "public/assets/images/icons/StarIcon.svg";
+          ratingStars.forEach((stars) => {
+            stars.appendChild(star.cloneNode(true));
+          });
+        }
+
+        ratingBar.forEach((bar) => {
+          const value =
+            (docData[bar.getAttribute("data-ratingBar")]?.length / totalUserRated) *
+              100 || 0;
+          bar.value = value;
+          bar.nextElementSibling.textContent = `${value}%`;
+        });
+      } else {
+        ratingCount.forEach((count) => {
+          count.textContent = 0;
+        });
+        ratingNum.forEach((num) => {
+          num.textContent = "0.0";
+        });
+
+        for (let i = 0; i < 5; i++) {
+          const star = document.createElement("img");
+          star.width = 25;
+          star.height = 25;
+          star.src = "public/assets/images/icons/StarIcon.svg";
+          ratingStars.forEach((stars) => {
+            stars.append(star.cloneNode(true));
+          });
+        }
+
+        ratingBar.forEach((bar) => {
+          bar.value = 0;
+          bar.nextElementSibling.textContent = "0%";
+        });
+      }
     } else {
       fetchStatus.error = "Course not found";
     }

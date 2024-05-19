@@ -8,7 +8,7 @@
     <script defer src="components/footer/footer-box.js"></script>
     <script defer src="components/accordionBar/accordionBar.js"></script>
     <!-- scripts  -->
-    <script defer src="public/script/course.js"></script>
+    <script defer type="module" src="public/script/course.js"></script>
     <!-- stylesheet -->
     <link rel="stylesheet" href="public/style/pages/course.css" />
   </head>
@@ -19,45 +19,10 @@
           <h1></h1>
           <p class="desc"></p>
           <div class="ratings">
-            <p>4.0</p>
-            <div class="stars">
-              <!-- 
-              icon here should not have alt text
-              https://html.spec.whatwg.org/multipage/images.html#a-graphical-representation-of-some-of-the-surrounding-text 
-              -->
-              <img
-                src="public/assets/images/icons/StarFilledIcon.svg"
-                width="25"
-                height="25"
-                alt=""
-              />
-              <img
-                src="public/assets/images/icons/StarFilledIcon.svg"
-                width="25"
-                height="25"
-                alt=""
-              />
-              <img
-                src="public/assets/images/icons/StarFilledIcon.svg"
-                width="25"
-                height="25"
-                alt=""
-              />
-              <img
-                src="public/assets/images/icons/StarFilledIcon.svg"
-                width="25"
-                height="25"
-                alt=""
-              />
-              <img
-                src="public/assets/images/icons/StarIcon.svg"
-                width="25"
-                height="25"
-                alt=""
-              />
-            </div>
+            <p data-ratingNum>0.0</p>
+            <div data-ratingStars class="stars"></div>
             <p class="ratings-count">
-              <small> 35 ratings </small>
+              <small> <span data-ratingCount>0</span> ratings </small>
             </p>
           </div>
           <div class="meta">
@@ -229,71 +194,46 @@
         <div>
           <h2>Ratings and reviews</h2>
           <div class="ratings-top">
-            <h3>4.0</h3>
+            <h3 data-ratingNum>0.0</h3>
             <div>
-              <div class="stars">
-                <!-- 
-              icon here should not have alt text
-              https://html.spec.whatwg.org/multipage/images.html#a-graphical-representation-of-some-of-the-surrounding-text 
-              -->
-                <img
-                  src="public/assets/images/icons/StarFilledIcon.svg"
-                  width="20"
-                  height="20"
-                  alt=""
-                />
-                <img
-                  src="public/assets/images/icons/StarFilledIcon.svg"
-                  width="20"
-                  height="20"
-                  alt=""
-                />
-                <img
-                  src="public/assets/images/icons/StarFilledIcon.svg"
-                  width="20"
-                  height="20"
-                  alt=""
-                />
-                <img
-                  src="public/assets/images/icons/StarFilledIcon.svg"
-                  width="20"
-                  height="20"
-                  alt=""
-                />
-                <img
-                  src="public/assets/images/icons/StarIcon.svg"
-                  width="20"
-                  height="20"
-                  alt=""
-                />
-              </div>
-              <p>35 ratings</p>
+              <div data-ratingStars class="stars"></div>
+              <p><span data-ratingCount>0</span> ratings</p>
             </div>
           </div>
           <div class="ratings-body">
             <div class="bar">
               <label for="fiveStars">5 stars</label>
-              <progress id="fiveStars" max="100" value="70">70%</progress>
+              <progress data-ratingBar="5" id="fiveStars" max="100" value="70">
+                70%
+              </progress>
               <label for="fiveStars">53 %</label>
             </div>
             <div class="bar">
               <label for="fourStars">4 stars</label>
-              <progress id="fourStars" max="100" value="70">70%</progress>
+              <progress data-ratingBar="4" id="fourStars" max="100" value="70">
+                70%
+              </progress>
               <label for="fourStars">53 %</label>
             </div>
             <div class="bar">
               <label for="threeStars">3 stars</label>
-              <progress id="threeStars" max="100" value="70">70%</progress>
+              <progress data-ratingBar="3" id="threeStars" max="100" value="70">
+                70%
+              </progress>
               <label for="threeStars">53 %</label>
             </div>
             <div class="bar">
               <label for="twoStars">2 stars</label>
-              <progress id="twoStars" max="100" value="70">70%</progress>
+              <progress data-ratingBar="2" id="twoStars" max="100" value="70">
+                70%
+              </progress>
               <label for="twoStars">53 %</label>
             </div>
             <div class="bar">
               <label for="oneStars">1 stars</label>
-              <progress id="oneStars" max="100" value="70">70%</progress>
+              <progress data-ratingBar="1" id="oneStars" max="100" value="70">
+                70%
+              </progress>
               <label for="oneStars">53 %</label>
             </div>
           </div>
